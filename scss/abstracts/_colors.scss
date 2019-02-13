@@ -1,0 +1,48 @@
+// Color variables
+
+// Main brand colors
+$fire: #a83232;
+
+// Brand color tints
+$blue__cyan: #6ecded;
+$blue-tint__lightest: #d6f4ff;
+
+// Monochromatic scale
+$white:    #fff;
+//$gray-100: #f8f9fa !default;
+$gray-200: #ddd;
+//$gray-300: #dee2e6 !default;
+//$gray-400: #ced4da !default;
+//$gray-500: #adb5bd !default;
+//$gray-600: #6c757d !default;
+$gray-700: #3d3c45;
+//$gray-800: #343a40 !default;
+$gray-900: #222;
+$black:    #101010;
+
+$colors: () !default;
+$colors: (
+  fire: $fire,
+  blue: $blue__cyan,
+  lightest-blue: $blue-tint__lightest,
+  'white': $white,
+  gray-200: $gray-200,
+  gray-700: $gray-700,
+  gray-900: $gray-900,
+  'black': $black,
+);
+
+// Map-getter for theme Colors
+@function palette($color) {
+  @return map-get($colors, $color);
+}
+
+// Generic variables
+$color__body-fg: palette(gray-900);
+$color__body-bg: palette('white');
+
+$color__link: palette(fire);
+$color__link-hover: palette(ice);
+$color__link-focus: palette(ice);
+
+$color__borders: palette(gray-200);

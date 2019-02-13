@@ -1,0 +1,47 @@
+// Keyframes
+@keyframes animate-cloud {
+  0% {
+    transform: translate3d(-10vw,0,0);
+  }
+  100% {
+    transform: translate3d(110vw,0,0);
+  }
+}
+
+.cloud {
+  animation-name: animate-cloud;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  z-index: z(cloud);
+}
+
+.cloud-1 {
+  animation-duration: 30s;
+  animation-delay: 2s;
+  bottom: 45vh;
+  height: 4.5vw;
+  width: 7.5vw;
+}
+
+// Furthest one back. Smallest and the slowest
+.cloud-2 {
+  animation-duration: 42s;
+  animation-delay: 7s;
+  bottom: 33.5vh;
+  height: 3vw;
+  width: 5vw;
+}
+
+.cloud-3 {
+  animation-duration: 34s;
+  animation-delay: 5s;
+  bottom: 27vh;
+  height: 3.75vw;
+  width: 6vw;
+}

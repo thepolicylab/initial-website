@@ -1,0 +1,66 @@
+// React's body element, Root
+.page {
+  background-color: palette(gray-700);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: z(page);
+
+  &__home {}
+}
+
+// React wrapper, Root
+/*#wrapper*/ .r-wrapper {
+  background-color: palette('white');
+  
+  @include media-breakpoint-up($bp-lg) {
+    background: linear-gradient(palette('white'), palette(lightest-blue));
+  }
+
+  &__flex {
+    @include media-breakpoint-up($bp-lg) {
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      justify-content: space-between;
+      padding-top: $vertical-rhythm;
+      margin: 0 auto;
+      max-width: $max-width__splash;
+    }
+  }
+  
+  // Vertical media query
+  @media (min-width: em(1200)) and (min-height: em(800)) {
+   min-height: 30vh;
+   max-height: 45vh; 
+  }
+}
+
+.main {
+  
+  &__header {
+    @include media-breakpoint-up($bp-lg) {
+      flex: 1 0 30%;
+      max-width: 30%;
+    }
+  }
+  
+  &__content {
+    background: linear-gradient(palette('white'), palette(lightest-blue));
+    
+    @include media-breakpoint-up($bp-lg) {
+      background: none;
+      flex: 1 0 70%;
+      margin-bottom: fluid-calc(0, -330, bp(medium), bp(xx-large), 1px);
+      max-width: 70%;
+    }
+  }
+  
+  &__article {
+    position: relative;
+    z-index: z(main-article);
+  }
+
+  &__banner {}
+
+  &__footer {}
+}

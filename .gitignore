@@ -1,0 +1,5 @@
+// Mac OSX files
+*/.DS_store
+
+// SASS Artifacts
+*/.sass-cache

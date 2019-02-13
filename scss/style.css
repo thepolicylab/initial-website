@@ -546,12 +546,18 @@ ins {
       min-height: 30vh;
       max-height: 45vh; } }
 
+@media (min-width: 60em) {
+  .main__header {
+    flex: 1 0 30%;
+    max-width: 30%; } }
 .main__content {
   background: linear-gradient(#fff, #d6f4ff); }
   @media (min-width: 60em) {
     .main__content {
       background: none;
-      margin-bottom: calc(0px + (-330 - 0) * ((100vw - 760px) / 760)); } }
+      flex: 1 0 70%;
+      margin-bottom: calc(0px + (-330 - 0) * ((100vw - 760px) / 760));
+      max-width: 70%; } }
 .main__article {
   position: relative;
   z-index: 20; }
@@ -559,6 +565,7 @@ ins {
 .brand {
   text-align: center;
   position: relative;
+  white-space: nowrap;
   z-index: 25; }
   .brand__seal, .brand__img {
     display: inline-block; }
@@ -566,11 +573,6 @@ ins {
     max-width: 87px; }
   .brand__img {
     max-width: 140px; }
-  @media (min-width: 38.75em) {
-    .brand__seal {
-      max-width: 97px; }
-    .brand__img {
-      max-width: 180px; } }
 
 .splash__header h1 {
   text-transform: lowercase; }
@@ -580,7 +582,7 @@ ins {
     font-weight: normal;
     letter-spacing: 0; }
     @media (min-width: 60em) {
-      .splash__header h1 i::after {
+      .splash__header h1 i::before {
         content: "\A";
         white-space: pre; } }
 .splash__content p {
@@ -599,7 +601,8 @@ ins {
   .illus img {
     position: absolute;
     bottom: -1px;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    z-index: 11; }
   .illus figcaption {
     position: absolute;
     width: 1px;
@@ -640,6 +643,44 @@ ins {
 .footer {
   color: #fff;
   text-align: center; }
+
+@keyframes animate-cloud {
+  0% {
+    transform: translate3d(-10vw, 0, 0); }
+  100% {
+    transform: translate3d(110vw, 0, 0); } }
+.cloud {
+  animation-name: animate-cloud;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  z-index: 5; }
+
+.cloud-1 {
+  animation-duration: 30s;
+  animation-delay: 2s;
+  bottom: 45vh;
+  height: 4.5vw;
+  width: 7.5vw; }
+
+.cloud-2 {
+  animation-duration: 42s;
+  animation-delay: 7s;
+  bottom: 33.5vh;
+  height: 3vw;
+  width: 5vw; }
+
+.cloud-3 {
+  animation-duration: 34s;
+  animation-delay: 5s;
+  bottom: 27vh;
+  height: 3.75vw;
+  width: 6vw; }
 
 .mc__label {
   display: block;
@@ -685,10 +726,10 @@ ins {
       display: flex;
       flex-flow: row nowrap; }
 
-    .u-wrapper {
+    .footer .u-wrapper {
       flex: 1 0 auto; }
 
     .copyright {
       text-align: right; } }
 
-/*# sourceMappingURL=render.css.map */
+/*# sourceMappingURL=style.css.map */

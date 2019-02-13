@@ -20,13 +20,13 @@
     max-width: 140px;
   }
   
-  @include media-breakpoint-up($bp-sm) {
-    &__seal {
-      max-width: 97px;
-    }
-    
-    &__img {
-      max-width: 180px;
-    }
-  }
+  //@include media-breakpoint-up($bp-sm) {
+  //  &__seal {
+  //    max-width: 97px;
+  //  }
+  //  
+  //  &__img {
+  //    max-width: 180px;
+  //  }
+  //}
 }

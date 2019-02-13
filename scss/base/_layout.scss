@@ -39,8 +39,8 @@
   
   &__header {
     @include media-breakpoint-up($bp-lg) {
-      flex: 1 0 34%;
-      max-width: 34%;
+      flex: 1 0 30%;
+      max-width: 30%;
     }
   }
   
@@ -49,9 +49,9 @@
     
     @include media-breakpoint-up($bp-lg) {
       background: none;
-      flex: 1 0 66%;
+      flex: 1 0 70%;
       margin-bottom: fluid-calc(0, -330, bp(medium), bp(xx-large), 1px);
-      max-width: 66%;
+      max-width: 70%;
     }
   }
   

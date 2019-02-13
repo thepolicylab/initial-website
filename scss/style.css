@@ -548,16 +548,16 @@ ins {
 
 @media (min-width: 60em) {
   .main__header {
-    flex: 1 0 34%;
-    max-width: 34%; } }
+    flex: 1 0 30%;
+    max-width: 30%; } }
 .main__content {
   background: linear-gradient(#fff, #d6f4ff); }
   @media (min-width: 60em) {
     .main__content {
       background: none;
-      flex: 1 0 66%;
+      flex: 1 0 70%;
       margin-bottom: calc(0px + (-330 - 0) * ((100vw - 760px) / 760));
-      max-width: 66%; } }
+      max-width: 70%; } }
 .main__article {
   position: relative;
   z-index: 20; }
@@ -573,11 +573,6 @@ ins {
     max-width: 87px; }
   .brand__img {
     max-width: 140px; }
-  @media (min-width: 38.75em) {
-    .brand__seal {
-      max-width: 97px; }
-    .brand__img {
-      max-width: 180px; } }
 
 .splash__header h1 {
   text-transform: lowercase; }
@@ -731,7 +726,7 @@ ins {
       display: flex;
       flex-flow: row nowrap; }
 
-    .u-wrapper {
+    .footer .u-wrapper {
       flex: 1 0 auto; }
 
     .copyright {

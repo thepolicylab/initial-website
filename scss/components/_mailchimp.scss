@@ -1,0 +1,86 @@
+// Hide the MailChimp Honeypot
+.mc {
+  
+  &__form {}
+  
+  &__wrapper {}
+  
+  &__label {
+    @extend %placeholder__font-size;
+    display: block;
+    padding-right: 1ch;
+  }
+  
+  &__input {
+    border: 0;
+    border-radius: 0;
+    padding: 0.5rem 1rem 0.375rem;
+    font-size: 100%;
+    width: 20ch;
+  }
+  
+  &__nectar {
+    position: absolute;
+    left: -5000px;
+  }
+  
+  &__button {
+    background-color: palette(blue);
+    border: 0;
+    padding: 0.5rem 1rem 0.375rem;
+    font-size: 100%;
+    font-weight: $font-weight__bold;
+    text-transform: uppercase;
+  }
+  
+  // iPhone 8 to iPad
+  @media (min-width: em(410)) and (max-width: em(1023)) {
+    background-color: palette(gray-700);
+    padding-top: 1.125rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: z(mailchimp);
+    
+    $fixed-footer__height: 74px;
+    
+    &__label {
+      display: inline-block;
+    }
+    
+    @at-root {
+      .footer {
+        margin-bottom: $fixed-footer__height;
+      }
+    }
+  }
+  
+  @media (min-width: em(1024)) {
+    text-align: left;
+    
+    &__label {
+      display: inline-block;
+    }
+    
+    &__input {
+      width: 32ch;
+    }
+    
+    @at-root {
+      .footer {
+        display: flex;
+        flex-flow: row nowrap;
+      }
+      
+      .u-wrapper {
+        flex: 1 0 auto;
+      }
+      
+      .copyright {
+        text-align: right;
+      }
+    }
+  }
+}

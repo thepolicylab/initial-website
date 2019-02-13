@@ -1,0 +1,230 @@
+// Z-index illustration parts and ordering
+
+// Placeholder illustration from Ben
+
+// Figure
+.illus {
+  // Locally scoped
+  $min-vw: 320;
+  $max-vw: 1440;
+  
+  $min-aspect: 4 3;
+  $min-height: $min-vw * (nth($min-aspect, 2) / nth($min-aspect, 1));
+  
+  $max-aspect: 8 3;
+  $max-height: $max-vw * (nth($max-aspect, 2) / nth($max-aspect, 1));
+  
+  $unit: 1px;
+  
+  min-height: ($min-height * 1px);
+  height: fluid-calc($min-height, $max-height, $min-vw, $max-vw, $unit);
+  max-height: ($max-height * 1px);
+  
+  background-color: palette(lightest-blue);
+  //border-top: 1px solid palette(gray-700);
+  border-bottom: 0.75vw solid palette(gray-700);
+  margin-bottom: 0;
+  position: relative;
+  z-index: z(illus);
+  
+  // All images
+  img {
+    position: absolute;
+    bottom: -1px;
+    transform: translateX(-50%);
+    z-index: (z(illus) + 1);
+  }
+
+  // Use the figcaption as a screen reader description
+  figcaption {
+    @include sr-only;
+  }
+
+  // Light colored bar for depth
+  &__bar {
+    background-color: rgba(#6d6b53, 0.1);
+    position: absolute;
+    bottom: 25%;
+    height: 10%;
+    width: 100%;
+  }
+
+  // Wayyy in the back
+  img#{&}__clouds {
+    right: 0;
+    transform: none;
+    $min-t: -45;
+    $max-t: -150;
+    $min-w: 260;
+    $max-w: 800;
+    
+    top: fluid-calc($min-t, $max-t, $min-vw, $max-vw, $unit);
+    max-width: fluid-calc($min-w, $max-w, $min-vw, $max-vw, $unit);
+  }
+
+  // In the back
+  &__indy {
+    $min-l: 240;
+    $max-l: 1050;
+    $min-w: 103;
+    $max-w: 215;
+    
+    left: fluid-calc($min-l, $max-l, $min-vw, $max-vw, $unit);
+    max-width: fluid-calc($min-w, $max-w, $min-vw, $max-vw, $unit);
+  }
+  
+  &__citizens {
+    $min-l: 300;
+    $max-l: 1278;
+    $min-w: 122;
+    $max-w: 290;
+    
+    left: fluid-calc($min-l, $max-l, $min-vw, $max-vw, $unit);
+    max-width: fluid-calc($min-w, $max-w, $min-vw, $max-vw, $unit);
+  }
+  
+  &__textron {
+    $min-l: 335;
+    $max-l: 1380;
+    $min-w: 83;
+    $max-w: 175;
+    
+    left: fluid-calc($min-l, $max-l, $min-vw, $max-vw, $unit);
+    max-width: fluid-calc($min-w, $max-w, $min-vw, $max-vw, $unit);
+  }
+
+  // Behind the State House
+  &__rural {
+    $min-l: 35;
+    $max-l: 120;
+    $min-w: 320;
+    $max-w: 1000;
+    
+    left: fluid-calc($min-l, $max-l, $min-vw, $max-vw, $unit);
+    max-width: fluid-calc($min-w, $max-w, $min-vw, $max-vw, $unit);
+  }
+
+  // In the front
+  &__statehouse {
+    left: 50%;
+    $min-w: 224;
+    $max-w: 520;
+    
+    max-width: fluid-calc($min-w, $max-w, $min-vw, $max-vw, $unit);
+  }
+}
+
+// Old Illustration from Kristin
+
+// Industrial Trust: right top middle 277 x 417, furthest back
+// Green Hills: left 1424 x 819, next furthest back
+// Downtown: bottom right, 1071 x 750
+// Rural Community: left middle 480 x 281
+// State House: bottom left 1042 x 650
+// Roger Williams: bottom right 415 x 703
+
+//.illus {
+//  $min-width: 415;
+//  $min-aspect: 4 3;
+//  $min-height: $min-width * (nth($min-aspect, 2) / nth($min-aspect, 1));
+//  $max-width: 1440;
+//  $max-aspect: 8 3;
+//  $max-height: $max-width * (nth($max-aspect, 2) / nth($max-aspect, 1));
+//  
+//  min-height: ($min-height * 1px);
+//  height: calc(#{($min-height * 1px)} + (#{$max-height} - #{$min-height}) * ((100vw - #{($min-width) * 1px})/(#{$max-width} - #{$min-width})));
+//  max-height: ($max-height * 1px);
+//  
+//  background-color: palette(lightest-blue);
+//  overflow: hidden;
+//  position: relative;
+//
+//  img {
+//    //@extend .img--rwd;
+//    position: absolute;
+//  }
+//  
+//  figcaption {
+//    @include sr-only;
+//  }
+//  
+//  &__indy {
+//    top: 0;
+//    left: 68%;
+//    height: 42%;
+//  }
+//  
+//  &__hills {
+//    bottom: 0;
+//    height: 95%;
+//    
+//    $min-value: 70;
+//    $max-value: 0;
+//    $min-vw: 320;
+//    $max-vw: 540;
+//    $unit: 1px;
+//    
+//    // This one is negative for the min-value
+//    left: calc(-#{$min-value * $unit} + (#{$max-value} + #{$min-value}) * ((100vw - #{$min-vw * $unit}) / (#{$max-vw} - #{$min-vw})));
+//    @media (min-width: #{$max-vw * $unit}) {
+//      left: $max-value;
+//    }
+//  }
+//  
+//  &__comm {
+//    top: 32%;
+//    left: 0;
+//    max-height: (280px * 0.65);
+//    
+//    $min-value: 100;
+//    $max-value: 200;
+//    $min-vw: 320;
+//    $max-vw: 720;
+//    $unit: 1px;
+//    
+//    height: calc(#{$min-value * $unit} + (#{$max-value} - #{$min-value}) * ((100vw - #{$min-vw * $unit}) / (#{$max-vw} - #{$min-vw})));
+//    @media (min-width: #{$max-vw * $unit}) {
+//      height: $max-value;
+//    }
+//  }
+//  
+//  &__downtown {
+//    bottom: 0;
+//    height: 90%;
+//    
+//    $min-value: 186;
+//    $max-value: 0;
+//    $min-vw: 320;
+//    $max-vw: 640;
+//    $unit: 1px;
+//    
+//    // This one is negative for the min-value
+//    right: calc(-#{$min-value * $unit} + (#{$max-value} + #{$min-value}) * ((100vw - #{$min-vw * $unit}) / (#{$max-vw} - #{$min-vw})));
+//    @media (min-width: #{$max-vw * $unit}) {
+//      right: $max-value;
+//    }
+//  }
+//  
+//  &__capital {
+//    bottom: 0;
+//    right: 38%;
+//    max-height: (650px * 0.65);
+//    
+//    $min-value: 210;
+//    $max-value: 360;
+//    $min-vw: 320;
+//    $max-vw: 800;
+//    $unit: 1px;
+//    
+//    height: calc(#{$min-value * $unit} + (#{$max-value} - #{$min-value}) * ((100vw - #{$min-vw * $unit}) / (#{$max-vw} - #{$min-vw})));
+//    @media (min-width: #{$max-vw * $unit}) {
+//      height: $max-value;
+//    }
+//  }
+//  
+//  &__roger {
+//    bottom: 0;
+//    right: 0;
+//    height: 75%;
+//  }
+//}

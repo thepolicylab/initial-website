@@ -1,0 +1,11 @@
+@mixin hide() {
+  display: none;
+  visibility: hidden;
+  speak: none;
+}
+
+@mixin show($display: block) {
+  display: $display;
+  visibility: visible;
+  speak: normal;
+}

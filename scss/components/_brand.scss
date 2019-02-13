@@ -1,0 +1,32 @@
+.brand {
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  z-index: z(brand);
+
+  &__link {}
+
+  &__seal,
+  &__img {
+    display: inline-block;
+  }
+  
+  &__seal {
+    @extend %margin-right;
+    max-width: 87px;
+  }
+  
+  &__img {
+    max-width: 140px;
+  }
+  
+  @include media-breakpoint-up($bp-sm) {
+    &__seal {
+      max-width: 97px;
+    }
+    
+    &__img {
+      max-width: 180px;
+    }
+  }
+}

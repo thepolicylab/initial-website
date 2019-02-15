@@ -10,12 +10,12 @@
         font-weight: normal;
         letter-spacing: 0;
         
-        @include media-breakpoint-up($bp-lg) {
+        //@include media-breakpoint-up($bp-lg) {
           &::before {
             content: "\A";
             white-space: pre;
           }
-        }
+        //}
       }
     }
   }

@@ -57,7 +57,14 @@
   
   &__article {
     position: relative;
+    margin: 0 auto;
+    max-width: em(540);
     z-index: z(main-article);
+    
+    @include media-breakpoint-up($bp-lg) {
+      margin: 0;
+      max-width: none;
+    }
   }
 
   &__banner {}

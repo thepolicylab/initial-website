@@ -557,6 +557,7 @@ ins {
       background: none;
       flex: 1 0 70%;
       margin-bottom: calc(0px + (-330 - 0) * ((100vw - 760px) / 760));
+      margin-top: 100px;
       max-width: 70%; } }
 .main__article {
   position: relative;

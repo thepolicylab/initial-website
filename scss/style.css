@@ -699,12 +699,15 @@ ins {
   position: absolute;
   left: -5000px; }
 .mc__button {
-  background-color: #6ecded;
+  background-color: #e2e3e4;
   border: 0;
   padding: 0.5rem 1rem 0.375rem;
   font-size: 100%;
   font-weight: 600;
-  text-transform: uppercase; }
+  margin-left: 5px;
+  border-radius: 5px;
+  /* text-transform: uppercase; */
+ }
 @media (min-width: 25.625em) and (max-width: 63.9375em) {
   .mc {
     background-color: #3d3c45;

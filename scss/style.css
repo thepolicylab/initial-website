@@ -585,7 +585,7 @@ ins {
     @media (min-width: 60em) {
       .splash__header h1 i::before {
         content: "\A";
-        white-space: pre; } }
+        /* white-space: pre; } } */
 .splash__content p {
   font-weight: 500;
   max-width: 48ch; }

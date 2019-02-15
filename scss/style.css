@@ -710,7 +710,7 @@ ins {
  }
 @media (min-width: 25.625em) and (max-width: 63.9375em) {
   .mc {
-    background-color: #3d3c45;
+    background-color: #6ecded;
     padding-top: 1.125rem;
     padding-bottom: 1rem;
     /* position: fixed; */

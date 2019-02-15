@@ -1,6 +1,6 @@
-# Initial Splash page Website
+# Initial website
 
-A splash page teaser for _the Center for Civic Futures_, February 2019. 
+An intro website for _the Center for Civic Futures_, February 2019. 
 Static HTML/CSS/PNG/SVG files. 
 
 ## Render SCSS locally

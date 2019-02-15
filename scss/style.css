@@ -710,7 +710,8 @@ ins {
     background-color: #3d3c45;
     padding-top: 1.125rem;
     padding-bottom: 1rem;
-    position: fixed;
+    /* position: fixed; */
+    /* ben g removed this when removing copyright section */
     bottom: 0;
     left: 0;
     width: 100%;

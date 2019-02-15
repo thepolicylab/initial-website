@@ -431,7 +431,8 @@ textarea, .mc__label {
     p,
     li,
     textarea, .mc__label {
-      font-size: 1.375rem; } }
+      font-size: 1.375rem;
+      font-weight: 600; } }
 
 p,
 ul,

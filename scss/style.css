@@ -622,7 +622,9 @@ ins {
     position: absolute;
     bottom: 25%;
     height: 10%;
-    width: 100%; }
+    width: 100%;
+    display: none;
+  }
   .illus img.illus__clouds {
     right: 0;
     transform: none;

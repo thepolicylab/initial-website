@@ -722,7 +722,7 @@ ins {
     .mc__label {
       display: inline-block; }
     .footer {
-      margin-bottom: 74px; } }
+      /* margin-bottom: 74px; } } */
 @media (min-width: 64em) {
   .mc {
     text-align: left; }

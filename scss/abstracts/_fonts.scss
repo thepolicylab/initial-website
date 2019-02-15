@@ -1,7 +1,7 @@
 // Font families, font variables
 
 // Import the Google Font
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,500,600');
+//@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700');
 
 // Define a "System" font stack for fallbacks
 @font-face {
@@ -27,9 +27,9 @@ $font-stack__mono: monospace;
 
 $font-stack__custom: $font-name__custom, $font-stack__sans;
 
-$font-weight__normal: 400;
-$font-weight__medium: 500;
-$font-weight__bold: 600;
+$font-weight__normal: 500;
+$font-weight__medium: 600;
+$font-weight__bold: 700;
 
 $line-height__base: 1.33; // This font family needs tighter line-height
 $line-height__tight: 1;

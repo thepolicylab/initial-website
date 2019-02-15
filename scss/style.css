@@ -421,12 +421,14 @@ h6,
 p,
 li,
 textarea, .mc__label {
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  font-weight: 600;  }
   @media (min-width: 27.5rem) {
     p,
     li,
     textarea, .mc__label {
-      font-size: calc(1.25rem + (1.375 - 1.25) * ((100vw - 27.5rem) / 47.5)); } }
+      font-size: calc(1.25rem + (1.375 - 1.25) * ((100vw - 27.5rem) / 47.5));
+      font-weight: 600;  } }
   @media (min-width: 75rem) {
     p,
     li,

@@ -1,0 +1,56 @@
+title: Brown University Policy Lab
+description: A new lab at the center of Rhode Island’s infrastructure for evidence-based policymaking.
+  
+markdown: redcarpet
+highlighter: pygments
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+
+baseurl: '/brownpolicy/'
+port: 4060
+url: //thepolicylab.brown.edu
+twitter_handle: brownuniversity
+
+
+# Define some defaults
+defaults:
+  -
+    values:
+      layout: "page"
+      author: "The Policy Lab"
+
+
+# Permalink Configuration
+permalink: /blog/:year/:month/:title
+
+# Post types
+collections:
+  team:
+    output: true
+    permalink: /team/:name
+  events:
+    output: false
+    permalink: /events/:name
+
+# Exclude from _site build
+exclude: ['.git',
+  '.gitignore',
+  'Gemfile',
+  'Gemfile.lock',
+  'CNAME',
+  'LICENSE',
+  'feed.xml',
+  'team/README.md'
+  ]
+
+
+# Setting relative permalink to false. See http://jekyllrb.com/docs/upgrading/.
+relative_permalinks: false
+
+sass:
+  sass_dir: _sass
+  
+
+# Plugins and extras
+plugins:
+- jekyll-autoprefixer

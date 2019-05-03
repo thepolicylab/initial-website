@@ -1,0 +1,118 @@
+// General global styles. Some override settings in USWDS
+
+// General vertical rhythm
+// Not ready for the effects of this yet.
+// Perhaps we need to scope it inside of something first
+//* + * {
+//  margin-top: $vertical-rhythm;
+//}
+
+// Placeholder extend for DRY
+%fluid-gutter {
+  @include fluid-units(
+    'padding-left' 'padding-right',
+    $gutter-min,
+    $gutter-max,
+    strip-unit(rem(bp(small))),
+    strip-unit(rem(bp(large)))
+  );
+}
+
+// Flexible gutter helper
+%margin-right {
+  @include fluid-units('margin-right', $gutter-min, $gutter-max, $min-vw, $max-vw);
+}
+
+%margin-left {
+  @include fluid-units('margin-left', $gutter-min, $gutter-max, $min-vw, $max-vw);
+}
+
+
+// Utilities
+
+// Image responsiveness
+.img {
+  &--rwd {
+    // The BS4 framework is not opinionated
+    // Add this class to force an image to be responsive
+    display: block;
+    max-width: 100%;
+  }
+}
+
+
+// Max-width container
+.u {
+
+  &__container {
+    margin: 0 auto;
+    max-width: $max-width__splash;
+  }
+
+  // No max width, just padding
+  &__spacing {
+    @extend %fluid-gutter;
+    padding-top: $vertical-rhythm;
+    padding-bottom: $vertical-rhythm;
+  }
+  
+  &__vspacing {
+    @include fluid-units(
+      'padding-top' 'padding-bottom',
+      $vertical-min,
+      $vertical-max,
+      strip-unit(rem(bp(small))),
+      strip-unit(rem(bp(x-large)))
+    );
+  }
+  
+  &__vspacing-b {
+    @include fluid-units(
+      'padding-bottom',
+      $vertical-min,
+      $vertical-max,
+      strip-unit(rem(bp(small))),
+      strip-unit(rem(bp(x-large)))
+    );
+  }
+  
+  // Max-width for text content
+  &__content {
+    max-width: $max-width__text;
+  }
+}
+
+
+// Colors
+// BS4 gives us utilties for theme colors but not generic names colors
+.text-blue {
+  color: color('blue');
+}
+
+
+// Box Shadows
+// Not using the BS4 shadow utility as we can don't need all the options
+.shadow {
+  box-shadow: 0 0 0.75rem rgba(#000, 0.12);
+}
+
+
+// Elements
+.divider {
+  @include fluid-units(
+    'margin-top',
+    ($vertical-min / 2),
+    ($vertical-max / 2),
+    strip-unit(rem(bp(small))),
+    strip-unit(rem(bp(x-large)))
+  );
+  @include fluid-units(
+    'margin-bottom',
+    $vertical-min,
+    $vertical-max,
+    strip-unit(rem(bp(small))),
+    strip-unit(rem(bp(x-large)))
+  );
+  height: 1px;
+  border-top: 0.5px solid $border-color;
+}

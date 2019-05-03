@@ -1,0 +1,28 @@
+// General variables
+
+$transition: all 250ms ease;
+$kerning: .03125em;
+
+// Spacing: Assumed REMs
+$gutter-min: 1;
+$gutter-max: 2;
+$vertical-min: 2;
+$vertical-max: 4;
+
+// Establishing some vertical rhythm for block elements
+$vertical-rhythm: ($line-height__base * 1rem);
+
+// Z Indices
+$z-indices: (
+  page: 1,
+  cloud: 5,
+  illus: 10,
+  main-article: 20,
+  brand: 25,
+  mailchimp: 999
+);
+
+// Z-index helper
+@function z($name) {
+  @return map-get($z-indices, $name);
+}

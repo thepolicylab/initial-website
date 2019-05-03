@@ -1,0 +1,327 @@
+// Link styles not addressed in Bootstrap
+a {
+  transition: $transition;
+
+  &[href^=tel] {
+    color: inherit;
+    text-decoration: dotted;
+  }
+}
+
+// Responsive and fluid type sizing
+// Root (mobile) sizes are set in abstracts/variables-bs4/bs4-typography.scss
+.display-1 { @include one-element-size(display-1); }
+
+.display-2 { @include one-element-size(display-2); }
+
+.display-3 { @include one-element-size(display-3); }
+
+.display-4 { @include one-element-size(display-4); }
+
+
+// Headings
+h1, .h1 {
+  @include one-element-size(h1);
+  font-weight: $font-weight-bold;
+  margin-bottom: 2rem;
+  text-transform: lowercase;
+}
+
+h2, .h2 {
+  @include one-element-size(h2);
+}
+
+h3, .h3 {
+  @include one-element-size(h3);
+}
+
+h4, .h4 {
+  @include one-element-size(h4);
+}
+
+h5, .h5,
+.lead {
+  @include one-element-size(h5);
+}
+
+h6, .h6 {
+  @include one-element-size(h6);
+}
+
+// Reused in other places as well for specific elements
+%placeholder__font-size {
+  @include one-element-size();
+}
+
+// Other block level elements
+p,
+li,
+address,
+label,
+.form-control,
+.btn {
+  // Set the mobile first value
+  font-size: rem(one-type-size(base));
+  // Now include the responsive values
+  @extend %placeholder__font-size;
+}
+
+p,
+li,
+address {
+  font-weight: $font-weight-medium;
+}
+
+// Set the vertical rhythm for block-level containers
+p,
+ul,
+ol,
+address,
+form {
+  margin-bottom: $vertical-rhythm;
+  
+  //&:last-child {
+  //  margin-bottom: 0;
+  //}
+}
+
+// Nested lists should not have margin bottom
+//ol ol,
+//ul ul,
+//ul ol,
+//ol ul {
+//  margin-bottom: 0;
+//}
+//
+//.micro {
+//  @include one-element-size(micro);
+//}
+
+// Block level elements
+//blockquote {
+//  quotes: none;
+//  position: relative;
+//
+//  p {
+//    color: palette(mono);
+//    font-style: italic;
+//    padding-left: em(32);
+//  }
+//
+//  p::before,
+//  p:last-child::after {
+//    color: palette(brand);
+//    font-family: $font-serif;
+//    font-size: rem(48);
+//    font-style: italic;
+//    font-weight: $font-weight__bold;
+//    line-height: 1;
+//  }
+//
+//  p::before {
+//    content: "“";
+//    position: absolute;
+//      top: 0; left: .0625em;
+//  }
+//
+//  p:last-child::after {
+//    content: "”";
+//    display: inline;
+//    line-height: 0;
+//    margin-left: .125em;
+//    vertical-align: text-bottom;
+//  }
+//}
+
+//hr {
+//  border: none;
+//  border-top: 1px solid palette(gray-200);
+//  height: 0;
+//  line-height: 1;
+//  margin: $vertical-rhythm 0;
+//  width: 100%;
+//}
+
+//ul,
+//ol {
+//  margin-left: 1.5rem;
+//}
+//
+//// scss-lint:disable MergeableSelector
+//ul { list-style: square; }
+//
+//ul ul { list-style: disc; }
+//
+//ul ul ul { list-style: circle; }
+//
+//ol { list-style: decimal; }
+//
+//ol ol { list-style: upper-alpha; }
+//
+//ol ol ol { list-style: upper-roman; }
+//
+//ol ol ol ol { list-style: lower-alpha; }
+//
+//ol ol ol ol ol { list-style: lower-roman; }
+// scss-lint:enable MergeableSelector
+
+//dl {
+//  border-top: 1px solid $color__borders;
+//}
+//
+//dt,
+//dd {
+//  border-left: 1px solid $color__borders;
+//  border-right: 1px solid $color__borders;
+//  padding: .75em 1em .5625em;
+//}
+//
+//dt {
+//  border-bottom: 1px dotted $color__borders;
+//  font-weight: $font-weight__bold;
+//}
+//
+//dd {
+//  border-bottom: 2px solid $color__borders;
+//}
+
+//figure {}
+
+//table {
+//  width: 100%;
+//
+//  th {
+//    //border-bottom: 2px solid $table-border-color;
+//    //padding: $table-cell-padding;
+//    text-align: left;
+//  }
+//
+//  td {
+//    //border-top: 1px solid $table-border-color;
+//    //padding: $table-cell-padding;
+//  }
+//
+//  // zebra striping pattern
+//  tbody {
+//
+//    tr:nth-of-type(odd) {
+//      //background-color: $table-border-color;
+//    }
+//  }
+//}
+
+// Inline typography elements
+//strong,
+//b,
+//em,
+//i,
+//cite,
+//small,
+//sup,
+//sup {
+//  letter-spacing: $kerning;
+//}
+
+//sub,
+//sup {
+//  font-size: 75%;
+//  line-height: 1;
+//  position: relative;
+//}
+//
+//sup {
+//  top: -0.5em;
+//}
+//
+//sub {
+//  bottom: -0.25em;
+//}
+
+//abbr[title] {
+//  font-size: 75%;
+//  font-weight: $font-weight__bold;
+//  letter-spacing: ($kerning * 2);
+//  text-transform: uppercase;
+//}
+
+//var {
+//  color: palette(mono, 75);
+//  display: inline-block;
+//  padding: 0 .125em;
+//}
+
+// Proper code blocks need to be surrounded by a <pre>. They work together.
+//pre {
+//  white-space: pre-wrap;
+//  word-wrap: break-word; // For IE 5.5+ and up
+//
+//  code {
+//    border-bottom: 1px solid palette(mono, 25);
+//    border-left: 5px solid $color-code;
+//    border-radius: 0;
+//    display: block;
+//    margin: 0;
+//    padding: 1.375em 1.25em 1.3125em;
+//  }
+//}
+
+//code,
+//kbd,
+//samp,
+//mark,
+//ins {
+//  display: inline-block;
+//  line-height: 1.5;
+//  padding: 0.125em 0.25em 0;
+//}
+
+//code,
+//kbd,
+//samp {
+//  background: rgba(#000, .05);
+//  //border-radius: $default-border-radius;
+//  box-shadow: 0 0 .25em rgba(#000, .1) inset;
+//  //font-family: $font-mono;
+//}
+//
+//code {
+//  //color: $color-code;
+//}
+//
+//mark {
+//  background-color: #ff9; // yellow
+//}
+
+//strike,
+//s {
+//  //color: palette(mono, 25);
+//}
+//
+//del {
+//  //color: $color-error;
+//}
+//
+//ins {
+//  //background-color: palette(mono, 25);
+//  text-decoration: none;
+//}
+//
+//// These should change depending on the language
+//[lang="en-US"] {
+//
+//  q {
+//    display: inline;
+//
+//    ::before { content: "“"; }
+//
+//    ::after {
+//      content: "”";
+//      white-space: nowrap;
+//    }
+//
+//    // Nested
+//    q::before { content: "‘"; }
+//
+//    q::after { content: "’"; }
+//  }
+//}

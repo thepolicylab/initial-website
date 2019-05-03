@@ -1,0 +1,28 @@
+.intro {
+  
+  &__header {
+    h1 {
+      
+      i {
+        font-family: $font-stack__serif;
+        font-size: 87.5%;
+        font-weight: normal;
+        letter-spacing: 0;
+        
+        // Force a line break
+        &::before {
+          content: "\A";
+          white-space: pre;
+        }
+      }
+    }
+  }
+}
+
+.theory {
+  &__icon {
+    @extend .img--rwd;
+    max-width: 140px;
+    margin: $spacer auto;
+  }
+}

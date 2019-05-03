@@ -1,0 +1,63 @@
+//<div class="col-sm events__description pb-4">
+//  <h3 class="h5 events__title">
+//    <a href="#" class="events__link" target="_blank" rel="nofollow">
+//      Does Cash Bail Increase Mass Incarceration?
+//    </a>
+//  </h3>
+//  <p>
+//    <time datetime="2019-04-22 00:00:00 -0400">April 04, 2019</time> — 4:00pm<br>
+//    <a href="https://www.google.com/maps/place/Smith-Buonanno+Hall/@41.8296114,-71.4027891,15z" class="events__map__link" target="_blank" rel="nofollow">
+//      <span class="events__location">Brown University<br>Smith Buonanno Hall 201</span>
+//      <span class="events__map__text">Map</span>
+//    </a>
+//  </p>
+//  <p>
+//    <a href="https://eventbrite.com" class="events__register__link" target="_blank" rel="nofollow">Register on EventBrite →</a>
+//  </p>
+//</div>
+
+.events {
+
+  &__description {
+    border-bottom: 0.5px solid gray('300');
+    margin-bottom: ($spacer * 3);
+  }
+
+  &__title {}
+  
+  &__link {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    
+    @include hover-focus() {
+      color: $link-color;
+      text-decoration: $link-decoration;
+    }
+  }
+  
+  &__map {
+    
+    &__link {
+      color: $link-hover-color;
+      text-decoration: $link-hover-decoration;
+      
+      @include hover-focus() {
+        color: $link-color;
+        text-decoration: $link-decoration;
+      }
+    }
+    
+    &__link:hover &__text,
+    &__link:focus &__text {
+      color: $link-hover-color;
+      text-decoration: $link-hover-decoration;
+    }
+    
+    &__link &__text {
+      color: $link-color;
+      padding-left: 0.5rem;
+      text-decoration: $link-decoration;
+      transition: $transition;
+    }
+  }
+}

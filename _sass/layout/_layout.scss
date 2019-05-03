@@ -1,0 +1,60 @@
+// Body Classes
+.layout__default {
+  min-height: 100vh;
+  position: relative;
+  z-index: z(page);
+}
+
+.page {
+  &__home {}
+}
+
+
+// Page layout wrapper with the gradient
+.l-wrapper {
+  color: $gray-700;
+  overflow: hidden;
+
+  .layout__team & {
+    background-color: $white;
+  }
+
+  &__flex {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      justify-content: space-between;
+      padding-top: $vertical-rhythm;
+    }
+  }
+}
+
+// Main page element
+.main {
+  
+  &__header {
+    @include media-breakpoint-up(lg) {
+      flex: 1 0 30%;
+      max-width: 30%;
+    }
+  }
+  
+  &__content {
+    
+    @include media-breakpoint-up(lg) {
+      background: none;
+      flex: 1 0 67%;
+      max-width: 67%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      flex: 1 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  &__article {
+    position: relative;
+    z-index: z(main-article);
+  }
+}

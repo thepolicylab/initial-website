@@ -1,0 +1,31 @@
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  tinyL: 0,
+  xs: $bp-xs,
+  sm: $bp-sm,
+  md: $bp-md,
+  lg: $bp-lg,
+  xl: $bp-xl,
+  xxl: $bp-xxl
+);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  lg: em(map-get($max-widths, base)),
+);
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+//$grid-columns: 12;
+//$grid-gutter-width: 30px;

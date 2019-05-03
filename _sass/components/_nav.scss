@@ -1,0 +1,94 @@
+// Navigation Bar
+// A mix oif custom styles (.nav) and BS4 classes (.navbar)
+
+.nav {
+  @extend %fluid-gutter; // for fluid left and right padding
+  align-items: flex-start;
+
+  @include media-breakpoint-down(md) {
+    box-shadow: 0 0 0.5rem rgba(#000, 0.25);
+  }
+
+  // Actually one level above .nav
+  &__container {
+    background-color: color("blue");
+  }
+  
+  &__button {
+    border-radius: 0;
+    padding: 0;
+    margin: 0 -1rem;
+    
+    &__icon,
+    &__text {
+      color: $white;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    &__icon {
+      font-size: 2.5rem;
+      padding: 0 0.5rem 0 1rem;
+    }
+    
+    &__text {
+      font-size: 1.125rem;
+      padding: 0.25rem 1rem 0 0;
+      letter-spacing: $kerning;
+      text-transform: uppercase;
+    }
+  }
+  
+  // Collapsible area for mobile
+  &__pane {}
+  
+  // UL
+  &__list {
+    width: 100%;
+    margin-bottom: $spacer;
+    
+    @include media-breakpoint-up(lg) {
+      margin-left: - ($spacer * 2);
+      width: calc(100% + #{$spacer * 2});
+      margin-bottom: 0;
+    }
+  }
+  
+  // LI
+  &__item {}
+  
+  // Anchor
+  &__link {
+    color: $white;
+    background-color: transparent;
+    display: block;
+    font-weight: $font-weight-medium;
+    padding: $spacer $spacer ($spacer * 0.75);
+    text-decoration: none;
+    
+    // Already set by BS4 inside .navbar-expand-md .navbar-nav .nav-link
+    //@include media-breakpoint-up(lg) {
+    //  padding-left: ($spacer * 2);
+    //  padding-right: ($spacer * 2);
+    //}
+    
+    &.active {
+      color: gray("700");
+      background-color: theme-color("primary");
+    }
+    
+    &.btn {
+      @include media-breakpoint-down(md) {
+        display: inline-block;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        border-radius: 2rem;
+        padding: 0.625rem 1rem 0.5rem;
+        margin-top: 0.25rem;
+      }
+    }
+  }
+}

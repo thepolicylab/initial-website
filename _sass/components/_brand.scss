@@ -1,0 +1,22 @@
+.brand {
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  z-index: z(brand);
+
+  &__link {}
+
+  &__seal,
+  &__img {
+    display: inline-block;
+  }
+  
+  &__seal {
+    @extend %margin-right;
+    max-width: 87px;
+  }
+  
+  &__img {
+    max-width: 140px;
+  }
+}

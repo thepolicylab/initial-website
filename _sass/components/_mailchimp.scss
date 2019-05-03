@@ -1,0 +1,45 @@
+// Hide the MailChimp Honeypot
+.mc {
+  
+  .connect & .text-center {
+    text-align: left !important;
+  }
+  
+  .connect & .justify-content-center {
+    justify-content: left !important;
+  }
+  
+  &__form,
+  &__wrapper {
+    margin-bottom: 0;
+  }
+  
+  &__wrapper {
+    display: flex;
+  }
+  
+  &__label {}
+  
+  &__input {
+    margin-right: ($spacer / 2);
+    padding-left: ($spacer * 0.75);
+    padding-right: ($spacer * 0.75);
+    
+    //@include media-breakpoint-only(md) {
+    //  padding-left: ($spacer * 0.75);
+    //  padding-right: ($spacer * 0.75);
+    //  width: rem(170) !important;
+    //}
+  }
+  
+  &__nectar {
+    @include sr-only;
+  }
+  
+  &__button {
+    padding-top: ($spacer * 0.625);
+    padding-bottom: ($spacer * 0.5625);
+    padding-left: ($spacer * 0.75);
+    padding-right: ($spacer * 0.75);
+  }
+}

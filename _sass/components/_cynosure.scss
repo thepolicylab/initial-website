@@ -1,0 +1,46 @@
+// Attention-seeking animation
+//
+// User clicks on a anchor link, and the target element receives a "burst" effect
+//
+// Cynosure: a person or thing that attracts notice, esp. because of its brilliance or beauty
+
+.target-cynosure {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    background-image: radial-gradient(rgba(255,255,255,0) 32%, $white 50%, rgba(255,255,255,0) 68%);
+    background-size: contain;
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vw;
+    transform: translate3d(-50%, -50%, 0) scale(0,0);
+  }
+
+  &:target::before {
+    animation-name: burst-ring;
+    animation-delay: 500ms;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+  }
+}
+
+@keyframes burst-ring {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(0,0);
+  }
+  66% {
+    opacity: 0.33;
+    transform: translate3d(-50%, -50%, 0) scale(0.92,0.92);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(1.8,1.8);
+  }
+}

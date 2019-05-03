@@ -1,0 +1,20 @@
+.footer {
+  
+  address span,
+  p a {
+    white-space: nowrap;
+  }
+  
+  .breaker {
+    @include media-breakpoint-up(sm) {
+      &::before {
+        content: ' | ';
+      }
+    }
+  }
+}
+
+address a {
+  display: block;
+  text-decoration: none;
+}

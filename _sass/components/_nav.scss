@@ -72,6 +72,13 @@
     //  padding-right: ($spacer * 2);
     //}
     
+    &:not(.btn) {
+      @include hover-focus {
+        color: color("blue");
+        background-color: $tint__policy-blue__lightest;
+      }
+    }
+    
     &.active {
       color: gray("700");
       background-color: theme-color("primary");
@@ -91,4 +98,13 @@
       }
     }
   }
+  
+  &__skip {
+    // Skip link actually resides just outside of the nav
+    padding-top: 1.125rem;
+    padding-bottom: 0.875rem;
+    margin-right: 1rem;
+  }
 }
+
+

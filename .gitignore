@@ -2,4 +2,7 @@
 */.DS_store
 
 // SASS Artifacts
-*/.sass-cache
+.sass-cache
+
+// Jekyll render
+_site

@@ -1,0 +1,49 @@
+            {%- for event in site.events -%}
+              {%- capture now %}{{'now' | date: '%Y%m%d'}}{% endcapture -%}
+              {%- assign now = now | plus: 0 -%}
+              {%- capture posttime %}{{ event.date | date: '%Y%m%d'}}{% endcapture -%}
+              {%- assign posttime = posttime | plus: 0 -%}
+              {%- if posttime > now -%}
+              <div class="events__description">
+                <h3 class="h5 events__title pb-2">
+                  {%- if event.register-link -%}
+                  <a href="{{ event.register-link }}" class="events__link" target="_blank" rel="nofollow">
+                  {%- endif -%}
+                    {{- event.title -}}
+                  {%- if event.register-link -%}
+                  </a>
+                  {%- endif -%}
+                </h3>
+                {%- if event.speaker -%}
+                <p class="h6 text-blue pb-2">{{ event.speaker }}</p>
+                {%- endif -%}
+                <p><time datetime="{{ event.date }}">{{ event.date | date: '%B %d, %Y' }}{% if event.time %} — {{ event.time }}{% endif %}</time></p>
+                <div class="row align-items-end">
+                  <p class="col-sm-7">
+                    {%- if event.location-url -%}
+                    <a href="{{ event.location-url }}" class="events__map__link" target="_blank" rel="nofollow">
+                    {%- endif -%}
+                      <span class="events__location">
+                        {{- event.location-1 -}}{%- if event.location-2 -%}<br>
+                        {{- event.location-2 -}}{%- endif -%}
+                      </span>
+                    {%- if event.location-url -%}
+                      <span class="events__map__text">Map &rarr;</span>
+                    </a>
+                    {%- endif -%}
+                  </p>
+                  {%- if event.register-link -%}
+                  <p class="col-sm-5 text-sm-right">
+                    <a href="{{ event.register-link }}" target="_blank" class=events__register__link"" rel="nofollow">
+                      {%- if event.register-text -%}{{ event.register-text }} &rarr;
+                      {%- else -%}Register &rarr;{%- endif -%}
+                    </a>
+                  </p>
+                  {%- endif -%}
+                </div>
+                {% if event.content %}
+                  {{ event.content }}
+                {% endif %}
+              </div>
+              {%- endif -%}
+            {%- endfor -%}

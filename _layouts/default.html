@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+
+  {% include head.html %}
+
+  <body class="layout__{{ page.layout }} page__{{ page.body-class }}" data-spy="scroll" data-target="#main-nav">
+    <div id="wrapper" class="l-wrapper">
+
+      {% include navigation.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+    </div>
+    
+    {% include subfooter.html %}
+  </body>
+</html>

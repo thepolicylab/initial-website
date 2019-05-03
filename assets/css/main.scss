@@ -1,0 +1,24 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// See: https://jekyllrb.com/docs/assets/
+// The load path '_sass' is assumed and inserted here for every include
+// To change the load path, go to _config.yml and change the value of 'sass_dir'
+
+
+// Our functions and helpers
+@import 'abstracts/index';
+
+
+// #Bootstrap
+// https://getbootstrap.com/docs/4.0/getting-started/theming/
+@import 'vendors/bootstrap';
+
+
+// This project
+@import 'base/index';
+@import 'components/index';
+@import 'layout/index';
+//@import 'pages/index';
+//@import 'themes/index';

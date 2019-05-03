@@ -60,3 +60,12 @@
     width: 6vw;
   }
 }
+
+@include for-old-ie {
+  .cloud-1,
+  .cloud-2,
+  .cloud-3 {
+    @include hide();
+    animation-name: none;
+  }
+}

@@ -4,7 +4,9 @@
 @import 'functions';
 @import 'mixins/fluid-units';
 @import 'mixins/fluid-typography';
+@import 'mixins/ie-hacks';
 @import 'mixins/maintain-ratio';
+@import 'mixins/show-hide';
 
 // Our Project variables
 @import 'project/breakpoints';

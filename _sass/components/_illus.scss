@@ -9,7 +9,7 @@
   $min-aspect: 4 3;
   $min-height: $min-vw * (nth($min-aspect, 2) / nth($min-aspect, 1));
   
-  $max-aspect: 8 3;
+  $max-aspect: 9 3;
   $max-height: $max-vw * (nth($max-aspect, 2) / nth($max-aspect, 1));
   
   $unit: 1px;

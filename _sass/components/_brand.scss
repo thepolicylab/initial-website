@@ -13,10 +13,22 @@
   
   &__seal {
     @extend %margin-right;
-    max-width: 87px;
+    max-width: 90px;
+    
+    @include for-old-ie {
+      // When using max- values, IE will assume the dimensions are the same in both directions
+      // Therefore, with a max-width of 90px we were getting a max-height of 90px
+      max-height: 86px;
+    }
   }
   
   &__img {
     max-width: 140px;
+    
+    @include for-old-ie {
+      // When using max- values, IE will assume the dimensions are the same in both directions
+      // Therefore, with a max-width of 140px we were getting a max-height of 140px
+      max-height: 70px;
+    }
   }
 }

@@ -1,0 +1,104 @@
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+//$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-stack__custom;
+// Bootstrap has no default Serif font stack — Use our own $font-stack__serif
+// stylelint-enable value-keyword-case
+
+// $font-size-base: 1rem; // Assumes the browser default, typically `16px`
+// I know that we are NOT using 16px as the base font size, but do not change the valeue above!
+// $font-size-lg: ($font-size-base * 1.25);
+// $font-size-sm: ($font-size-base * .875);
+
+//$font-weight-light: 300;
+$font-weight-normal: $font-weight__normal;
+$font-weight-medium: $font-weight__medium;
+$font-weight-bold: $font-weight__bold;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: $line-height__base;
+$line-height-lg: $line-height__loose;
+$line-height-sm: $line-height__tight;
+
+
+// Fluid Typography
+
+// Set the base sizes — the Mobile sizes
+// The mixin should grab the value defined for "base" in our "type-sizes" map
+$h1-font-size: rem(one-type-size(h1));
+$h2-font-size: rem(one-type-size(h2));
+$h3-font-size: rem(one-type-size(h3));
+$h4-font-size: rem(one-type-size(h4));
+$h5-font-size: rem(one-type-size(h5));
+$h6-font-size: rem(one-type-size(h6));
+
+//$headings-margin-bottom: ($spacer / 2);
+//$headings-font-family: inherit;
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: $line-height-sm;
+//$headings-color: inherit;
+
+$display1-size: rem(one-type-size(display-1));
+$display2-size: rem(one-type-size(display-2));
+$display3-size: rem(one-type-size(display-3));
+$display4-size: rem(one-type-size(display-4));
+
+$display1-weight: $headings-font-weight;
+$display2-weight: $headings-font-weight;
+$display3-weight: $headings-font-weight;
+$display4-weight: $headings-font-weight;
+//$display-line-height: $headings-line-height;
+
+$lead-font-size: rem(one-type-size(h5));
+$lead-font-weight: $font-weight-bold;
+
+//$small-font-size: 80%;
+
+//$text-muted: $gray-600;
+
+$paragraph-margin-bottom: $vertical-rhythm;
+
+//$blockquote-small-color:      $gray-600;
+//$blockquote-font-size:        ($font-size-base * 1.25);
+//
+//$hr-border-color:             rgba($black, .1);
+//$hr-border-width:             $border-width;
+//
+//$mark-padding:                .2em;
+//
+//$dt-font-weight:              $font-weight-bold;
+//
+//$kbd-box-shadow:              inset 0 -.1rem 0 rgba($black, .25);
+//$nested-kbd-font-weight:      $font-weight-bold;
+//
+//$list-inline-padding:         .5rem;
+//
+//$mark-bg:                     #fcf8e3;
+//
+//$hr-margin-y:                 $spacer;
+
+
+// Links
+$link-color: $color__link;
+$link-decoration: underline;
+$link-hover-color: $color__link-hover;
+$link-hover-decoration: none;
+
+
+// Code
+
+//$code-font-size:                    87.5%;
+//$code-color:                        $pink;
+//
+//$kbd-padding-y:                     .2rem;
+//$kbd-padding-x:                     .4rem;
+//$kbd-font-size:                     $code-font-size;
+//$kbd-color:                         $white;
+//$kbd-bg:                            $gray-900;
+//
+//$pre-color:                         $gray-900;
+//$pre-scrollable-max-height:         340px;

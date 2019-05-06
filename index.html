@@ -1,72 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Center for Civic Futures</title>
-    <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700);</style>
-    <link type="text/css" rel="stylesheet" href="scss/style.css">
-    <meta name="description" content="We’re a new lab at the center of Rhode Island’s infrastructure for evidence-based policymaking.">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134641342-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+---
+layout: default
+title: Welcome to the Brown Policy Lab
+nav-title: Home
+permalink: /
+body-class: home
+---
 
-      gtag('config', 'UA-134641342-1');
-    </script>
-
-  </head>
-  <body>
-    <div class="page page__home">
-      <div id="wrapper" class="r-wrapper">
-        <div class="r-wrapper__flex">
-          <header class="main__header header u-wrapper">
-            <div class="brand">
-              <img class="brand__seal img--rwd" alt="The State of Rhode Island" src="images/State-of-RI-seal.png">
-              <img class="brand__img img--rwd" alt="and Brown University" src="images/Brown-2-color_trans.png">
-            </div>
-          </header>
-          <main class="main__content u-wrapper">
-            <article class="main__article splash">
-              <header class="splash__header">
-                <h1 class="display-3">The Center <i>for</i> Civic Futures</h1>
+      <div class="illus__sky">
+        <div class="l-wrapper__flex u__container">
+  
+          {% include header.html %}
+  
+          <main id="content" class="main__content u__spacing">
+            <article class="main__article intro">
+              <header class="intro__header">
+                <h1 class="display-3">Welcome <i>to</i> The Lab</h1>
               </header>
-              <div class="splash__content">
+              <div class="u__content">
                 <p>We’re a new lab at the center of Rhode Island’s infrastructure for evidence-based policymaking.</p>
                 <p>Let’s learn together.</p>
               </div>
             </article>
           </main>
         </div>
+  
+        {% include landscape.html %}
+      
       </div>
-      <figure class="main__banner illus" role="banner">
-        <div class="cloud cloud-1" style="background-image: url('illus/single-cloud.svg');" aria-hidden="true"></div>
-        <div class="cloud cloud-2" style="background-image: url('illus/single-cloud.svg');" aria-hidden="true"></div>
-        <div class="cloud cloud-3" style="background-image: url('illus/single-cloud.svg');" aria-hidden="true"></div>
-        <img class="illus__indy" alt="" src="illus/industrial-trust.svg">
-        <img class="illus__rural" alt="" src="illus/rural-community.svg">
-        <img class="illus__textron" alt="" src="illus/textron-bldg.svg">
-        <img class="illus__bridge" alt="" src="illus/bridge.svg">
-        <img class="illus__statehouse" alt="" src="illus/state-house.svg">
-        <figcaption>An illustration of rolling green hills with small, rural houses in the foreground. In the middle is the Rhode Island state house. To the right is a downtown city scene with large buildings of glass and stone.</figcaption>
-      </figure>
-      <footer class="main__footer footer">
-        <div class="u-wrapper mc">
-          <div id="mc_embed_signup">
-            <form action="https://brown.us20.list-manage.com/subscribe/post?u=5050b7f10df36f1c41b3743cf&amp;id=cf85e54967" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mc__form" target="_blank">
-              <div id="mc_embed_signup_scroll" class="mc__wrapper">
-                <label for="mce-EMAIL" class="mc__label">Sign up to learn more </label>
-                <input type="email" name="EMAIL" class="email mc__input" id="mce-EMAIL" placeholder="name@email.com" required="" value="" data-com.agilebits.onepassword.user-edited="yes">
-                <div class="mc__nectar" aria-hidden="true"><input type="text" name="b_5050b7f10df36f1c41b3743cf_cf85e54967" tabindex="-1" value=""></div>
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="mc__button" value="Submit">
+      <section id="anchor-about" class="u__vspacing s__white">
+        <article class="u__container">
+          
+          <div class="u__spacing">
+            <div class="row">
+              <div class="col-md-3 col-lg-4">
+                <h2 class="h1">Why We’re Here</h2>
               </div>
-            </form>
+              <div class="col-md-9 col-lg-8">
+                <p class="lead">Under the leadership of Governor Gina Raimondo, Rhode Island has built the country’s strongest infrastructure for evidence-based policymaking.</p>
+                <p>The Policy Lab is at the center of that infrastructure, bringing together diverse perspectives and expertise from government, academia, and community organizations to foster a culture of learning and experimentation across the state.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </footer>
-    </div>
-  </body>
-</html>
+          
+          <div id="anchor-theory" class="divider"></div>
+          
+          <div class="u__spacing">
+            <h2 class="h4 text-center text-uppercase font-weight-bold text-blue">Theory of Change</h2>
+            <p class="text-center lead pb-sm-3 pb-lg-5">We look to improve policy outcomes through three focus areas:</p>
+          
+            <div class="container pb-sm-3 pb-lg-5">
+              <div class="row">
+                <div class="col-sm shadow p-4 pb-0 mx-sm-2 mx-lg-3">
+                  <p class="text-center"><img class="theory__icon" src="{{ site.baseurl }}assets/img/icon-generating-evidence.svg" alt="" aria-hidden="true" /></p>
+                  <p class="text-center">Generating evidence to fill knowledge gaps</p>
+                </div>
+                <div class="col-sm shadow p-4 pb-0 mx-sm-2 mx-lg-3">
+                  <p class="text-center"><img class="theory__icon" src="{{ site.baseurl }}assets/img/icon-integrating-evidence.svg" alt="" aria-hidden="true" /></p>
+                  <p class="text-center">Integrating that evidence into planning, budget, procurement, and performance management processes</p>
+                </div>
+                <div class="col-sm shadow p-4 pb-0 mx-sm-2 mx-lg-3">
+                  <p class="text-center"><img class="theory__icon" src="{{ site.baseurl }}assets/img/icon-building-coalitions.svg" alt="" aria-hidden="true" /></p>
+                  <p class="text-center">Building coalitions throughout our government, academic institutions, and community organizations to support evidence-based policy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="u__spacing u__container u__content">
+            <h3 class="h5 text-center font-weight-bold">The three areas are extremely codependent.</h3>
+            <p class="text-center">While many approaches to this work focus on one or two areas at a time, building a culture of evidence-based policymaking requires us to pursue all three simultaneously.</p> 
+          </div>
+        </article>
+      </section>
+      
+      <section id="anchor-team" class="u__vspacing s__light">
+        <article class="u__container">
+          <div class="u__spacing">
+            <h2 class="h1 text-center">Our Team</h2>
+          </div>
+          <div class="container u__spacing team py-0">
+            <div class="row justify-content-center">
+              {% for member in site.team %}
+                {% include team-teaser.html %}
+              {% endfor %}
+            </div>
+          </div>
+        </article>
+      </section>
+      
+      <section id="anchor-connect" class="u__vspacing s__primary target-cynosure">
+        <article class="u__container u__spacing connect">
+          <div class="row">
+            <div class="col-md-3 col-lg-4">
+              <h2 class="h1">Get Updates</h2>
+            </div>
+            <div class="col-md-9 col-lg-8">
+              <p class="lead">Sign up to get updates on projects, events, and our upcoming podcast, <em>30,000 Leagues</em>. </p>
+              
+              {% include mailchimp.html %}
+              
+            </div>
+          </div>
+        </article>
+      </section>
+      
+      <section id="anchor-jobs" class="u__vspacing s__gray">
+        <article class="u__container u__spacing jobs">
+          <div class="row">
+            <div class="col-md-3 col-lg-4">
+              <h2 class="h1">Join Us</h2>
+            </div>
+            <div class="col-md-9 col-lg-8">
+              <p class="lead">We’re looking for self-starters and team players to help us identify, develop, and complete projects across a wide range of policy areas. </p>
+              <ul class="list-unstyled jobs__list">
+                <li class="jobs__list__item"><a href="#">Senior Data Scientist, Full-Time</a></li>
+                <li class="jobs__list__item"><a href="#">Engineering Practices Lead, Contract</a></li>
+                <li class="jobs__list__item"><a href="#">Front-End Web Developer, Contract</a></li>
+                <li class="jobs__list__item"><a href="#">Full-Stack Web Developer, Contract</a></li>
+              </ul>
+              <p>Don’t see what you’re looking for? <a href="mailto:policylab@brown.edu?subject=A career at the Policy Lab">Send us a message!</a></p>
+            </div>
+          </div>
+        </article>
+      </section>
+      
+      <section id="anchor-events" class="u__vspacing s__white">
+        <article class="u__container u__spacing events">
+          <div class="row">
+            <div class="col-md-3 col-lg-4">
+              <h2 class="h1">Events</h2>
+            </div>
+            <div class="col-md-9 col-lg-8">
+              
+              {% include events.html %}
+              
+            </div>
+          </div>
+        </article>
+      </section>

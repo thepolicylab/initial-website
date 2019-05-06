@@ -1,0 +1,205 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret: false;
+//$enable-rounded:            true;
+//$enable-shadows:            false;
+//$enable-gradients:          false;
+//$enable-transitions:        true;
+//$enable-grid-classes:       true;
+$enable-print-styles: false;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem;
+$spacers: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+//$sizes: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+//$sizes: map-merge(
+//  (
+//    25: 25%,
+//    50: 50%,
+//    75: 75%,
+//    100: 100%,
+//    auto: auto
+//  ),
+//  $sizes
+//);
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $color__body-bg;
+$body-color: $color__body-fg;
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-width: 1px;
+$border-color: $color__borders;
+
+$border-radius: .25rem;
+//$border-radius-lg:            .3rem;
+//$border-radius-sm:            .2rem;
+//
+//$box-shadow-sm:               0 .125rem .25rem rgba($black, .075);
+//$box-shadow:                  0 .5rem 1rem rgba($black, .15);
+//$box-shadow-lg:               0 1rem 3rem rgba($black, .175);
+//
+//$component-active-color:      $white;
+//$component-active-bg:         theme-color("primary");
+//
+//$caret-width:                 .3em;
+
+$transition-base: $transition;
+//$transition-fade:             opacity .15s linear;
+//$transition-collapse:         height .35s ease;
+
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+//$table-cell-padding:          .75rem;
+//$table-cell-padding-sm:       .3rem;
+//
+//$table-bg:                    transparent;
+//$table-accent-bg:             rgba($black, .05);
+//$table-hover-bg:              rgba($black, .075);
+//$table-active-bg:             $table-hover-bg;
+//
+//$table-border-width:          $border-width;
+//$table-border-color:          $gray-300;
+//
+//$table-head-bg:               $gray-200;
+//$table-head-color:            $gray-700;
+//
+//$table-dark-bg:               $gray-900;
+//$table-dark-accent-bg:        rgba($white, .05);
+//$table-dark-hover-bg:         rgba($white, .075);
+//$table-dark-border-color:     lighten($gray-900, 7.5%);
+//$table-dark-color:            $body-bg;
+//
+//$table-striped-order:         odd;
+//
+//$table-caption-color:         $text-muted;
+
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+//$zindex-dropdown:                   1000;
+//$zindex-sticky:                     1020;
+//$zindex-fixed:                      1030;
+//$zindex-modal-backdrop:             1040;
+//$zindex-modal:                      1050;
+//$zindex-popover:                    1060;
+//$zindex-tooltip:                    1070;
+
+
+// Pagination
+
+//$pagination-padding-y:              .5rem;
+//$pagination-padding-x:              .75rem;
+//$pagination-padding-y-sm:           .25rem;
+//$pagination-padding-x-sm:           .5rem;
+//$pagination-padding-y-lg:           .75rem;
+//$pagination-padding-x-lg:           1.5rem;
+//$pagination-line-height:            1.25;
+//
+//$pagination-color:                  $link-color;
+//$pagination-bg:                     $white;
+//$pagination-border-width:           $border-width;
+//$pagination-border-color:           $gray-300;
+//
+//$pagination-focus-box-shadow:       $input-btn-focus-box-shadow;
+//$pagination-focus-outline:          0;
+//
+//$pagination-hover-color:            $link-hover-color;
+//$pagination-hover-bg:               $gray-200;
+//$pagination-hover-border-color:     $gray-300;
+//
+//$pagination-active-color:           $component-active-color;
+//$pagination-active-bg:              $component-active-bg;
+//$pagination-active-border-color:    $pagination-active-bg;
+//
+//$pagination-disabled-color:         $gray-600;
+//$pagination-disabled-bg:            $white;
+//$pagination-disabled-border-color:  $gray-300;
+
+
+// List group
+
+//$list-group-bg:                     $white;
+//$list-group-border-color:           rgba($black, .125);
+//$list-group-border-width:           $border-width;
+//$list-group-border-radius:          $border-radius;
+//
+//$list-group-item-padding-y:         .75rem;
+//$list-group-item-padding-x:         1.25rem;
+//
+//$list-group-hover-bg:               $gray-100;
+//$list-group-active-color:           $component-active-color;
+//$list-group-active-bg:              $component-active-bg;
+//$list-group-active-border-color:    $list-group-active-bg;
+//
+//$list-group-disabled-color:         $gray-600;
+//$list-group-disabled-bg:            $list-group-bg;
+//
+//$list-group-action-color:           $gray-700;
+//$list-group-action-hover-color:     $list-group-action-color;
+//
+//$list-group-action-active-color:    $body-color;
+//$list-group-action-active-bg:       $gray-200;
+
+
+// Image thumbnails
+
+//$thumbnail-padding:                 .25rem;
+//$thumbnail-bg:                      $body-bg;
+//$thumbnail-border-width:            $border-width;
+//$thumbnail-border-color:            $gray-300;
+//$thumbnail-border-radius:           $border-radius;
+//$thumbnail-box-shadow:              0 1px 2px rgba($black, .075);
+
+
+// Figures
+
+//$figure-caption-font-size:          90%;
+//$figure-caption-color:              $gray-600;
+
+
+// Printing
+//$print-page-size:                   letter;
+//$print-body-min-width:              map-get($grid-breakpoints, "lg");

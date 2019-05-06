@@ -1,0 +1,80 @@
+//
+// Color system
+//
+
+// Custom values for Brown Policy Lab
+$white:    #fff;
+//$gray-100: #f8f9fa !default;
+$gray-200: #e1e1e5;
+$gray-300: #bcbbc4;
+$gray-400: #a4a2ae;
+$gray-500: #797788;
+$gray-600: #504e5a;
+$gray-700: #3d3c45;
+//$gray-800: #343a40 !default;
+$gray-900: #222;
+$black:    #101010;
+
+
+// Main brand colors
+$policy-blue: #70cfef;
+$policy-blue__h: 195;
+$policy-blue__s: 80;
+$policy-blue__l: 69;
+
+$policy-cream: #f6edcc;
+$policy-cream__h: 47;
+$policy-cream__s: 70;
+$policy-cream__l: 88;
+
+
+// Tints
+$tint__policy-blue__lightest: hsl($policy-blue__h, 100, 92); // #d6f5ff
+$tint__policy-blue__rich: hsl($policy-blue__h, 100, 33); // #007ea8
+$tint__policy-blue__dark: hsl($policy-blue__h, 78, 36); // #1480a3
+
+
+// Generic variables
+$color__body-fg: $gray-700;
+// Make the body bg the same as the footer bg.
+// This makes the page seamless when the body is shorter than the viewport height.
+$color__body-bg: $gray-700;
+
+$color__link: $tint__policy-blue__dark;
+$color__link-hover: $gray-700;
+$color__link-focus: $policy-blue;
+
+$color__borders: $gray-200;
+
+
+// Bootstrap color variables
+
+$blue: $tint__policy-blue__dark;
+//$indigo:  #6610f2;
+//$purple:  #6f42c1;
+//$pink:    #e83e8c;
+//$red:     #dc3545;
+//$orange:  #fd7e14;
+//$yellow:  #ffc107;
+//$green:   #28a745;
+//$teal:    #20c997;
+//$cyan:    #17a2b8;
+
+$primary: $policy-blue;
+//$secondary:     $gray-600;
+//$success:       $green;
+//$info:          $cyan;
+//$warning:       $yellow;
+//$danger:        $red;
+$light: $policy-cream;
+//$dark:          $gray-800;
+
+// Set a specific jump point for requesting color jumps
+//$theme-color-interval:      8%;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+//$yiq-contrasted-threshold:  150;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+//$yiq-text-dark:             $gray-900;
+//$yiq-text-light:            $white;

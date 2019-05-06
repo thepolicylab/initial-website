@@ -1,0 +1,44 @@
+// Various sections and utilities
+
+.s {
+  
+  // Primary and dark color themes
+  // Using the darker version for accessibility
+  &__dark ,
+  &__primary {
+    a {
+      color: $white;
+      
+      &[href^=tel] {
+        color: inherit;
+      }
+      
+      @include hover-focus {
+        color: $tint__policy-blue__lightest;
+      }
+    }
+  }
+  
+  &__primary {
+    background-color: $tint__policy-blue__rich;
+    color: $white;
+  }
+  
+  &__dark {
+    background-color: gray("700");
+    color: $white;
+  }
+  
+  // Light themes
+  &__light {
+    background-color: theme-color("light");
+  }
+  
+  &__white {
+    background-color: $white;
+  }
+  
+  &__gray {
+    background-color: gray("200");
+  }
+}

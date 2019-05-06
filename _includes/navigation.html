@@ -1,0 +1,42 @@
+          {% comment %}
+            This is a mix of custom BEM SASS classes and Bootstrap
+            - main__nav: Our BEM class for layout
+            - nav and nav__*: Our BEM style hooks
+            - navbar and nav-*: Bootstrap classes, unstyled in our project
+          {% endcomment %}
+          <div class="nav__container fixed-top">
+            <nav id="main-nav" class="main__nav navbar navbar-expand-lg u__container nav">
+              
+              <a href="#content" class="nav-link nav__link nav__skip sr-only sr-only-focusable js-smoothscroll">Skip to main content</a>
+              
+              <button class="navbar-toggler nav__button" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="nav__button__icon">&equiv;</span>
+                <span class="nav__button__text"><span class="sr-only">Open the </span>Menu</span>
+              </button>
+              <div class="collapse navbar-collapse nav__pane" id="navbarContent">
+                <ul class="navbar-nav nav__list" role="navigation">
+                  <li class="nav-item nav__item">
+                    <a href="{{ site.baseurl }}#anchor-about" class="nav-link nav__link js-smoothscroll">About Us</a>
+                  </li>
+                  <li class="nav-item nav__item">
+                    <a href="{{ site.baseurl }}#anchor-theory" class="nav-link nav__link js-smoothscroll">Theory of Change</a>
+                  </li>
+                  <li class="nav-item nav__item">
+                    <a href="{{ site.baseurl }}#anchor-team" class="nav-link nav__link js-smoothscroll">Our Team</a>
+                  </li>
+                  <li class="nav-item nav__item">
+                    <a href="{{ site.baseurl }}#anchor-connect" class="nav-link nav__link js-smoothscroll">Connect</a>
+                  </li>
+                  <li class="nav-item nav__item">
+                    <a href="{{ site.baseurl }}#anchor-jobs" class="nav-link nav__link js-smoothscroll">Jobs</a>
+                  </li>
+                  <li class="nav-item nav__item">
+                    <a href="{{ site.baseurl }}#anchor-events" class="nav-link nav__link js-smoothscroll">Events</a>
+                  </li>
+                  <li class="nav-item nav__item ml-lg-auto">
+                    <a href="{{ site.baseurl }}#anchor-contact" class="nav-link nav__link btn btn-outline-primary js-smoothscroll">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>

@@ -1,0 +1,6 @@
+// Target old IE only — works for IE10 and 11, not newer
+@mixin for-old-ie() {
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    @content
+  }
+}

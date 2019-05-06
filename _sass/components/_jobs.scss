@@ -1,0 +1,33 @@
+.jobs {
+  
+  &__list {
+    // This happens to be on a light gray background
+    border-top: 0.5px solid gray('300');
+    
+    &__item {
+      border-bottom: 0.5px solid gray('300');
+      
+      a {
+        display: block;
+        font-weight: $font-weight-medium;
+        padding: ($spacer * 0.75) ($spacer * 1.5) ($spacer * 0.625) 0;
+        position: relative;
+        text-decoration: none;
+        
+        &::after {
+          content: '\02192';
+          color: color("blue");
+          position: absolute;
+          top: 50%;
+          right: 4px;
+          transition: transform 250ms ease;
+          transform: translate(0, -50%);
+        }
+        
+        &:hover::after {
+          transform: translate(5px, -50%);
+        }
+      }
+    }
+  }
+}

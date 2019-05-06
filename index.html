@@ -11,13 +11,22 @@ body-class: home
 
           {% include header.html %}
 
+          <style>
+          /* inline css from BG */
+          @media (max-width: 960px) {
+              header.main__header {
+                display: none;
+              }
+          }
+          </style>
+
           <main id="content" class="main__content u__spacing">
             <article class="main__article intro">
               <header class="intro__header">
-                <h1 class="display-3" style="font-weight: 700;">Welcome <i>to</i> The Lab</h1>
+                <h1 class="display-3" style="font-weight: 700; padding-top: .8em;">Welcome <i style="font-size: 93%;">to</i> The Lab</h1>
               </header>
               <div class="u__content">
-                <p class="lead">We’re a new lab at the center of Rhode Island’s infrastructure for evidence-based policymaking.</p>
+                <p class="lead" style="max-width: 600px">We’re a new lab at the center of Rhode Island’s infrastructure for evidence-based policymaking.</p>
                 <p class="lead">Let’s learn together.</p>
               </div>
             </article>

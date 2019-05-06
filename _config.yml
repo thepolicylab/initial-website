@@ -1,6 +1,6 @@
 title: The Policy Lab at Brown University
 description: We're a new lab at the center of Rhode Island’s infrastructure for evidence-based policymaking.
-  
+
 markdown: redcarpet
 highlighter: pygments
 redcarpet:
@@ -8,7 +8,7 @@ redcarpet:
 
 baseurl: /
 port: 4060
-url: //thepolicylab.brown.edu
+url: thepolicylab.brown.edu
 twitter_handle: ThePolicyTweets
 
 
@@ -49,7 +49,7 @@ relative_permalinks: false
 
 sass:
   sass_dir: _sass
-  
+
 
 # Plugins and extras
 plugins:

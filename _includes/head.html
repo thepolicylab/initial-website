@@ -5,23 +5,21 @@
 	<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
 	<link rel="preconnect" href="https://brown.us20.list-manage.com">
 
-
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="google-site-verification" content="wkcAVWy8ClxzqSm5y4O1zgeSVSi3QBaFD69VQP5YNvQ" />
+	<meta name="google-site-verification" content="wkcAVWy8ClxzqSm5y4O1zgeSVSi3QBaFD69VQP5YNvQ">
 
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="The Policy Lab">
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
-	<meta property="og:image" content="http://thepolicylab.brown.edu/assets/img/share-image.jpg" />
-	<meta property="og:site_name" content="The Policy Lab at Brown University">
+	<meta property="og:image" content="{{ site.baseurl }}assets/img/share-image.jpg">
+	<meta property="og:site_name" content="{{ site.title }}">
 	<meta property="og:description" content="{{ site.description }}">
-
 
   <title>{% if page.html-title %}{{ page.html-title }} | BPL{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
 
-  <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700);</style>
+  <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Rajdhani:400,600,700);</style>
   <link type="text/css" rel="stylesheet" href="{{ "assets/css/main.css" | prepend: site.baseurl }}">
 
   <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}assets/favicons/apple-touch-icon.png">
@@ -31,7 +29,8 @@
   <link rel="mask-icon" href="{{ site.baseurl }}assets/favicons/safari-pinned-tab.svg" color="#007ea8">
   <meta name="msapplication-TileColor" content="#007ea8">
   <meta name="theme-color" content="#007ea8">
-  <!-- Global site tag (gtag.js) - Google Analytics
+  {% comment %}
+  <!--Global site tag (gtag.js) - Google Analytics-->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134641342-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -39,5 +38,6 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-134641342-1');
-  </script>-->
+  </script>
+  {% endcomment %}
 </head>

@@ -10,10 +10,17 @@
 //  </a>
 //<div>
 
+.layout__team {
+  // account for the positioned navbar
+  padding-top: rem(42);
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 0;
+  }
+}
+
 .team {
 
-  &__member {}
-  
   &__photo {
     border-radius: 50%;
     margin: 0 auto $spacer;
@@ -109,6 +116,7 @@
     }
     
     &__header {
+      padding-top: ($spacer * 2);
 
       @include media-breakpoint-up(sm) {
         margin-left: -15px; // emulate a BS4 row but without any flex properties
@@ -119,6 +127,10 @@
           padding-left: 15px;
           padding-right: 15px;
         }
+      }
+      
+      @include media-breakpoint-up(lg) {
+        padding-top: 0;
       }
     }
     

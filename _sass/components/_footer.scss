@@ -5,16 +5,23 @@
     white-space: nowrap;
   }
   
+  address a {
+    display: block;
+    text-decoration: none;
+    
+    > span:first-child {
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+    }
+  }
+  
   .breaker {
     @include media-breakpoint-up(sm) {
       &::before {
         content: ' | ';
+        margin: 0 0.375rem;
       }
     }
   }
-}
-
-address a {
-  display: block;
-  text-decoration: none;
 }

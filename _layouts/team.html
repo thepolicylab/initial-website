@@ -28,7 +28,7 @@ body-class: team
     <article class="container u__container">
       <div class="row">
         <div class="col-sm-4 col-lg-3 offset-lg-1 text-center">
-          <img class="img--rwd team__member__img" src="{{ site.baseurl }}assets/img/team/{{ page.img }}" alt="">
+          <img class="img--rwd team__member__img" src="{{ '/' | relative_url }}assets/img/team/{{ page.img }}" alt="">
           
           {% if page.website %}
             <a class="team__member__social" href="{{ page.website }}" target="_blank" title="Visit {{ page.title }}’s personal website in a new window">

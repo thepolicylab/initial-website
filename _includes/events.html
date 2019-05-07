@@ -17,20 +17,16 @@
                 {%- if event.speaker -%}
                 <p class="h6">{{ event.speaker }}</p>
                 {%- endif -%}
-                <p><time datetime="{{ event.date }}">{{ event.date | date: '%A, %B %d, %Y' }}{% if event.time %}, {{ event.time }}{% endif %}</time></p>
+                <p><time datetime="{{ event.date }}">{{ event.date | date: '%A, %B %d, %Y' }}{% if event.time %}, {{ event.time }}{% endif %}</time></p>
                 {%- if event.location-1 -%}
                 <div class="row align-items-end">
                   <p class="col-sm-7">
                     {%- if event.location-url -%}
                     <a href="{{ event.location-url }}" class="events__map__link" target="_blank" rel="nofollow">
-                    {%- endif -%}
-                      <span class="events__location">{{- event.location-1 -}}{%- if event.location-2 -%}<br>
-                        {{- event.location-2 -}}{%- endif -%}
-                      </span>
-                    {%- if event.location-url -%}
-                      <span class="events__map__text">Map &rarr;</span>
+                      {%- endif -%}
+                      <span class="events__location">{{- event.location-1 -}}{%- if event.location-2 -%}<br>{{- event.location-2 -}}{%- endif -%}</span>{%- if event.location-url -%}<span class="events__map__text">Map &rarr;</span>
                     </a>
-                    {%- endif -%}
+                  {%- endif -%}
                   </p>
                   {%- if event.register-link -%}
                   <p class="col-sm-5 text-sm-right">

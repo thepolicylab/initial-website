@@ -1,6 +1,9 @@
 title: The Policy Lab at Brown University
 description: We're a new lab at the center of Rhode Island’s infrastructure for evidence-based policymaking.
 
+repository: thepolicylab/initial-website.git
+github.pages_hostname: https://thepolicylab.brown.edu
+
 markdown: redcarpet
 highlighter: pygments
 redcarpet:
@@ -54,3 +57,4 @@ sass:
 # Plugins and extras
 plugins:
 - jekyll-autoprefixer
+- jekyll-github-metadata

@@ -17,7 +17,7 @@
                 {%- if event.speaker -%}
                 <p class="h6">{{ event.speaker }}</p>
                 {%- endif -%}
-                <p><time datetime="{{ event.date }}">{{ event.date | date: '%B %d, %Y' }}{% if event.time %}, {{ event.time }}{% endif %}</time></p>
+                <p><time datetime="{{ event.date }}">{{ event.date | date: '%A, %B %d, %Y' }}{% if event.time %}, {{ event.time }}{% endif %}</time></p>
                 <div class="row align-items-end">
                   <p class="col-sm-7">
                     {%- if event.location-url -%}

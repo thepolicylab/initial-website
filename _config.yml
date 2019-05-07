@@ -5,7 +5,7 @@ repository: thepolicylab/initial-website.git
 github.pages_hostname: https://thepolicylab.brown.edu
 
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 

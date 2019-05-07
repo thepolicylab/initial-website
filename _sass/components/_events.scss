@@ -23,17 +23,11 @@
     margin-bottom: ($spacer * 3);
   }
 
-  &__title {}
-  
-  &__link {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
-    
-    @include hover-focus() {
-      color: $link-color;
-      text-decoration: $link-decoration;
-    }
+  &__title {
+    color: $link-color;
   }
+  
+  &__link {}
   
   &__map {
     

@@ -98,21 +98,21 @@
 
 
 // Elements
-.divider {
-  @include fluid-units(
-    'margin-top',
-    ($vertical-min / 2),
-    ($vertical-max / 2),
-    strip-unit(rem(bp(small))),
-    strip-unit(rem(bp(x-large)))
-  );
-  @include fluid-units(
-    'margin-bottom',
-    $vertical-min,
-    $vertical-max,
-    strip-unit(rem(bp(small))),
-    strip-unit(rem(bp(x-large)))
-  );
-  height: 1px;
-  border-top: 0.5px solid $border-color;
-}
+//.divider {
+//  @include fluid-units(
+//    'margin-top',
+//    ($vertical-min / 2),
+//    ($vertical-max / 2),
+//    strip-unit(rem(bp(small))),
+//    strip-unit(rem(bp(x-large)))
+//  );
+//  @include fluid-units(
+//    'margin-bottom',
+//    $vertical-min,
+//    $vertical-max,
+//    strip-unit(rem(bp(small))),
+//    strip-unit(rem(bp(x-large)))
+//  );
+//  height: 1px;
+//  border-top: 0.5px solid $border-color;
+//}

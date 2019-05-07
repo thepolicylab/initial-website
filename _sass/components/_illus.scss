@@ -27,7 +27,7 @@
 
   // "Suck" the illustration up into the Intro area
   @include media-breakpoint-up(lg) {
-    margin-top: fluid-calc(0, -240, bp(medium), bp(xx-large), 1px);
+    margin-top: fluid-calc(0, -200, bp(medium), bp(xx-large), 1px);
     pointer-events: none;
   }
 

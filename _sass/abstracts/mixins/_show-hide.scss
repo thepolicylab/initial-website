@@ -6,6 +6,6 @@
 }
 
 @mixin show($d: 'block') {
-  display: $d;
+  display: unquote($d);
   visibility: visible;
 }

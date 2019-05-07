@@ -33,7 +33,10 @@
 .main {
   
   &__header {
+    @include hide;
+
     @include media-breakpoint-up(lg) {
+      @include show();
       flex: 1 0 30%;
       max-width: 30%;
     }

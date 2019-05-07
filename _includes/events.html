@@ -5,7 +5,7 @@
               {%- assign posttime = posttime | plus: 0 -%}
               {%- if posttime > now -%}
               <div class="events__description">
-                <h3 class="h5 events__title pb-2">
+                <h3 class="h5 events__title text-blue">
                   {%- if event.register-link -%}
                   <a href="{{ event.register-link }}" class="events__link" target="_blank" rel="nofollow">
                   {%- endif -%}
@@ -15,7 +15,7 @@
                   {%- endif -%}
                 </h3>
                 {%- if event.speaker -%}
-                <p class="h6 text-blue pb-2">{{ event.speaker }}</p>
+                <p class="h6">{{ event.speaker }}</p>
                 {%- endif -%}
                 <p><time datetime="{{ event.date }}">{{ event.date | date: '%B %d, %Y' }}{% if event.time %} — {{ event.time }}{% endif %}</time></p>
                 <div class="row align-items-end">

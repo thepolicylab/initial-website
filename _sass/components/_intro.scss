@@ -1,19 +1,19 @@
 .intro {
-  
+
   &__header {
     h1 {
       font-weight: $font-weight-bold;
       line-height: 0.9; // even tighter than tight
       padding-top: 0.25em;
-      
+
       i {
         font-family: $font-stack__serif;
         font-size: 93.75%;
         font-weight: normal;
         letter-spacing: 0;
-        
+
         // Force a line break
-        &::before {
+        &::after {
           content: "\A";
           white-space: pre;
         }

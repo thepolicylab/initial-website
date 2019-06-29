@@ -2,10 +2,10 @@
 layout: page
 ---
 
-Initial website for The Policy Lab
+Website for the Civic Futures Summit
 ==========================
 
-An intro website for _The Policy Lab_ at Brown University, May 2019. Static 
+Website for the _Civic Futures Summit_. Static 
 HTML generated from [Jekyll](https://jekyllrb.com/) with [SASS](https://sass-lang.com/), 
 [Bootstrap 4.3](https://getbootstrap.com/docs/4.3/getting-started/introduction/), 
 and [Autoprefixer](https://github.com/vwochnik/jekyll-autoprefixer).

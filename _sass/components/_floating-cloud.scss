@@ -23,9 +23,10 @@
 
 .panel-purple {
   animation-duration: 30s;
-  animation-delay: 2s;
+  animation-delay: .5s;
   height: 100%;
   width: 100%;
+  left: 71%;
 
   @include media-breakpoint-up(sm) {
     // height: 4.5vw;
@@ -36,9 +37,10 @@
 // Furthest one back. Smallest and the slowest
 .panel-blue {
   animation-duration: 42s;
-  animation-delay: 7s;
+  animation-delay: .85s;
   height: 100%;
   width: 100%;
+  left: 54%;
 
 
   @include media-breakpoint-up(sm) {
@@ -49,9 +51,10 @@
 
 .panel-green {
   animation-duration: 34s;
-  animation-delay: 5s;
+  animation-delay: .7s;
   height: 100%;
   width: 100%;
+  left: 32%;
 
 
   @include media-breakpoint-up(sm) {
@@ -62,9 +65,10 @@
 
 .panel-orange {
   animation-duration: 34s;
-  animation-delay: 5s;
+  animation-delay: .65s;
   height: 100%;
   width: 100%;
+  left: 6%;
 
 
   @include media-breakpoint-up(sm) {
@@ -74,8 +78,10 @@
 
 .panel-yellow {
   animation-duration: 34s;
-  animation-delay: 5s;
-
+  animation-delay: .5s;
+  height: 100%;
+  width: 100%;
+  left: -15%;
 
   @include media-breakpoint-up(sm) {
 

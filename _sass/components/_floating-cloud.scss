@@ -8,7 +8,7 @@
   }
 }
 
-.cloud {
+.panel {
   animation-name: animate-cloud;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
@@ -21,13 +21,13 @@
   z-index: z(cloud);
 }
 
-.cloud-1 {
+.panel-purple {
   animation-duration: 30s;
   animation-delay: 2s;
   bottom: 45vh;
   height: 12vw;
   width: 15vw;
-  
+
   @include media-breakpoint-up(sm) {
     height: 4.5vw;
     width: 7.5vw;
@@ -35,31 +35,59 @@
 }
 
 // Furthest one back. Smallest and the slowest
-.cloud-2 {
+.panel-blue {
   animation-duration: 42s;
   animation-delay: 7s;
   bottom: 33.5vh;
   height: 10vw;
   width: 12vw;
-  
+
   @include media-breakpoint-up(sm) {
     height: 3vw;
     width: 5vw;
   }
 }
 
-.cloud-3 {
+.panel-green {
   animation-duration: 34s;
   animation-delay: 5s;
   bottom: 27vh;
   height: 8vw;
   width: 10vw;
-  
+
   @include media-breakpoint-up(sm) {
     height: 3.75vw;
     width: 6vw;
   }
 }
+
+
+.panel-orange {
+  animation-duration: 34s;
+  animation-delay: 5s;
+  bottom: 27vh;
+  height: 8vw;
+  width: 10vw;
+
+  @include media-breakpoint-up(sm) {
+    height: 3.75vw;
+    width: 6vw;
+  }
+}
+
+.panel-yellow {
+  animation-duration: 34s;
+  animation-delay: 5s;
+  bottom: 27vh;
+  height: 8vw;
+  width: 10vw;
+
+  @include media-breakpoint-up(sm) {
+    height: 3.75vw;
+    width: 6vw;
+  }
+}
+
 
 @include for-old-ie {
   .cloud-1,

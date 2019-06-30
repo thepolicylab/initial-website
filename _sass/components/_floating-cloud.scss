@@ -17,18 +17,19 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  left: 0;
+  // left: 0;
   z-index: z(cloud);
 }
 
 .panel-purple {
   animation-duration: 30s;
   animation-delay: 2s;
-
+  height: 100%;
+  width: 100%;
 
   @include media-breakpoint-up(sm) {
-    height: 4.5vw;
-    width: 7.5vw;
+    // height: 4.5vw;
+    // width: 7.5vw;
   }
 }
 
@@ -36,6 +37,8 @@
 .panel-blue {
   animation-duration: 42s;
   animation-delay: 7s;
+  height: 100%;
+  width: 100%;
 
 
   @include media-breakpoint-up(sm) {
@@ -47,6 +50,8 @@
 .panel-green {
   animation-duration: 34s;
   animation-delay: 5s;
+  height: 100%;
+  width: 100%;
 
 
   @include media-breakpoint-up(sm) {
@@ -58,6 +63,8 @@
 .panel-orange {
   animation-duration: 34s;
   animation-delay: 5s;
+  height: 100%;
+  width: 100%;
 
 
   @include media-breakpoint-up(sm) {

@@ -8,6 +8,11 @@
   // }
 }
 
+#moving-panels {
+  top: 0;
+  position: absolute;
+}
+
 .panel {
   animation-name: animate-cloud;
   animation-fill-mode: both;

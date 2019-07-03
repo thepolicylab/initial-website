@@ -1,7 +1,7 @@
-title: The Policy Lab
-description: We're a new lab at the center of Rhode Island’s infrastructure for evidence-based policymaking. Let's learn together.
+title: Civic Futures Summit - Central Texas
+description: We’re bringing together governments and universities across central texas to celebrate and share skills and ideas for the future of state and local government
 
-repository: thepolicylab/initial-website.git
+repository: civic-imagination/summit-website.git
 github.pages_hostname: https://thepolicylab.brown.edu
 
 markdown: kramdown
@@ -11,8 +11,8 @@ redcarpet:
 
 baseurl: /
 port: 4060
-url: //thepolicylab.brown.edu
-twitter_handle: ThePolicyTweets
+url: //civicfutures.io
+twitter_handle: civicimagination
 
 
 # Define some defaults
@@ -20,7 +20,7 @@ defaults:
   -
     values:
       layout: "page"
-      author: "The Policy Lab"
+      author: "Civic Futures Summit"
 
 
 # Permalink Configuration

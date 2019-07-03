@@ -9,8 +9,7 @@
 }
 
 #moving-panels {
-  top: 0;
-  position: absolute;
+  height: 64px;
 }
 
 .panel {
@@ -24,12 +23,12 @@
   position: absolute;
   // left: 0;
   z-index: z(cloud);
+  height: 720px;
 }
 
 .panel-purple {
   animation-duration: 60s;
   animation-delay: .5s;
-  height: 100%;
   width: 100%;
   left: 71%;
 

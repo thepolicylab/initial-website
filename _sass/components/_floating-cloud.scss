@@ -26,67 +26,74 @@
   height: 720px;
 }
 
-.panel-purple {
+.panel-all {
   animation-duration: 60s;
   animation-delay: .47s;
-  width: 645px;
+  width: 2264px;
   margin-left: 112%;
 
-  @include media-breakpoint-up(sm) {
-    // height: 4.5vw;
-    // width: 7.5vw;
-  }
-}
 
-// Furthest one back. Smallest and the slowest
-.panel-blue {
-  animation-duration: 62s;
-  animation-delay: .48s;
-  width: 600px;
-  margin-left: 84%;
-
-
-  @include media-breakpoint-up(sm) {
-    // height: 3vw;
-    // width: 5vw;
-  }
-}
-
-.panel-green {
-  animation-duration: 58s;
-  animation-delay: .52s;
-  width: 578px;
-  margin-left: 38%;
-
-
-  @include media-breakpoint-up(sm) {
-
-  }
-}
-
-
-.panel-orange {
-  animation-duration: 64s;
-  animation-delay: .51s;
-  width: 645px;
-  margin-left: -8%;
-
-
-  @include media-breakpoint-up(sm) {
-
-  }
-}
-
-.panel-yellow {
-  animation-duration: 56s;
-  animation-delay: .5s;
-  width: 617px;
-  margin-left: -42%;
-
-  @include media-breakpoint-up(sm) {
-
-  }
-}
+// .panel-purple {
+//   animation-duration: 60s;
+//   animation-delay: .47s;
+//   width: 645px;
+//   margin-left: 112%;
+//
+//   @include media-breakpoint-up(sm) {
+//     // height: 4.5vw;
+//     // width: 7.5vw;
+//   }
+// }
+//
+// // Furthest one back. Smallest and the slowest
+// .panel-blue {
+//   animation-duration: 62s;
+//   animation-delay: .48s;
+//   width: 600px;
+//   margin-left: 84%;
+//
+//
+//   @include media-breakpoint-up(sm) {
+//     // height: 3vw;
+//     // width: 5vw;
+//   }
+// }
+//
+// .panel-green {
+//   animation-duration: 58s;
+//   animation-delay: .52s;
+//   width: 578px;
+//   margin-left: 38%;
+//
+//
+//   @include media-breakpoint-up(sm) {
+//
+//   }
+// }
+//
+//
+// .panel-orange {
+//   animation-duration: 64s;
+//   animation-delay: .51s;
+//   width: 645px;
+//   margin-left: -8%;
+//
+//
+//   @include media-breakpoint-up(sm) {
+//
+//   }
+// }
+//
+// .panel-yellow {
+//   animation-duration: 56s;
+//   animation-delay: .5s;
+//   width: 617px;
+//   margin-left: -42%;
+//
+//   @include media-breakpoint-up(sm) {
+//
+//   }
+// }
 
 
 @include for-old-ie {

@@ -30,7 +30,7 @@
   animation-duration: 60s;
   animation-delay: .47s;
   width: 645px;
-  left: 112%;
+  margin-left: 112%;
 
   @include media-breakpoint-up(sm) {
     // height: 4.5vw;
@@ -43,7 +43,7 @@
   animation-duration: 62s;
   animation-delay: .48s;
   width: 600px;
-  left: 84%;
+  margin-left: 84%;
 
 
   @include media-breakpoint-up(sm) {
@@ -56,7 +56,7 @@
   animation-duration: 58s;
   animation-delay: .52s;
   width: 578px;
-  left: 38%;
+  margin-left: 38%;
 
 
   @include media-breakpoint-up(sm) {
@@ -69,7 +69,7 @@
   animation-duration: 64s;
   animation-delay: .51s;
   width: 645px;
-  left: -8%;
+  margin-left: -8%;
 
 
   @include media-breakpoint-up(sm) {
@@ -81,7 +81,7 @@
   animation-duration: 56s;
   animation-delay: .5s;
   width: 617px;
-  left: -42%;
+  margin-left: -42%;
 
   @include media-breakpoint-up(sm) {
 

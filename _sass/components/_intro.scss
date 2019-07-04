@@ -3,7 +3,7 @@
   &__header {
     h1 {
       font-weight: $font-weight-bold;
-      font-size: 12em;
+      font-size: calc(3em + 10vw);
       line-height: 0.8em; // even tighter than tight
       padding-top: 0.25em;
       text-transform: none;

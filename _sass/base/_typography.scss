@@ -329,7 +329,6 @@ form {
 
 .illus__sky {
   background: url(/assets/illus/civic-futures-banner.png) center;
-
 }
 
 
@@ -344,6 +343,13 @@ a.button-text-yo:visited,
 a.button-text-yo:hover {
   color: #fff;
   text-decoration: none;
+}
+
+
+#closing-panels {
+  background: url(/assets/illus/futures-ribbon.png) center;
+  background-size: cover;
+  height: 120px;
 }
 
 // @media all and (max-width: 50em) {

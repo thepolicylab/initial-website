@@ -29,7 +29,7 @@
 .panel-purple {
   animation-duration: 60s;
   animation-delay: .5s;
-  width: 100%;
+  width: 645px;
   left: 71%;
 
   @include media-breakpoint-up(sm) {
@@ -42,8 +42,7 @@
 .panel-blue {
   animation-duration: 62s;
   animation-delay: .85s;
-  height: 100%;
-  width: 100%;
+  width: 600px;
   left: 54%;
 
 
@@ -56,8 +55,7 @@
 .panel-green {
   animation-duration: 58s;
   animation-delay: .7s;
-  height: 100%;
-  width: 100%;
+  width: 578px;
   left: 32%;
 
 
@@ -70,8 +68,7 @@
 .panel-orange {
   animation-duration: 64s;
   animation-delay: .65s;
-  height: 100%;
-  width: 100%;
+  width: 645px;
   left: 6%;
 
 
@@ -83,8 +80,7 @@
 .panel-yellow {
   animation-duration: 56s;
   animation-delay: .5s;
-  height: 100%;
-  width: 36%;
+  width: 617px;
   left: -15%;
 
   @include media-breakpoint-up(sm) {

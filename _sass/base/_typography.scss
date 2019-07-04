@@ -334,7 +334,16 @@ form {
 
 
 .phase-image {
-  max-width: 600px;
+  max-width: 100%;
+  padding-bottom: 1.2em;
+}
+
+.button-text-yo,
+a.button-text-yo,
+a.button-text-yo:visited,
+a.button-text-yo:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 // @media all and (max-width: 50em) {

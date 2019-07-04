@@ -52,10 +52,11 @@
   }
 
   &__sky {
-    background-color: #fff;
     background: url(../../assets/illus/civic-futures-banner.png) center;
     padding-top: em(34); // Height of the Fixed navbar
     background-size: cover;
+    background-color: #fff;
+
   }
 
   // Wayyy in the back

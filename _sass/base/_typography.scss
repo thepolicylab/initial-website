@@ -343,13 +343,28 @@ a.button-text-yo:visited,
 a.button-text-yo:hover {
   color: #fff;
   text-decoration: none;
+  font-size: 1.2em;
+}
+
+.btn-primary {
+  background-color: #5169B2;
+  border-color:#5169B2;
+}
+
+.btn-primary:hover {
+  background-color: #5169B2;
+}
+
+a.button-text-yo:hover {
+  text-decoration: underline;
 }
 
 
 #closing-panels {
   background: url(/assets/illus/futures-ribbon.png) center;
-  background-size: cover;
-  height: 120px;
+  background-size: auto;
+  height: 140px;
+  background-color: #fff;
 }
 
 // @media all and (max-width: 50em) {

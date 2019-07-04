@@ -1,10 +1,10 @@
 // Keyframes
 @keyframes animate-cloud {
   from {
-    left: -50%;
+    transform: translate3d(-15vw,0,0);
   }
   to {
-    left: 150%;
+    transform: translate3d(115vw,0,0);
   }
 }
 
@@ -26,74 +26,67 @@
   height: 720px;
 }
 
-.panel-all {
+.panel-purple {
   animation-duration: 60s;
   animation-delay: .47s;
-  width: 2264px;
-  margin-left: 112%;
+  width: 645px;
+  left: 112%;
+
+  @include media-breakpoint-up(sm) {
+    // height: 4.5vw;
+    // width: 7.5vw;
+  }
+}
+
+// Furthest one back. Smallest and the slowest
+.panel-blue {
+  animation-duration: 62s;
+  animation-delay: .48s;
+  width: 600px;
+  left: 84%;
 
 
-// .panel-purple {
-//   animation-duration: 60s;
-//   animation-delay: .47s;
-//   width: 645px;
-//   margin-left: 112%;
-//
-//   @include media-breakpoint-up(sm) {
-//     // height: 4.5vw;
-//     // width: 7.5vw;
-//   }
-// }
-//
-// // Furthest one back. Smallest and the slowest
-// .panel-blue {
-//   animation-duration: 62s;
-//   animation-delay: .48s;
-//   width: 600px;
-//   margin-left: 84%;
-//
-//
-//   @include media-breakpoint-up(sm) {
-//     // height: 3vw;
-//     // width: 5vw;
-//   }
-// }
-//
-// .panel-green {
-//   animation-duration: 58s;
-//   animation-delay: .52s;
-//   width: 578px;
-//   margin-left: 38%;
-//
-//
-//   @include media-breakpoint-up(sm) {
-//
-//   }
-// }
-//
-//
-// .panel-orange {
-//   animation-duration: 64s;
-//   animation-delay: .51s;
-//   width: 645px;
-//   margin-left: -8%;
-//
-//
-//   @include media-breakpoint-up(sm) {
-//
-//   }
-// }
-//
-// .panel-yellow {
-//   animation-duration: 56s;
-//   animation-delay: .5s;
-//   width: 617px;
-//   margin-left: -42%;
-//
-//   @include media-breakpoint-up(sm) {
-//
-//   }
-// }
+  @include media-breakpoint-up(sm) {
+    // height: 3vw;
+    // width: 5vw;
+  }
+}
+
+.panel-green {
+  animation-duration: 58s;
+  animation-delay: .52s;
+  width: 578px;
+  left: 38%;
+
+
+  @include media-breakpoint-up(sm) {
+
+  }
+}
+
+
+.panel-orange {
+  animation-duration: 64s;
+  animation-delay: .51s;
+  width: 645px;
+  left: -8%;
+
+
+  @include media-breakpoint-up(sm) {
+
+  }
+}
+
+.panel-yellow {
+  animation-duration: 56s;
+  animation-delay: .5s;
+  width: 617px;
+  left: -42%;
+
+  @include media-breakpoint-up(sm) {
+
+  }
+}
 
 
 @include for-old-ie {

@@ -2,7 +2,7 @@ title: Civic Futures Summit - Central Texas
 description: We’re bringing together governments and universities across central texas to celebrate and share skills and ideas for the future of state and local government
 
 repository: civic-imagination/summit-website.git
-github.pages_hostname: https://thepolicylab.brown.edu
+github.pages_hostname: https://civicfutures.io
 
 markdown: kramdown
 highlighter: rouge

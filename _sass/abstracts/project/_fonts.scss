@@ -14,18 +14,23 @@
 }
 
 // Define the family and weights
-$font-name__custom: 'Rajdhani';
+$font-name__custom: 'eagle';
 
-$font-stack__sans: 'System Sans', 'Segoe UI', 'Lucida Grande', sans-serif;
+$font-name__body: "Gotham Narrow A", "Gotham Narrow B";
+$font-name__body-alt: "Gotham SSm A", "Gotham SSm B";
+
+$font-stack__sans: $font-name__body, 'System Sans', 'Segoe UI', 'Lucida Grande', sans-serif;
 $font-stack__serif: Georgia, TimesNewRoman, 'Times New Roman', serif;
 $font-stack__mono: monospace;
 
 $font-stack__custom: $font-name__custom, $font-stack__sans;
 
-$font-weight__normal: 400;
-$font-weight__medium: 600;
+$font-weight__normal: 500;
 $font-weight__bold: 700;
 
-$line-height__base: 1.33; // This font family needs tighter line-height
-$line-height__tight: 1;
+$font-weight__custom__normal: 400;
+$font-weight__custom__bold: 700;
+
+$line-height__base: 1.5;
+$line-height__tight: 1.125;
 $line-height__loose: 1.625;

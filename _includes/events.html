@@ -5,7 +5,7 @@
               {%- assign posttime = posttime | plus: 0 -%}
               {%- if posttime > now -%}
               <div class="events__description">
-                <h3 class="h5 events__title">
+                <h3 class="events__title">
                   {%- if event.register-link -%}
                   <a href="{{ event.register-link }}" class="events__link" target="_blank" rel="nofollow">
                   {%- endif -%}
@@ -15,29 +15,34 @@
                   {%- endif -%}
                 </h3>
                 {%- if event.speaker -%}
-                <p class="h6">{{ event.speaker }}</p>
+                <p class="h5 alt-bold events__speaker">{{ event.speaker }}</p>
                 {%- endif -%}
-                <p><time datetime="{{ event.date }}">{{ event.date | date: '%A, %B %d, %Y' }}{% if event.time %}, {{ event.time }}{% endif %}</time></p>
-                {%- if event.location-1 -%}
-                <div class="row align-items-end">
-                  <p class="col-sm-7">
-                    {%- if event.location-url -%}
-                    <a href="{{ event.location-url }}" class="events__map__link" target="_blank" rel="nofollow">
-                      {%- endif -%}
-                      <span class="events__location">{{- event.location-1 -}}{%- if event.location-2 -%}<br>{{- event.location-2 -}}{%- endif -%}</span>{%- if event.location-url -%}<span class="events__map__text">Map &rarr;</span>
-                    </a>
-                  {%- endif -%}
-                  </p>
-                  {%- if event.register-link -%}
-                  <p class="col-sm-5 text-sm-right">
-                    <a href="{{ event.register-link }}" target="_blank" class=events__register__link"" rel="nofollow">
-                      {%- if event.register-text -%}{{ event.register-text }} &rarr;
-                      {%- else -%}Register &rarr;{%- endif -%}
-                    </a>
-                  </p>
-                  {%- endif -%}
-                </div>
-                {%- endif -%}
+                
+                <p class="h5 events__date">
+                  <time datetime="{{ event.date }}">{{ event.date | date: '%A, %B %d, %Y' }}{% if event.time %}, {{ event.time }}{% endif %}</time>
+                </p>
+              {%- if event.location-1 -%}
+                <p class="h5 events__location">
+                  {{- event.location-1 -}}{%- if event.location-2 -%}<br>{{- event.location-2 -}}{%- endif -%}
+                </p>
+              {%- endif -%}
+              {%- if event.location-url -%}
+                <p class="h5 alt-bold events__map-link">
+                  <a href="{{ event.location-url }}" target="_blank" rel="nofollow">
+                    <span class="events__map__text">Map &rarr;</span>
+                  </a>
+                </p>
+              {%- endif -%}
+              
+              {%- if event.register-link -%}
+                <p class="h5 alt-bold events__register-link">
+                  <a href="{{ event.register-link }}" target="_blank" class=events__register__link"" rel="nofollow">
+                    {%- if event.register-text -%}{{ event.register-text }} &rarr;
+                    {%- else -%}Register &rarr;{%- endif -%}
+                  </a>
+                </p>
+              {%- endif -%}
+
                 {% if event.content %}
                   {{ event.content }}
                 {% endif %}

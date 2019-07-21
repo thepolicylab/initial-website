@@ -9,14 +9,13 @@
       
       a {
         display: block;
-        font-weight: $font-weight-medium;
         padding: ($spacer * 0.75) ($spacer * 1.5) ($spacer * 0.625) 0;
         position: relative;
         text-decoration: none;
         
         &::after {
           content: '\02192';
-          color: color("blue");
+          color: $policy-blue;
           position: absolute;
           top: 50%;
           right: 4px;

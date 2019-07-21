@@ -20,22 +20,51 @@
   }
   
   &__primary {
-    background-color: $tint__policy-blue__rich;
+    background: top center no-repeat url('../img/splatter-pattern.png') $policy-blue;
+    background-size: 100% auto;
     color: $white;
   }
   
   &__dark {
-    background-color: gray("700");
+    background-color: $tint__policy-blue__rich;
     color: $white;
   }
-  
+
+  &__primary,
+  &__dark {
+    #{$all-headings} {
+      color: $white;
+    }
+  }
+
   // Light themes
   &__light {
     background-color: theme-color("light");
   }
   
+  &__light-splatter {
+    background: top center no-repeat url('../img/splatter-pattern.png') theme-color("light");
+    background-size: 100% auto;
+  }
+  
+  &__sky {
+    background-color: $policy-sky;
+  }
+  
+  &__lil-splatter {
+    background-image: url('../img/splatter-pattern.png');
+    background-position: 0 -370px;
+    background-repeat: no-repeat;
+  }
+  
   &__white {
     background-color: $white;
+  }
+  
+  &__green {
+    background: top center no-repeat url('../img/splatter-pattern.png') $policy-green;
+    background-size: 100% auto;
+    color: $tint__policy-blue__rich;
   }
   
   &__gray {

@@ -10,21 +10,37 @@ a {
 
 // Responsive and fluid type sizing
 // Root (mobile) sizes are set in abstracts/variables-bs4/bs4-typography.scss
-.display-1 { @include one-element-size(display-1); }
+.display-1 {
+  @include one-element-size(display-1);
+  color: $policy-blue;
+}
 
-.display-2 { @include one-element-size(display-2); }
+//.display-2 { @include one-element-size(display-2); }
 
-.display-3 { @include one-element-size(display-3); }
+//.display-3 { @include one-element-size(display-3); }
 
-.display-4 { @include one-element-size(display-4); }
+.display-4 {
+  @include one-element-size(display-4);
+}
 
 
 // Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-stack__custom !important;
+  font-weight: $font-weight__custom__normal;
+}
+
+
 h1, .h1 {
   @include one-element-size(h1);
-  font-weight: $font-weight-bold;
+  color: $policy-blue;
   margin-bottom: 2rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 
 h2, .h2 {
@@ -66,12 +82,6 @@ label,
   @extend %placeholder__font-size;
 }
 
-p,
-li,
-address {
-  font-weight: $font-weight-medium;
-}
-
 // Set the vertical rhythm for block-level containers
 p,
 ul,
@@ -83,6 +93,11 @@ form {
   //&:last-child {
   //  margin-bottom: 0;
   //}
+}
+
+.alt-bold {
+  font-family: $font-name__body-alt, $font-stack__sans;
+  font-weight: $font-weight__bold;
 }
 
 // Nested lists should not have margin bottom

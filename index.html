@@ -6,24 +6,27 @@ permalink: /
 body-class: home
 ---
 
-      <div class="illus__sky">
-        <div class="l-wrapper__flex u__container">
+      <div class="u__vspacing s__sky s__lil-splatter pb-0">
 
-          {% include header.html %}
+        {% include header.html %}
 
-          <main id="content" class="main__content u__spacing pb-0" style="min-width:70%">
-            <article class="main__article intro">
-              <header class="intro__header">
-                <h1 class="display-3"><i>Welcome to</i><b>The Policy Lab</b></h1>
-              </header>
-              <div class="u__content">
-                <p class="lead" style="max-width: 600px">We’re at the center of Rhode Island’s infrastructure for evidence-based policymaking.</p>
-                <p class="lead">Let’s learn together.</p>
-              </div>
-            </article>
-          </main>
+        <main id="content" class="main__content u__spacing pb-0">
+          <article class="main__article intro">
+            <header class="intro__header">
+              <h1>
+                <span class="text-uppercase">Welcome to</span>
+                <span class="display-1">The Policy Lab</span>
+              </h1>
+            </header>
+            <div class="intro__content u__content mx-auto">
+              <p class="h4 alt-bold">We’re at the center of Rhode Island’s<br> infrastructure for evidence-based policymaking.</p>
+              <p class="h4 alt-bold">Let’s learn together.</p>
+            </div>
+          </article>
+        </main>
+        <div class="city--header city__sky">
+          <img class="city__cityscape" src="{{ '/' | relative_url }}assets/illus/cityscape_nosky.png" alt="">
         </div>
-        {% include landscape.html %}
       </div>
 
 
@@ -78,21 +81,15 @@ body-class: home
       </section>
 
 
-
-
-      <section id="anchor-quote" class="u__vspacing s__gray">
+      <section id="anchor-quote" class="u__vspacing s__green">
         <article class="u__container">
 
-          <div class="u__spacing">
-            <p class="text-center lead">"Applied research can be remarkably difficult, as theories often fail to work in practice. We need scientists shoulder-to-shoulder with practitioners in those moments, co-designing fresh ideas and iteratively experimenting to optimize solutions. The Policy Lab is a place and group of people dedicated to this work. Think NASA or Bell Labs, but for public policy."
-            <br/>
-            <br/>
-            <a href="https://thepolicylab.brown.edu/team/david-yokum/">David Yokum</a>, Director
-            </p>
-
-
-          </div>
-
+          <figure class="u__spacing quote">
+            <blockquote class="h2 quote__content">Applied research can be remarkably difficult, as theories often fail to work in practice. We need scientists shoulder-to-shoulder with practitioners in those moments, co-designing fresh ideas and iteratively experimenting to optimize solutions. The Policy Lab is a place and group of people dedicated to this work. Think NASA or Bell Labs, but for public policy. </blockquote>
+            <figcaption class="quote__attribution">
+              <cite><a href="/team/david-yokum/">David Yokum</a>, Director</cite>
+            </figcaption>
+          </figure>
 
         </article>
       </section>
@@ -102,27 +99,26 @@ body-class: home
         <article class="u__container">
 
           <div class="u__spacing">
-            <h2 class="h4 text-center text-uppercase font-weight-bold text-blue">Theory of Change</h2>
+            <h2 class="display-4 text-center text-primary">Theory of Change</h2>
+            <hr class="squiggle">
 
             <div class="u__spacing u__container u__content">
-
-            <p class="text-center px-lg-5">It is common nowadays to agree that policy should be evidence-based. But how to deliver on that rhetoric in practice is harder. We need not only the highest quality scientific methods, but also a pragmatic mindset geared toward designing learning agendas that can concretely inform decision-making within the bureaucratic and political trenches.
-            <p class="text-center px-lg-5">We look to improve policy outcomes through three interconnected areas:</p>
-
-          </div>
+              <p class="text-center px-lg-5">It is common nowadays to agree that policy should be evidence-based. But how to deliver on that rhetoric in practice is harder. We need not only the highest quality scientific methods, but also a pragmatic mindset geared toward designing learning agendas that can concretely inform decision-making within the bureaucratic and political trenches.
+              <p class="text-center px-lg-5">We look to improve policy outcomes through three interconnected areas:</p>
+            </div>
 
             <div class="container pb-sm-3 pb-lg-5">
               <div class="row">
-                <div class="col-sm shadow p-4 pb-0 mx-sm-2 mx-lg-3">
-                  <p class="text-center"><img class="theory__icon" src="{{ '/' | relative_url }}assets/img/icon-generating-evidence.svg" alt="" aria-hidden="true" /></p>
+                <div class="col-sm p-4 pb-0 my-2 mx-sm-2 mx-lg-3 theory__circle">
+                  <p class="text-center"><img class="theory__icon" src="{{ '/' | relative_url }}assets/img/icon-generating-evidence.png" alt="" aria-hidden="true" /></p>
                   <p class="text-center">Generating evidence to fill knowledge gaps</p>
                 </div>
-                <div class="col-sm shadow p-4 pb-0 mx-sm-2 mx-lg-3">
-                  <p class="text-center"><img class="theory__icon" src="{{ '/' | relative_url }}assets/img/icon-integrating-evidence.svg" alt="" aria-hidden="true" /></p>
+                <div class="col-sm pt-4 px-4 my-2 mx-sm-2 mx-lg-3 theory__circle">
+                  <p class="text-center"><img class="theory__icon" src="{{ '/' | relative_url }}assets/img/icon-integrating-evidence.png" alt="" aria-hidden="true" /></p>
                   <p class="text-center">Integrating that evidence into planning, budget, procurement, and performance management processes</p>
                 </div>
-                <div class="col-sm shadow p-4 pb-0 mx-sm-2 mx-lg-3">
-                  <p class="text-center"><img class="theory__icon" src="{{ '/' | relative_url }}assets/img/icon-building-coalitions.svg" alt="" aria-hidden="true" /></p>
+                <div class="col-sm pt-4 px-4 my-2 mx-sm-2 mx-lg-3 theory__circle">
+                  <p class="text-center"><img class="theory__icon" src="{{ '/' | relative_url }}assets/img/icon-building-coalitions.png" alt="" aria-hidden="true" /></p>
                   <p class="text-center">Building coalitions across government, universities, and community organizations to support evidence-based policy</p>
                 </div>
               </div>
@@ -136,12 +132,12 @@ body-class: home
 
           </div>
 
-
         </article>
       </section>
 
 
-      <section id="anchor-jobs" class="u__vspacing s__light">
+{% comment %}  Jobs  {% endcomment %}
+      <section id="anchor-jobs" class="u__vspacing s__light-splatter pb-0">
         <article class="u__container u__spacing jobs">
           <div class="row">
             <div class="col-md-3 col-lg-4">
@@ -160,9 +156,13 @@ body-class: home
             </div>
           </div>
         </article>
+        <div class="city--footer city__sky">
+          <img class="city__cityscape" src="{{ '/' | relative_url }}assets/illus/cityscape_nosky.png" alt="">
+        </div>
       </section>
 
 
+{% comment %}
       <section id="anchor-connect" class="u__vspacing s__primary target-cynosure">
         <article class="u__container u__spacing connect">
           <div class="row">
@@ -179,7 +179,7 @@ body-class: home
         </article>
       </section>
 
-      {% comment %}
+      
       <section id="anchor-team" class="u__vspacing s__light">
         <article class="u__container">
           <div class="u__spacing">
@@ -194,4 +194,4 @@ body-class: home
           </div>
         </article>
       </section>
-      {% endcomment %}
+{% endcomment %}

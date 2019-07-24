@@ -1,0 +1,33 @@
+// <div class="city--header city__sky">
+//   <img class="city--footer city__cityscape" src="{{ '/' | relative_url }}assets/illus/cityscape_nosky.png" alt="">
+// </div>
+
+.city {
+  
+  &__sky {
+    background: bottom center no-repeat url("../illus/cityscape_clouds.png") transparent;
+    background-size: cover;
+  }
+  
+  &__cityscape {
+    @extend .img--rwd;
+  }
+  
+  &--header {
+    $min-value: -340;
+    $max-value: 0;
+    $min-vw: 480;
+    $max-vw: 1520;
+    $unit: 1px;
+    
+    margin-left: fluid-calc($min-value, $max-value, $min-vw, $max-vw, $unit);
+    margin-right: fluid-calc($min-value, $max-value, $min-vw, $max-vw, $unit);
+    
+    @include media-breakpoint-up(xxl) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  &--footer {}
+}

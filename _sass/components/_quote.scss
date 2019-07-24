@@ -1,0 +1,50 @@
+//<figure class="u__spacing quote">
+//  <blockquote class="h2 quote__content">&ldquo;Applied research can be remarkably difficult, as theories often fail to work in practice. We need scientists shoulder-to-shoulder with practitioners in those moments, co-designing fresh ideas and iteratively experimenting to optimize solutions. The Policy Lab is a place and group of people dedicated to this work. Think NASA or Bell Labs, but for public policy.&rdquo;</blockquote>
+//  <figcaption class="quote__attribution">
+//    <cite><a href="/team/david-yokum/">David Yokum</a>, Director</cite>
+//  </figcaption>
+//</figure>
+
+.quote {
+  &__content {
+    font-family: $font-stack__custom;
+    position: relative;
+    text-indent: 1.25em;
+    
+    &::before {
+      content: '“';
+      font-family: $font-stack__serif;
+      font-size: 250%;
+      font-weight: $font-weight-bold;
+      position: absolute;
+      top: -0.75rem;
+      left: -0.55em;
+    }
+    
+    @include media-breakpoint-up(md) {
+      padding-left: rem(48);
+      text-indent: 0;
+      
+      &::before {
+        left: 0;
+      }
+    }
+  }
+  
+  &__attribution {
+    padding-left: rem(48);
+    
+    &,
+    a {
+      color: $tint__policy-blue__rich;
+    }
+
+    a {
+      font-weight: $font-weight-bold;
+    }
+
+    cite {
+      font-style: normal;
+    }
+  }
+}

@@ -17,21 +17,26 @@ $black:    #101010;
 
 
 // Main brand colors
-$policy-blue: #70cfef;
-$policy-blue__h: 195;
-$policy-blue__s: 80;
-$policy-blue__l: 69;
+$policy-blue: #06749c;
+$policy-blue__h: 196;
+$policy-blue__s: 96;
+$policy-blue__l: 61;
 
-$policy-cream: #f6edcc;
-$policy-cream__h: 47;
-$policy-cream__s: 70;
-$policy-cream__l: 88;
+$policy-cream: #f3eede;
+$policy-cream__h: 46;
+$policy-cream__s: 9;
+$policy-cream__l: 95;
 
+$policy-green: #acbe37;
+$policy-green__h: 68;
+$policy-green__s: 71;
+$policy-green__l: 75;
+
+$policy-sky: #9ddce1;
 
 // Tints
-$tint__policy-blue__lightest: hsl($policy-blue__h, 100, 92); // #d6f5ff
-$tint__policy-blue__rich: hsl($policy-blue__h, 100, 33); // #007ea8
-$tint__policy-blue__dark: hsl($policy-blue__h, 78, 36); // #1480a3
+$tint__policy-blue__lightest: hsl($policy-blue__h, 100, 92); // #d6f5ff!
+$tint__policy-blue__rich: #003e6b; // hsb(205, 100, 42)
 
 
 // Generic variables
@@ -40,8 +45,8 @@ $color__body-fg: $gray-700;
 // This makes the page seamless when the body is shorter than the viewport height.
 $color__body-bg: $gray-700;
 
-$color__link: $tint__policy-blue__dark;
-$color__link-hover: $gray-700;
+$color__link: $policy-blue;
+$color__link-hover: $tint__policy-blue__rich;
 $color__link-focus: $policy-blue;
 
 $color__borders: $gray-200;
@@ -49,21 +54,21 @@ $color__borders: $gray-200;
 
 // Bootstrap color variables
 
-$blue: $tint__policy-blue__dark;
+//$blue: $tint__policy-blue__dark;
 //$indigo:  #6610f2;
 //$purple:  #6f42c1;
 //$pink:    #e83e8c;
 //$red:     #dc3545;
 //$orange:  #fd7e14;
 //$yellow:  #ffc107;
-//$green:   #28a745;
+$green: $policy-green;
 //$teal:    #20c997;
-//$cyan:    #17a2b8;
+$cyan: #70cfef; // used on buttons so far
 
 $primary: $policy-blue;
-//$secondary:     $gray-600;
-//$success:       $green;
-//$info:          $cyan;
+$secondary: $tint__policy-blue__rich;
+$success: $policy-green;
+$info: $policy-sky;
 //$warning:       $yellow;
 //$danger:        $red;
 $light: $policy-cream;

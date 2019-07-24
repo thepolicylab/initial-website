@@ -83,36 +83,11 @@
 }
 
 
-// Colors
-// BS4 gives us utilties for theme colors but not generic names colors
-.text-blue {
-  color: color('blue');
+// Custom section break
+hr.squiggle {
+  background: top center repeat-x url("../img/squiggle.png") transparent;
+  border: 0;
+  height: 6px;
+  margin: $spacer auto;
+  max-width: em(212);
 }
-
-
-// Box Shadows
-// Not using the BS4 shadow utility as we can don't need all the options
-.shadow {
-  box-shadow: 0 0 0.75rem rgba(#000, 0.12);
-}
-
-
-// Elements
-//.divider {
-//  @include fluid-units(
-//    'margin-top',
-//    ($vertical-min / 2),
-//    ($vertical-max / 2),
-//    strip-unit(rem(bp(small))),
-//    strip-unit(rem(bp(x-large)))
-//  );
-//  @include fluid-units(
-//    'margin-bottom',
-//    $vertical-min,
-//    $vertical-max,
-//    strip-unit(rem(bp(small))),
-//    strip-unit(rem(bp(x-large)))
-//  );
-//  height: 1px;
-//  border-top: 0.5px solid $border-color;
-//}

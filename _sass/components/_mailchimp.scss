@@ -16,20 +16,15 @@
   
   &__wrapper {
     display: flex;
+    align-items: stretch !important;
   }
   
   &__label {}
   
   &__input {
-    margin-right: ($spacer / 2);
+    border-radius: 0;
     padding-left: ($spacer * 0.75);
     padding-right: ($spacer * 0.75);
-    
-    //@include media-breakpoint-only(md) {
-    //  padding-left: ($spacer * 0.75);
-    //  padding-right: ($spacer * 0.75);
-    //  width: rem(170) !important;
-    //}
   }
   
   &__nectar {
@@ -37,9 +32,11 @@
   }
   
   &__button {
+    @include one-element-size(micro);
     padding-top: ($spacer * 0.625);
     padding-bottom: ($spacer * 0.5625);
-    padding-left: ($spacer * 0.75);
-    padding-right: ($spacer * 0.75);
+    padding-left: $spacer;
+    padding-right: $spacer;
+    text-transform: uppercase;
   }
 }

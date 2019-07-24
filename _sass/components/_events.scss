@@ -1,57 +1,64 @@
-//<div class="col-sm events__description pb-4">
-//  <h3 class="h5 events__title">
-//    <a href="#" class="events__link" target="_blank" rel="nofollow">
-//      Does Cash Bail Increase Mass Incarceration?
-//    </a>
-//  </h3>
-//  <p>
-//    <time datetime="2019-04-22 00:00:00 -0400">April 04, 2019</time> — 4:00pm<br>
-//    <a href="https://www.google.com/maps/place/Smith-Buonanno+Hall/@41.8296114,-71.4027891,15z" class="events__map__link" target="_blank" rel="nofollow">
-//      <span class="events__location">Brown University<br>Smith Buonanno Hall 201</span>
-//      <span class="events__map__text">Map</span>
-//    </a>
-//  </p>
-//  <p>
-//    <a href="https://eventbrite.com" class="events__register__link" target="_blank" rel="nofollow">Register on EventBrite →</a>
-//  </p>
-//</div>
+// <div class="events__description">
+//   <h3 class="alt-bold events__title"><a href="https://emilyostercribsheet.eventbrite.com" class="events__link" target="_blank" rel="nofollow">How Do You Raise a Three-Year-Old?</a></h3>
+//   <p class="h5 alt-bold events__speaker">Emily Oster, Professor of Economics and International and Public Affairs, Brown University</p>
+//   <p class="h5 events__date">
+//     <time datetime="2019-07-19 00:00:00 -0400">Friday, July 19, 2019, 12pm - 1pm</time>
+//   </p>
+//   <p class="h5 events__location">Providence Children's Museum<br>100 South Street, Providence</p>
+//   <p class="h5 alt-bold events__map-link">
+//     <a href="https://www.google.com/maps/place/100+South+St,+Providence,+RI+02903/data=!4m2!3m1!1s0x89e4456bab84e2f3:0xd942282dceb0115f?sa=X&amp;ved=2ahUKEwin1_Dn6K_iAhUFbq0KHeTuC1cQ8gEwAHoECAoQAQ" target="_blank" rel="nofollow">
+//       <span class="events__map__text">Map →</span>
+//     </a>
+//   </p><p class="h5 alt-bold events__register-link">
+//     <a href="https://emilyostercribsheet.eventbrite.com" target="_blank" class="events__register__link&quot;&quot;" rel="nofollow">RSVP on Eventbrite →</a>
+//   </p>
+//     <p>Join the author of <i><a href="https://www.penguinrandomhouse.com/books/572658/cribsheet-by-emily-oster/9780525559252/">Cribsheet</a></i> and <i><a href="https://www.penguinrandomhouse.com/books/310896/expecting-better-by-emily-oster/9780143125709/">Expecting Better</a></i> for a conversation about how data can help us become better, more relaxed parents.</p>
+// </div>
 
 .events {
 
-  &__description {
-    border-bottom: 0.5px solid gray('300');
-    margin-bottom: ($spacer * 3);
+  //&__description {}
+  
+  &__description + &__description {
+    background: top center repeat-x url("../img/squiggle.png") transparent;
+    padding-top: ($spacer * 3);
+    margin-top: ($spacer * 2.5);
   }
 
   &__title {
     color: $link-color;
   }
   
-  &__link {}
+  //&__link {}
   
-  &__map {
+  &__speaker {
+    margin-bottom: 0;
+  }
+  
+  &__map-link + &__register-link {
+    margin-top: - $vertical-rhythm;
     
-    &__link {
-      color: $link-hover-color;
-      text-decoration: $link-hover-decoration;
-      
-      @include hover-focus() {
-        color: $link-color;
-        text-decoration: $link-decoration;
-      }
-    }
-    
-    &__link:hover &__text,
-    &__link:focus &__text {
-      color: $link-hover-color;
-      text-decoration: $link-hover-decoration;
-    }
-    
-    &__link &__text {
-      color: $link-color;
-      padding-left: 0.5rem;
-      text-decoration: $link-decoration;
-      transition: $transition;
-    }
+    //&__link {
+    //  color: $link-hover-color;
+    //  text-decoration: $link-hover-decoration;
+    //  
+    //  @include hover-focus() {
+    //    color: $link-color;
+    //    text-decoration: $link-decoration;
+    //  }
+    //}
+    //
+    //&__link:hover &__text,
+    //&__link:focus &__text {
+    //  color: $link-hover-color;
+    //  text-decoration: $link-hover-decoration;
+    //}
+    //
+    //&__link &__text {
+    //  color: $link-color;
+    //  padding-left: 0.5rem;
+    //  text-decoration: $link-decoration;
+    //  transition: $transition;
+    //}
   }
 }

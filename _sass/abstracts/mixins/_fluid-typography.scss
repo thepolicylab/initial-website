@@ -65,7 +65,7 @@
 ///     }
 ///   }
 ///
-@mixin one-element-size($elem: 'base') {
+@mixin one-element-size($elem: 'base', $bootstrap: true) {
   @if type-of($type-sizes) != 'map' {
     @error 'A list named $type-sizes is undefined. [Mixin one-element-size()]';
   }
@@ -96,5 +96,10 @@
   $max-vw: strip-unit(rem(bp($last-key)));
 
   // Finally, use this mixin to set the base size and max size within the viewport range
-  @include fluid-units('font-size', $min-value, $max-value, $min-vw, $max-vw, 1rem, $render-mobile: false);
+  @if $min-value != $max-value {
+    // Min and Max are different, so output the crazy calc function
+    @include fluid-units('font-size', $min-value, $max-value, $min-vw, $max-vw, 1rem, $render-mobile: false);
+  } @else {
+    font-size: ($min-value * 1rem);
+  }
 }

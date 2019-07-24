@@ -16,34 +16,30 @@ $type-sizes: (
   // 1.16 typographic scale base 20
   // scss-lint:disable DeclarationOrder
   base: (
-    micro: 18,
-    base: 20,
-    h6: 20,
-    h5: 23,
-    h4: 26,
-    h3: 30,
-    h2: 34,
-    h1: 39,
-    display-4: 45,
-    display-3: 52,
-    display-2: 60,
-    display-1: 69
+    micro: 14,
+    base: 16,
+    h6: 17,
+    h5: 18,
+    h4: 21,
+    h3: 26,
+    h2: 30,
+    h1: 38,
+    display-4: 42,
+    display-1: 64
   ),
 
   // 1.25 typographic scale base 22
   // scss-lint:disable DeclarationOrder
   x-large: (
-    micro: 20,
-    base: 22,
-    h6: 22,
-    h5: 27,
-    h4: 33,
-    h3: 41,
-    h2: 51,
-    h1: 63,
-    display-4: 78,
-    display-3: 97,
-    display-2: 121,
-    display-1: 151
+    micro: 14,
+    base: 16,
+    h6: 18,
+    h5: 20,
+    h4: 24,
+    h3: 32,
+    h2: 36,
+    h1: 50,
+    display-4: 60,
+    display-1: 110
   ),
 );

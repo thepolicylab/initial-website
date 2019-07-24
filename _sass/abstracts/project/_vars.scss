@@ -2,6 +2,8 @@
 
 $transition: all 250ms ease;
 $kerning: .03125em;
+$all-headings: "h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6";
+
 
 // Spacing: Assumed REMs
 $gutter-min: 1;
@@ -17,8 +19,6 @@ $z-indices: (
   page: 1,
   cloud: 5,
   illus: 10,
-  main-article: 20,
-  brand: 25,
   mailchimp: 999
 );
 

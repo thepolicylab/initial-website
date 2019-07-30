@@ -1,0 +1,108 @@
+// <div class="cloud cloud-1"></div>
+
+@keyframes horizontal-movement {
+  0% {
+    // Start in the initial position
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  50% {
+    // translate off screen to the left
+    transform: translate3d(-50vw, 0, 0);
+    opacity: 0;
+  }
+  51% {
+    // immediately move to the far right
+    transform: translate3d(50vw, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    // transition back to its starting place
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+$overall-duration: 120s;
+
+$cloud-map: (
+  1: (
+    width: 25vw,
+    height: 12vw,
+    top: 15%,
+    left: -10%,
+    animation-duration: ($overall-duration * 0.86)
+  ),
+  2: (
+    width: 18vw,
+    height: 9vw,
+    top: 30%,
+    left: 30%,
+    animation-duration: ($overall-duration * 0.9)
+  ),
+  3: (
+    width: 22vw,
+    height: 11vw,
+    top: 20%,
+    left: 45%,
+    animation-duration: ($overall-duration * 0.88)
+  ),
+  4: (
+    width: 20vw,
+    height: 10vw,
+    top: 25%,
+    left: 60%,
+    animation-duration: ($overall-duration * 0.95)
+  ),
+  5: (
+    width: 16vw,
+    height: 8vw,
+    top: 33%,
+    left: 85%,
+    animation-duration: $overall-duration
+  )
+);
+
+
+.cloud {
+  // Hide initially
+  @include hide;
+  background: center center no-repeat url("../illus/fluffy-cloud.png") transparent;
+  background-size: contain;
+  min-width: 260px;
+  min-height: 130px;
+  
+  @supports (animation-name: horizontal-movement) {
+    @include show();
+    animation-name: horizontal-movement;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    
+    @at-root {
+      .city__sky {
+        background-image: none;
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+  
+  @each $key in map-keys($cloud-map) {
+    &--#{$key} {
+      @each $property, $value in map-get($cloud-map, $key) {
+        #{$property}: #{$value};
+      }
+    }
+  }
+  
+  @include media-breakpoint-down(sm) {
+    &--2,
+    &--4 {
+      @include hide();
+    }
+  }
+}

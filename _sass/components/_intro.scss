@@ -28,12 +28,8 @@
 }
 
 .theory {
-  &__circle {
+  &__wrapper {
     background: center no-repeat url('../img/splatter-pattern.png') percent-color($policy-cream, 50);
-    
-    @include media-breakpoint-up(lg) {
-      border-radius: 100%;
-    }
   }
   
   &__icon {

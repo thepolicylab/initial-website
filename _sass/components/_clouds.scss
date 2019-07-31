@@ -1,4 +1,4 @@
-// <div class="cloud cloud-1"></div>
+// <div class="cloud cloud--1"></div>
 
 @keyframes horizontal-movement {
   0% {
@@ -7,13 +7,13 @@
     opacity: 1;
   }
   50% {
-    // translate off screen to the left
-    transform: translate3d(-50vw, 0, 0);
+    // translate off screen to the right
+    transform: translate3d(40vw, 0, 0);
     opacity: 0;
   }
   51% {
-    // immediately move to the far right
-    transform: translate3d(50vw, 0, 0);
+    // immediately move to the far left
+    transform: translate3d(-40vw, 0, 0);
     opacity: 0;
   }
   100% {

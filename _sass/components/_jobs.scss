@@ -9,6 +9,7 @@
       
       a {
         display: block;
+        font-family: $font-name__body-alt, $font-stack__sans;
         padding: ($spacer * 0.75) ($spacer * 1.5) ($spacer * 0.625) 0;
         position: relative;
         text-decoration: none;

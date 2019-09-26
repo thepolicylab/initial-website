@@ -1,0 +1,18 @@
+// body class for the "clouds" page
+.presentation {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    
+    .main__header {
+      padding-bottom: 0;
+    }
+    
+    // Use negative margin to allow some overlap on screens that are not very tall
+    .main__content {
+      margin: -10vh 0;
+    }
+  }
+}

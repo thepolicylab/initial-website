@@ -32,6 +32,11 @@
       padding-top: $vertical-rhythm;
     }
   }
+  
+  // Overrides based on a body class
+  .presentation & {
+    padding-top: 0;
+  }
 }
 
 // Main page element

@@ -6,11 +6,15 @@
   <body class="layout__{{ page.layout }} page__{{ page.body-class }}" data-spy="scroll" data-target="#main-nav">
     <div id="top" class="l-wrapper">
 
-      {% include navigation.html %}
-
+      {% unless page.show-nav == false  %}
+        {% include navigation.html %}
+      {% endunless %}
+      
       {{ content }}
-
-      {% include footer.html %}
+      
+      {% unless page.show-foot == false  %}
+        {% include footer.html %}
+      {% endunless %}
     </div>
     
     {% include subfooter.html %}

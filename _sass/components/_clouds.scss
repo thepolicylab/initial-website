@@ -27,37 +27,37 @@ $overall-duration: 120s;
 
 $cloud-map: (
   1: (
-    width: 25vw,
-    height: 12vw,
-    top: 15%,
+    width: 26vw,
+    height: 14vw,
+    top: 10%,
     left: -10%,
     animation-duration: ($overall-duration * 0.86)
   ),
   2: (
-    width: 18vw,
-    height: 9vw,
-    top: 30%,
+    width: 20vw,
+    height: 11vw,
+    top: 25%,
     left: 30%,
     animation-duration: ($overall-duration * 0.9)
   ),
   3: (
-    width: 22vw,
-    height: 11vw,
-    top: 20%,
+    width: 30vw,
+    height: 18vw,
+    top: 15%,
     left: 45%,
     animation-duration: ($overall-duration * 0.88)
   ),
   4: (
-    width: 20vw,
-    height: 10vw,
-    top: 25%,
+    width: 26vw,
+    height: 14vw,
+    top: 20%,
     left: 60%,
     animation-duration: ($overall-duration * 0.95)
   ),
   5: (
-    width: 16vw,
-    height: 8vw,
-    top: 33%,
+    width: 32vw,
+    height: 20vw,
+    top: 5%,
     left: 85%,
     animation-duration: $overall-duration
   )

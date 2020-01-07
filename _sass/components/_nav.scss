@@ -1,6 +1,8 @@
 // Navigation Bar
 // A mix oif custom styles (.nav) and BS4 classes (.navbar)
 
+$nav-height__lg: rem(60);
+
 .nav {
   @extend %fluid-gutter; // for fluid left and right padding
   align-items: flex-start;
@@ -101,11 +103,34 @@
     }
   }
   
+  // Special case: The "Home" link, hide it in a way that we can animate once a user scrolls
+  .page__home &__item:first-child &__link.active {
+    overflow: hidden;
+    opacity: 0;
+    padding: ($spacer * 1.25) 0 $spacer;
+    transition: all 400ms ease;
+    white-space: nowrap;
+    width: 0px;
+  }
+  
+  .page__home &__item:first-child &__link {
+    opacity: 1;
+    padding: ($spacer * 1.25) $spacer $spacer; // would like to have used "inherit" but its not animatable
+    width: auto;
+  }
+  
   &__skip {
     // Skip link actually resides just outside of the nav
     padding-top: 1.125rem;
     padding-bottom: 0.875rem;
     margin-right: 1rem;
+  }
+  
+  &__spacer {
+    height: $nav-height__lg;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
   }
 }
 

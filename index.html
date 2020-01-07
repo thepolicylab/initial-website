@@ -141,7 +141,29 @@ body-class: home
       </section>
 
 
-{% comment %}  Jobs  {% endcomment %}
+{% comment %} People {% endcomment %}
+      <section id="anchor-team" class="u__vspacing s__light">
+        <article class="u__container">
+          <div class="u__spacing">
+            <h2 class="h1 text-center">Our Team</h2>
+          </div>
+          <div class="container u__spacing team py-0">
+            <div class="row justify-content-center">
+              {%- for teammate in site.team limit:4 -%}
+                {% include team-teaser.html %}
+              {% endfor %}
+            </div>
+            <div class="text-center">
+              <a href="{{ '/' | relative_url }}team/" class="btn btn-lg btn-primary">View All</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+
+
+
+{% comment %}  Jobs
       <section id="anchor-jobs" class="u__vspacing s__light-splatter pb-0 target-cynosure">
         <article class="u__container u__spacing jobs">
           <div class="row">
@@ -169,39 +191,5 @@ body-class: home
           <div class="cloud cloud--5"></div>
           <img class="city__cityscape" src="{{ '/' | relative_url }}assets/illus/cityscape_nosky.png" alt="">
         </div>
-      </section>
-
-
-{% comment %}
-      <section id="anchor-connect" class="u__vspacing s__primary target-cynosure">
-        <article class="u__container u__spacing connect">
-          <div class="row">
-            <div class="col-md-3 col-lg-4">
-              <h2 class="h1">Get Updates</h2>
-            </div>
-            <div class="col-md-9 col-lg-8">
-              <p class="lead">Sign up to get updates on projects, events, and new episodes of our podcast, <a href="https://thirtythousandleagues.com/">30,000 Leagues</a></p>
-
-              {% include mailchimp.html %}
-
-            </div>
-          </div>
-        </article>
-      </section>
-
-
-      <section id="anchor-team" class="u__vspacing s__light">
-        <article class="u__container">
-          <div class="u__spacing">
-            <h2 class="h1 text-center">Our Team</h2>
-          </div>
-          <div class="container u__spacing team py-0">
-            <div class="row justify-content-center">
-              {% for member in site.team %}
-                {% include team-teaser.html %}
-              {% endfor %}
-            </div>
-          </div>
-        </article>
       </section>
 {% endcomment %}

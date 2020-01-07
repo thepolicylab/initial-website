@@ -1,9 +1,11 @@
+            {%- capture now %}{{'now' | date: '%Y%m%d'}}{% endcapture -%}
+            {%- assign now = now | plus: 0 -%}
+            {%- assign counter = 0 -%}
             {%- for event in site.events -%}
-              {%- capture now %}{{'now' | date: '%Y%m%d'}}{% endcapture -%}
-              {%- assign now = now | plus: 0 -%}
               {%- capture posttime %}{{ event.date | date: '%Y%m%d'}}{% endcapture -%}
               {%- assign posttime = posttime | plus: 0 -%}
               {%- if posttime > now -%}
+                {%- increment counter -%}
               <div class="events__description">
                 <h3 class="events__title">
                   {%- if event.register-link -%}
@@ -21,27 +23,27 @@
                 <p class="h5 events__date">
                   <time datetime="{{ event.date }}">{{ event.date | date: '%A, %B %d, %Y' }}{% if event.time %}, {{ event.time }}{% endif %}</time>
                 </p>
-              {%- if event.location-1 -%}
+                {%- if event.location-1 -%}
                 <p class="h5 events__location">
                   {{- event.location-1 -}}{%- if event.location-2 -%}<br>{{- event.location-2 -}}{%- endif -%}
                 </p>
-              {%- endif -%}
-              {%- if event.location-url -%}
+                {%- endif -%}
+                {%- if event.location-url -%}
                 <p class="h5 alt-bold events__map-link">
                   <a href="{{ event.location-url }}" target="_blank" rel="nofollow">
                     <span class="events__map__text">Map &rarr;</span>
                   </a>
                 </p>
-              {%- endif -%}
+                {%- endif -%}
               
-              {%- if event.register-link -%}
+                {%- if event.register-link -%}
                 <p class="h5 alt-bold events__register-link">
                   <a href="{{ event.register-link }}" target="_blank" class=events__register__link"" rel="nofollow">
                     {%- if event.register-text -%}{{ event.register-text }} &rarr;
                     {%- else -%}Register &rarr;{%- endif -%}
                   </a>
                 </p>
-              {%- endif -%}
+                {%- endif -%}
 
                 {% if event.content %}
                   {{ event.content }}
@@ -49,3 +51,8 @@
               </div>
               {%- endif -%}
             {%- endfor -%}
+            {%- unless counter > 0 -%}
+              <div class="events__description">
+                <h3 class="events__title">There are no upcoming events scheduled at this time.</h3>
+              </div>
+            {%- endunless -%}

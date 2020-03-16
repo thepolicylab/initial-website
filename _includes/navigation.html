@@ -31,10 +31,10 @@
                   <li class="nav-item nav__item">
                     <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#anchor-theory" class="nav-link nav__link js-smoothscroll">Theory of Change</a>
                   </li>
-
+                  {% comment %}
                   <li class="nav-item nav__item">
                     <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#anchor-team" class="nav-link nav__link js-smoothscroll">Our Team</a>
-                  </li>
+                  </li>{% endcomment %}
                 </ul>
               </div>
             </nav>

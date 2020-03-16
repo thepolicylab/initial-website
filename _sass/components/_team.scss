@@ -1,20 +1,8 @@
-//<div class="team__member col-6 col-md-4">
-//  <a href="#" class="team__link">
-//    <div class="team__photo">
-//      <img src="{{ site.baseurl }}assets/img/david-yokum.jpg" class="img--rwd" alt="">
-//    </div>
-//    <p>
-//      <span class="team__member h5">David Yokum</span>
-//      <span class="team__position">Director</span>
-//    </p>
-//  </a>
-//<div>
-
 .layout__team {
   // account for the positioned navbar
-  padding-top: rem(42);
-
-  @include media-breakpoint-up(lg) {
+  padding-top: $nav-height__lg;
+  
+  .l-wrapper {
     padding-top: 0;
   }
 }
@@ -22,7 +10,6 @@
 .team {
 
   &__photo {
-    border-radius: 50%;
     margin: 0 auto $spacer;
     max-width: em(280);
     position: relative;
@@ -46,96 +33,61 @@
   }
   
   &__link &__name {
-    text-decoration: underline;
+    color: gray("700");
+    text-decoration: none;
+    border-bottom: 1px solid rgba($policy-blue, 0);
+  }
+  
+  .s__primary &__link &__name {
+    color: $white;
   }
   
   &__link:hover &__name,
   &__link:focus &__name {
-    color: gray("700");
+    color: $policy-blue;
+    border-bottom-color: rgba($policy-blue, 1);
     text-decoration: none;
-    transition: $transition;
+    //transition: $transition;
   }
   
-  &__link &__position {
-    color: gray("700");
+  .s__primary &__link:hover  &__name,
+  .s__primary &__link:focus  &__name {
+    color: $primary;
   }
   
-  &__link:hover &__position,
-  &__link:focus &__position {
-    color: color("blue");
-    transition: $transition;
-  }
+  //&__link &__position {
+  //  color: gray("700");
+  //}
+  //
+  //&__link:hover &__position,
+  //&__link:focus &__position {
+  //  color: color("blue");
+  //  transition: $transition;
+  //}
+  //
+  //&__name,
+  //&__position {
+  //  display: block;
+  //}
   
-  &__name,
-  &__position {
-    display: block;
-    text-align: center;
+  &__name {
+    font-family: $font-stack__custom;
   }
   
   // Individual profile page
-  //<main class="layout__main team">
-  //  <section class="team__member">
-  //    <header class="team__member__header u__container">
-  //      <h1 class="team__member__title h2 offset-sm-4">{{ page.title }}</h1>
-  //      <p class="team__member__position h5 offset-sm-4">{{ page.position }}</p>
-  //    </header>
-  //    <article class="container u__container">
-  //      <div class="row">
-  //        <div class="col-sm-4 col-lg-3">
-  //          <img class="img--rwd team__member__img" src="/brownpolicy/assets/img/team/david-yokum.jpg" alt="">
-  //          <a class="team__member__social" href="https://www.linkedin.com/in/davidyokum" target="_blank">LinkedIn profile</a>
-  //          <a class="team__member__social" href="https://twitter.com/david_yokum" target="_blank">Twitter profile</a>
-  //        </div>
-  //        <div class="col-sm-8 col-lg-9">
-  //          [ content ... ]
-  //        </div>
-  //      </div>
-  //    </article>
-  //    <footer class="u__vspacing s__light">
-  //      [ other team members ]
-  //    </footer>
-  //  </section>
-  //</main>
   &__member {
     
-    // Shared styles
-    &__profile,
-    &__header {
-      @include fluid-units(
-        'padding-bottom',
-        $vertical-min,
-        $vertical-max,
-        strip-unit(rem(bp(small))),
-        strip-unit(rem(bp(x-large)))
-      );
-    }
+    &__profile {}
     
-    &__profile {
-      background-color: $white;
-      padding-top: $spacer;
-    }
+    &__header {}
     
-    &__header {
-      padding-top: ($spacer * 2);
-
-      @include media-breakpoint-up(sm) {
-        margin-left: -15px; // emulate a BS4 row but without any flex properties
-        margin-right: -15px;
-        width: auto;
-        
-        > * {
-          padding-left: 15px;
-          padding-right: 15px;
-        }
-      }
-      
-      @include media-breakpoint-up(lg) {
-        padding-top: 0;
-      }
+    &__name {
+      display: flex;
+      flex-direction: column;
     }
     
     &__title {
-      font-weight: $font-weight-normal;
+      color: gray('700');
       text-transform: capitalize;
     }
     
@@ -150,9 +102,11 @@
       }
     }
     
+    &__meta {
+      margin-top: auto;
+    }
+    
     &__img {
-      max-width: 240px;
-      margin: 0 auto ($spacer * 1.5);
       width: 100%;
     }
     
@@ -191,76 +145,7 @@
     &__social + &__social {
       margin-left: 5%;
     }
+    
+    &__bio {}
   }
-  
-  // Modal classes
-  //<div class="modal-dialog team__modal" role="document">
-  //  <div class="modal-content team__modal__content">
-  //    <div class="modal-header team__modal__header">
-  //      <h3 class="modal-title team__modal__name h5" id="{{ member.slug }}-label">{{ member.title }}</h3>
-  //      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-  //        <span aria-hidden="true">&times;</span>
-  //      </button>
-  //    </div>
-  //    <div class="modal-body team__modal__body">
-  //      <img class="team__modal__img" src="{{ site.baseurl }}assets/img/{{ member.img }}" alt="">
-  //      {{ member.content }}
-  //    </div>
-  //    <div class="modal-footer team__modal__footer">
-  //      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-  //    </div>
-  //  </div>
-  //</div>
-  //&__modal {
-  //  max-width: $max-width__text;
-  //  
-  //  &__header {
-  //    
-  //    .close {
-  //      padding: .5rem 1rem;
-  //      border: 0;
-  //      border-top-right-radius: 4px;
-  //      background-color: $white;
-  //      color: gray("700");
-  //      cursor: pointer;
-  //      font-size: 2rem;
-  //      font-weight: $font-weight-bold;
-  //      pointer-events: all;
-  //    }
-  //    
-  //    .close:hover,
-  //    .close:focus {
-  //      color: color("blue");
-  //    }
-  //  }
-  //  
-  //  &__name {
-  //    color: color("blue");
-  //  }
-  //  
-  //  &__body {}
-  //  
-  //  &__img {
-  //    float: right;
-  //    width: 50%;
-  //    margin: 0 0 $vertical-rhythm 5%;
-  //  }
-  //  
-  //  &__footer {
-  //    border-top: 0;
-  //    background-color: $tint__policy-blue__lightest;
-  //  }
-  //  
-  //  @include media-breakpoint-up(lg) {
-  //    &__header,
-  //    &__footer {
-  //      padding-left: ($spacer * 2);
-  //      padding-right: ($spacer * 2);
-  //    }
-  //    
-  //    &__body {
-  //      padding: ($spacer * 2);
-  //    }
-  //  }
-  //}
 }

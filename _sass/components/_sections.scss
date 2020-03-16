@@ -25,6 +25,10 @@
     color: $white;
   }
   
+  &__primary-clean {
+    background-image: none;
+  }
+  
   &__dark {
     background-color: $tint__policy-blue__rich;
     color: $white;

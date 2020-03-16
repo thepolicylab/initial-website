@@ -8,6 +8,10 @@ a {
   }
 }
 
+a.btn {
+  text-decoration: none !important;
+}
+
 // Responsive and fluid type sizing
 // Root (mobile) sizes are set in abstracts/variables-bs4/bs4-typography.scss
 .display-1 {
@@ -74,8 +78,7 @@ p,
 li,
 address,
 label,
-.form-control,
-.btn {
+.form-control {
   // Set the mobile first value
   font-size: rem(one-type-size(base));
   // Now include the responsive values

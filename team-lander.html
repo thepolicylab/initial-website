@@ -1,0 +1,42 @@
+---
+layout: default
+title: "Our Team | The Policy Lab"
+nav-title: Team
+permalink: team/
+body-class: team
+---
+
+<section class="layout__main team s__light-splatter s__lil-splatter">
+  <div class="nav__spacer"></div>
+
+  <div class="u__container">
+    <div class="u__spacing">
+      <h2 class="h1 text-center">Our Team</h2>
+    </div>
+    <div class="container u__spacing team py-0">
+      <div class="row justify-content-center">
+        {% for teammate in site.team %}
+          {% if page.title != teammate.title %}
+            {% include team-teaser.html %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  
+  <aside class="u__vspacing s__light">
+    <div class="u__container u__spacing connect">
+      <div class="row">
+        <div class="col-md-3 col-lg-4">
+          <h2 class="h1">Get Updates</h2>
+        </div>
+        <div class="col-md-9 col-lg-8">
+          <p class="lead">Sign up to get updates on projects, events, and new episodes of our podcast, <a href="https://thirtythousandleagues.com/">30,000 Leagues</a></p>
+
+          {% include mailchimp.html %}
+
+        </div>
+      </div>
+    </div>
+  </aside>
+</section>

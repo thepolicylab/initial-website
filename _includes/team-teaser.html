@@ -1,11 +1,11 @@
             <div class="team__member col-6 col-md-4 col-lg-3 u__vspacing-b">
-              <a href="{{ '/' | relative_url }}{{ member.permalink }}" class="team__link">
+              <a href="{{ '/' | relative_url }}{{ teammate.permalink }}" class="team__link">
                 <div class="team__photo">
-                  <img src="{{ '/' | relative_url }}assets/img/team/{{ member.img }}" class="img--rwd" alt="" aria-hidden="true">
+                  <img src="{{ '/' | relative_url }}assets/img/team/{{ teammate.img }}" class="img--rwd" alt="" aria-hidden="true">
                 </div>
                 <p>
-                  <span class="team__name h5">{{ member.title }}</span>
-                  <span class="team__position">{{ member.position }}</span>
+                  <span class="team__name h5">{{ teammate.title }}</span>{% comment %}
+                  <span class="team__position">{{ teammate.position }}</span>{% endcomment %}
                 </p>
               </a>
             </div>

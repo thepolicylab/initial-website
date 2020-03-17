@@ -1,5 +1,10 @@
 // General global styles. Some override settings in USWDS
 
+html {
+  // Due to the sticky header
+  scroll-padding-top: 60px;
+}
+
 // General vertical rhythm
 // Not ready for the effects of this yet.
 // Perhaps we need to scope it inside of something first

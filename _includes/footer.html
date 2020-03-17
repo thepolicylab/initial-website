@@ -1,4 +1,4 @@
-      <section class="s__sky s__lil-splatter">
+      <section class="s__sky s__lil-splatter" aria-hidden="true">
         <div class="city--header city__sky">
           <div class="cloud cloud--1"></div>
           <div class="cloud cloud--2"></div>
@@ -8,11 +8,33 @@
           <img class="city__cityscape" src="{{ '/' | relative_url }}assets/illus/cityscape_nosky.png" alt="">
         </div>
       </section>
-      <footer id="anchor-contact" class="main__footer footer u__vspacing s__dark target-cynosure">
+      <section id="anchor-podcast" class="podcast s__primary">
+        <div class="podcast__blurb u__container u__vspacing u__spacing">
+          <p class="h4 mb-0">Check out our podcast</p>
+          <h2 class="display-4">30,000 Leagues</h2>
+          <p class="podcast__badges">
+            <a href="//podcasts.apple.com/us/podcast/30-000-leagues/id1476890683"><img src="{{ '/' | relative_url }}assets/img/Apple_Podcasts_listen_WHITEtrans.svg" alt="Listen with Apple Podcasts" width="165"></a>
+            <a href="//podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkLnBpcHBhLmlvL3B1YmxpYy9zaG93cy90aGlydHktdGhvdXNhbmQtbGVhZ3Vlcw&ved=0CAAQ4aUDahcKEwjwjNKlzKHoAhUAAAAAHQAAAAAQAQ&hl=en"><img src="{{ '/' | relative_url }}assets/img/Google_Podcasts_listen_WHITEtrans.svg" alt="Listen with Google Podcasts" width="165"></a>
+            <a href="//open.spotify.com/show/0pItMizm0y0ndIkiV2kkgu"><img src="{{ '/' | relative_url }}assets/img/Spotify_Podcasts_listen_WHITEtrans.svg" alt="Listen with Spotify" width="165"></a>
+          </p>
+          <p class="podcast__url h4"><a href="//thirtythousandleagues.com"><strong>thirtythousandleagues.com</strong></a></p>
+        </div>
+        <div class="podcast__img">
+          <img srcset="{{ '/' | relative_url }}assets/illus/30kleagues-640.jpg 640w,
+                       {{ '/' | relative_url }}assets/illus/30kleagues-1200.jpg 1200w,
+                       {{ '/' | relative_url }}assets/illus/30kleagues-2400.jpg 2400w,
+                       {{ '/' | relative_url }}assets/illus/30kleagues-2400.jpg 2x 1200w,
+                       {{ '/' | relative_url }}assets/illus/30kleagues-3200.jpg 3200w,
+                       {{ '/' | relative_url }}assets/illus/30kleagues-3200.jpg 2x 1600w"
+            sizes="(min-width: 2400px) 3200px, (min-width: 1200px) 2400px, (max-width: 640px) 640px, 1200px"
+            src="{{ '/' | relative_url }}assets/illus/30kleagues-640.jpg" alt="">
+        </div>
+      </section>
+      <footer id="anchor-contact" class="main__footer footer s__dark u__vspacing target-cynosure">
         <div class="u__container u__spacing">
           <div class="row align-items-end">
             <div class="col-md-6 col-lg-7 col-xl-8">
-              <p class="text-center text-md-left">
+              <p class="footer__logo text-center text-md-left">
                 <img class="brand__img img--rwd" alt="Brown University" src="{{ '/' | relative_url }}assets/img/brown-policy-lab-white.svg">
               </p>
               <address class="text-center text-md-left">

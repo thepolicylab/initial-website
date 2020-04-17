@@ -3,7 +3,7 @@ layout: page
 ---
 
 Initial website for The Policy Lab
-==========================
+==================================
 
 An intro website for _The Policy Lab_ at Brown University, May 2019. Static 
 HTML generated from [Jekyll](https://jekyllrb.com/) with [SASS](https://sass-lang.com/), 
@@ -27,7 +27,7 @@ To get up and running:
 Navigate to the project folder in your Terminal, then install Bundler if you do
 not already have it installed:
 
-{% highlight shell %}
+```sh
 // Check to see if Bundler is installed:
 $ which bundler
 
@@ -36,7 +36,7 @@ $ gem install bundler
 
 // Once installed (or if previously installed), run inside this project:
 $ bundle install
-{% endhighlight %}
+```
 
 The project dependencies should now be installed.
 
@@ -47,19 +47,33 @@ the permissions of your computer.
 ### Run the Local server and SASS compiler
 From the project root, run: 
 
-{% highlight shell %}
+```sh
 $ jekyll serve
-{% endhighlight  %}
+```
 
-The server is available in your browser at `http://localhost:4060/policy-lab/`. 
+The server is available in your browser at `http://localhost:4060/`. 
+
+
+#### Run or Build the site from a Different URL
 
 If the compiled file URLs need to have a different root path, change the `baseurl`
-value in  `_config` and restart the server. The web url will change as well,
+value in  `_config.yml` and restart the server. The web url will change as well,
 i.e. `http://localhost:4060/[path]`. When you upload the sites content to a server,
 all URLs will be prefixed with `/[path]`.
 
+Without changing the `config.yml` file, one may run a build command with an optional 
+`--baseurl` parameter like so:
+
+```sh
+$ jekyll build --baseurl '/custom/path/'
+```
+
+Files uploaded from the `_site` folder will be prefixed with `/custom/path/` in their URLs.
+
+
 ### Project Structure
-{% highlight JavaScript %}
+
+```js
 config.yml          // project set up and variables for base URL path
 _includes           // HTML partials
 -- footer.html
@@ -82,9 +96,10 @@ Gemfile             // Project dependency manager
 Gemfile.lock
 index.html          // Site content front page
 etc...
-{% endhighlight %}
+```
 
 ### Jekyll Standard Usage
+
 Any folder prefixed with an underscore is used as a build folder only, it is not
 compiled and rendered. An `assets` folder (unprefixed) will be included in the
 site build. Additional files that should be excluded from the build should be
@@ -107,12 +122,14 @@ structure.
 More in depth Jekyll instructions here from [JekyllRB](https://jekyllrb.com/).
 
 ### Markdown
+
 Markdown is supported and may be used inside files with a `.md` extension. 
 [A markdown syntax usage guide](https://github.com/fletcher/MultiMarkdown/blob/master/Documentation/Markdown%20Syntax.md).
 Daring Fireball has a really great [online converter](http://daringfireball.net/projects/markdown/dingus)
 if you need troubleshooting help.
 
 ## Updates
+
 Keep Ruby Gems and the Gemfile up to date. 
 
 ```sh

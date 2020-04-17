@@ -1,0 +1,57 @@
+// <section id="anchor-podcast" class="podcast s__primary">
+//   <div class="podcast__blurb u__container u__vspacing u__spacing">
+//     <p class="h4 mb-0">Check out our podcast</p>
+//     <h2 class="display-4">30,000 Leagues</h2>
+//     <p class="podcast__badges">
+//       <a href="#"><img src="..." alt="Listen with Apple Podcasts" width="165"></a>
+//       <a href="#"><img src="..." alt="Listen with Google Podcasts" width="165"></a>
+//       <a href="#"><img src="..." alt="Listen with Spotify" width="165"></a>
+//     </p>
+//     <p class="podcast__url h4"><a href="//thirtythousandleagues.com"><strong>thirtythousandleagues.com</strong></a></p>
+//   </div>
+//   <div class="podcast__img"> ... </div>
+// </section>
+
+.podcast {
+  @include fluid-units(
+    'padding-top',
+    12,
+    6,
+    strip-unit(rem(bp(small))),
+    strip-unit(rem(bp(x-large)))
+    );
+  background-image: none;
+  background-color: #5fbec7;
+  position: relative;
+  overflow: hidden;
+  
+  &__blurb {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+    }
+  }
+  
+  &__badges {
+    a img {
+      max-width: 48%;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  &__url {
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      bottom: 2rem;
+    }
+  }
+  
+  &__img img {
+    width: 100%;
+  }
+}

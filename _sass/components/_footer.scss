@@ -1,5 +1,13 @@
 .footer {
   
+  &__logo {
+    @include media-breakpoint-up(xl) {
+      float: left;
+      width: 180px;
+      margin-right: 1rem;
+    }
+  }
+  
   address span,
   p a {
     white-space: nowrap;

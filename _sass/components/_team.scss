@@ -24,7 +24,7 @@
   
   &__link img {
     transform: scale(1,1);
-    transition: transform 250ms ease;
+    transition: transform 500ms ease;
   }
   
   &__link:hover img,
@@ -32,14 +32,21 @@
     transform: scale(1.06,1.06);
   }
   
+  &__name {
+    font-family: $font-stack__custom;
+  }
+  
   &__link &__name {
     color: gray("700");
     text-decoration: none;
     border-bottom: 1px solid rgba($policy-blue, 0);
+    transition: transform 500ms ease;
   }
   
+  // When team cards are on a dark bg
+  .s__dark &__link &__name, 
   .s__primary &__link &__name {
-    color: $white;
+    color: $tint__policy-blue__lightest;
   }
   
   &__link:hover &__name,
@@ -47,31 +54,21 @@
     color: $policy-blue;
     border-bottom-color: rgba($policy-blue, 1);
     text-decoration: none;
-    //transition: $transition;
   }
   
-  .s__primary &__link:hover  &__name,
-  .s__primary &__link:focus  &__name {
-    color: $primary;
+  // When team cards are on a dark bg
+  .s__dark &__link &__name, 
+  .s__primary &__link &__name {
+    color: $tint__policy-blue__lightest;
+    border-bottom-color: rgba($tint__policy-blue__lightest, 0);
   }
   
-  //&__link &__position {
-  //  color: gray("700");
-  //}
-  //
-  //&__link:hover &__position,
-  //&__link:focus &__position {
-  //  color: color("blue");
-  //  transition: $transition;
-  //}
-  //
-  //&__name,
-  //&__position {
-  //  display: block;
-  //}
-  
-  &__name {
-    font-family: $font-stack__custom;
+  .s__dark &__link:hover &__name,
+  .s__dark &__link:focus &__name, 
+  .s__primary &__link:hover &__name,
+  .s__primary &__link:focus &__name {
+    color: $white;
+    border-bottom-color: rgba($tint__policy-blue__lightest, 1);
   }
   
   // Individual profile page

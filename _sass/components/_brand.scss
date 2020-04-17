@@ -7,9 +7,6 @@
 
   &__img {
     display: inline-block;
-  }
-  
-  &__img {
     max-width: 140px;
     
     @include for-old-ie {

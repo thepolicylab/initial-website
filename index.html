@@ -141,7 +141,7 @@ body-class: home
       </section>
 
 
-{% comment %} People 
+
       <section id="anchor-team" class="u__vspacing s__light">
         <article class="u__container">
           <div class="u__spacing">
@@ -149,17 +149,19 @@ body-class: home
           </div>
           <div class="container u__spacing team py-0">
             <div class="row justify-content-center">
-              {%- for teammate in site.team limit:4 -%}
+              {% assign sortedTeam = site.team | sort: 'title' %}
+              {%- for teammate in sortedTeam -%}
                 {% include team-teaser.html %}
               {% endfor %}
+
+
             </div>
-            <div class="text-center">
+            <!-- <div class="text-center">
               <a href="{{ '/' | relative_url }}team/" class="btn btn-lg btn-primary">View All</a>
-            </div>
+            </div> -->
           </div>
         </article>
       </section>
-{% endcomment %}
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: team
 title: Yogi the Narwhal
-permalink: https://thirtythousandleagues.com/
+permalink: team/yogi-the-narwhal/
 position: Mascot
 img: yogi-the-narwhal.jpg
 website: https://thirtythousandleagues.com/

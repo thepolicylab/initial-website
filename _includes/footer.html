@@ -1,11 +1,17 @@
       <section class="s__sky s__lil-splatter" aria-hidden="true">
-        <div class="city--header city__sky">
+        <div class="city--header">
           <div class="cloud cloud--1"></div>
           <div class="cloud cloud--2"></div>
           <div class="cloud cloud--3"></div>
           <div class="cloud cloud--4"></div>
           <div class="cloud cloud--5"></div>
-          <img class="city__cityscape" src="{{ '/' | relative_url }}assets/illus/cityscape_nosky.png" alt="">
+          <img srcset="{{ '/' | relative_url }}assets/illus/cityscape-1200.png 1200w,
+                       {{ '/' | relative_url }}assets/illus/cityscape-2400.png 2400w,
+                       {{ '/' | relative_url }}assets/illus/cityscape-2400.png 2x 1200w,
+                       {{ '/' | relative_url }}assets/illus/cityscape-3200.png 3200w,
+                       {{ '/' | relative_url }}assets/illus/cityscape-3200.png 2x 1600w"
+            sizes="(min-width: 2400px) 3200px, (min-width: 1200px) 2400px, 1200px"
+            src="{{ '/' | relative_url }}assets/illus/cityscape-1200.png" alt="" class="img--rwd">
         </div>
       </section>
       <section id="podcast" class="podcast s__primary">

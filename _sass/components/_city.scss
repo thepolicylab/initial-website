@@ -4,11 +4,6 @@
 
 .city {
   
-  &__sky {
-    background: bottom center no-repeat url("../illus/cityscape_clouds.png") transparent;
-    background-size: cover;
-  }
-  
   &__cityscape {
     @extend .img--rwd;
   }
@@ -17,13 +12,13 @@
     $min-value: -340;
     $max-value: 0;
     $min-vw: 480;
-    $max-vw: 1520;
+    $max-vw: 1200;
     $unit: 1px;
     
     margin-left: fluid-calc($min-value, $max-value, $min-vw, $max-vw, $unit);
     margin-right: fluid-calc($min-value, $max-value, $min-vw, $max-vw, $unit);
     
-    @include media-breakpoint-up(xxl) {
+    @include media-breakpoint-up(xl) {
       margin-left: 0;
       margin-right: 0;
     }

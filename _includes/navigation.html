@@ -8,7 +8,7 @@
             <nav id="main-nav" class="main__nav navbar navbar-expand-lg u__container nav">
 
               <a href="#content" class="nav-link nav__link nav__skip sr-only sr-only-focusable js-smoothscroll">Skip to main content</a>
-              
+
               <button class="navbar-toggler nav__button" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="nav__button__icon">&equiv;</span>
                 <span class="nav__button__text" style="font-weight: 600; padding-top: 0.2em;"><span class="sr-only">Open the </span>Menu</span>
@@ -21,19 +21,19 @@
                   </li>
 
                   <li class="nav-item nav__item">
-                    <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#anchor-connect" class="nav-link nav__link js-smoothscroll">Get Updates</a>
+                    <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#connect" class="nav-link nav__link js-smoothscroll">Get Updates</a>
                   </li>
 
                   <li class="nav-item nav__item">
-                    <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#anchor-events" class="nav-link nav__link js-smoothscroll">Events</a>
-                  </li>
-                  
-                  <li class="nav-item nav__item">
-                    <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#anchor-theory" class="nav-link nav__link js-smoothscroll">Theory of Change</a>
+                    <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#events" class="nav-link nav__link js-smoothscroll">Events</a>
                   </li>
 
                   <li class="nav-item nav__item">
-                    <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#anchor-team" class="nav-link nav__link js-smoothscroll">Our Team</a>
+                    <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#theory" class="nav-link nav__link js-smoothscroll">Theory of Change</a>
+                  </li>
+
+                  <li class="nav-item nav__item">
+                    <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#team" class="nav-link nav__link js-smoothscroll">Our Team</a>
                   </li>
                 </ul>
               </div>

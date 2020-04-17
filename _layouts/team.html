@@ -17,12 +17,12 @@ body-class: team
 
 <section id="content" class="layout__main team">
   <div class="team__member__profile">
-    <header class="team__member__header u__spacing u__vspacing s__light-splatter s__lil-splatter">
+    <header class="team__member__header u__spacing s__light-splatter s__lil-splatter">
       <div class="row u__container">
         <div class="col-sm-6 team__member__name">
-          <h1 class="team__member__title display-4">{{ page.title }}</h1>
-          <p class="team__member__position h3"><b>{{ page.position }}</b></p>
-          
+          <h1 class="team__member__title display-5 pt-4 mb-2">{{ page.title }}</h1>
+          <p class="team__member__position h4"><b>{{ page.position }}</b></p>
+
           <div class="team__member__meta">
           {% if page.website %}
             <a class="team__member__social" href="{{ page.website }}" target="_blank" title="Visit {{ page.title }}’s personal website in a new window">
@@ -49,25 +49,25 @@ body-class: team
             </a>
           {% endif %}
           </div>
-          
+
         </div>
         <div class="col-sm-6 team__member__headshot">
           <img class="img--rwd team__member__img" src="{{ '/' | relative_url }}assets/img/team/{{ page.img }}" alt="">
         </div>
       </div>
     </header>
-    
+
     <article class="container u__container u__vspacing team__member__bio">
       <div class="row">
         <div class="col-sm-9 col-lg-8">
-          
+
           {{ content }}
-          
+
         </div>
       </div>
     </article>
   </div>
-  
+
   <footer class="u__vspacing s__primary">
     <div class="u__container">
       <div class="u__spacing">
@@ -75,7 +75,8 @@ body-class: team
       </div>
       <div class="container u__spacing team py-0">
         <div class="row justify-content-center">
-          {% for teammate in site.team %}
+          {% assign sortedTeam = site.team | sort: 'title' %}
+          {%- for teammate in sortedTeam -%}
             {% if page.title != teammate.title %}
               {% include team-teaser.html %}
             {% endif %}
@@ -84,7 +85,7 @@ body-class: team
       </div>
     </div>
   </footer>
-  
+
   <aside class="u__vspacing s__primary s__primary-clean">
     <div class="u__container u__spacing connect">
       <div class="row">
@@ -100,5 +101,5 @@ body-class: team
       </div>
     </div>
   </aside>
-  
+
 </section>

@@ -15,7 +15,8 @@ body-class: team
     </div>
     <div class="container u__spacing team py-0">
       <div class="row justify-content-center">
-        {% for teammate in site.team %}
+        {% assign sortedTeam = site.team | sort: 'title' %}
+        {%- for teammate in sortedTeam -%}
           {% if page.title != teammate.title %}
             {% include team-teaser.html %}
           {% endif %}
@@ -23,7 +24,7 @@ body-class: team
       </div>
     </div>
   </div>
-  
+
   <aside class="u__vspacing s__light">
     <div class="u__container u__spacing connect">
       <div class="row">

@@ -2,7 +2,7 @@
 layout: team
 title: Jennifer Welch
 permalink: team/jennifer-welch/
-position: Director
+position: Research Agreement Manager
 img: jennifer-welch.jpg
 linkedin:
 twitter:

@@ -2,7 +2,7 @@
 layout: team
 title: Kirk Brown
 permalink: team/kirk-brown/
-position: Director
+position: Research Computing Analyst
 img: kirk-brown.jpg
 linkedin: https://www.linkedin.com/in/kirkbrwn/
 twitter:

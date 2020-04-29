@@ -17,6 +17,12 @@
     
     margin-left: fluid-calc($min-value, $max-value, $min-vw, $max-vw, $unit);
     margin-right: fluid-calc($min-value, $max-value, $min-vw, $max-vw, $unit);
+    position: relative;
+    
+    img {
+      position: relative;
+      z-index: 10;
+    }
     
     @include media-breakpoint-up(xl) {
       margin-left: 0;

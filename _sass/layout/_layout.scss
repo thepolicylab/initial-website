@@ -14,6 +14,7 @@
 .l-wrapper {
   color: $gray-700;
   overflow: hidden;
+  position: relative;
   padding-top: ($spacer * 3);
 
   @include media-breakpoint-up(sm) {

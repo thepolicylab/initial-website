@@ -7,7 +7,7 @@ img: kim-paull.jpg
 linkedin: https://www.linkedin.com/in/kimpaull/
 ---
 
-Kim Paull is a Fellow at The Policy Lab and Director of Data & Analytics at the Rhode Island Executive Office of Health and Human Service. Kim developed and now oversees the state’s Data Ecosystem, a pioneering analytic approach that connects data at the person and family level across state agencies, helping us understand the whole person, the whole family, and the whole community we serve.
+Kim Paull is a Fellow at The Policy Lab and Director of Data & Analytics for Rhode Island's Executive Office of Health and Human Services. Kim developed and now oversees the state’s Data Ecosystem, a pioneering analytic approach that connects data at the person and family level across state agencies, helping us understand the whole person, the whole family, and the whole community we serve.
 {: .lead}
 
 Kim has a deep interest in compelling, community-driven studies that inspire action; shaping data for easy self-service analytics; and cultivating a team culture that does our recruiting for us. Before joining EOHHS, Kim worked as an actuary and then shifted to public policy—healthcare finance, public health and programming in MA, CT and RI.

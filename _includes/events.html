@@ -19,7 +19,7 @@
                 {%- if event.speaker -%}
                 <p class="h5 alt-bold events__speaker">{{ event.speaker }}</p>
                 {%- endif -%}
-                
+
                 <p class="h5 events__date">
                   <time datetime="{{ event.date }}">{{ event.date | date: '%A, %B %d, %Y' }}{% if event.time %}, {{ event.time }}{% endif %}</time>
                 </p>
@@ -35,7 +35,7 @@
                   </a>
                 </p>
                 {%- endif -%}
-              
+
                 {%- if event.register-link -%}
                 <p class="h5 alt-bold events__register-link">
                   <a href="{{ event.register-link }}" target="_blank" class=events__register__link"" rel="nofollow">
@@ -55,6 +55,6 @@
               <div class="events__description">
                 {% comment %}<h3 class="events__title">There are no upcoming events scheduled at this time.</h3>{% endcomment %}
                 <h3>In response to the coronavirus, we have suspended our in-person events</h3>
-                <p>To learn more about the response to Covid-19, check out <a href="//thirtythousandleagues.com">our latest episode of 30,000 Leagues featuring Dr. Philip Chan</a>, an infectious disease expert who's part of the coronavirus response team in Rhode Island.</p>
+                <p>To learn more about the response to Covid-19, check out <a href="http://thirtythousandleagues.com">our episode of 30,000 Leagues featuring Dr. Philip Chan</a>, an infectious disease expert who's part of the coronavirus response team in Rhode Island, and <a href="http://thirtythousandleagues.com">our latest episode with Dr. James McDonald</a> about Rhode Island's framework for re-opening the state.</p>
               </div>
             {%- endunless -%}

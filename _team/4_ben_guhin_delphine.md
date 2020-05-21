@@ -8,7 +8,7 @@ linkedin: https://www.linkedin.com/in/benguhin
 twitter: https://twitter.com/benguhin
 ---
 
-Ben Guhin Delphine joined The Policy Lab in Fall 2018 to oversee design and technology strategy around user research, service delivery, and workforce development. He also serves as a Senior Advisor for Design & Technology Policy for the City of Austin, Texas.
+Ben Guhin Delphine leads The Policy Lab's practices around human-centered design, user research, systems mapping, and workforce development. He also serves as a Senior Advisor for Design & Technology Policy for the City of Austin, Texas.
 {: .lead}
 
 At The Policy Lab, Ben has worked with the Rhode Island Department of Education on interface designs for sharing data and predictive models with high school teachers, with the Rhode Island Division of Human Resources on understanding and evaluating processes for hiring and personnel management, and with the cities of Providence and Central Falls on building capacity for design, technology, and innovation.

@@ -30,6 +30,7 @@ jobs:
 
       - name: bundle install
         run: |
+          gem install bundler:2.1.4
           bundle config deployment true
           bundle config path vendor/bundle
           bundle install --jobs 4

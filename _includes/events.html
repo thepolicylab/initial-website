@@ -1,11 +1,9 @@
             {%- capture now %}{{'now' | date: '%Y%m%d'}}{% endcapture -%}
             {%- assign now = now | plus: 0 -%}
-            {%- assign counter = 0 -%}
             {%- for event in site.events -%}
               {%- capture posttime %}{{ event.date | date: '%Y%m%d'}}{% endcapture -%}
               {%- assign posttime = posttime | plus: 0 -%}
               {%- if posttime > now -%}
-                {%- increment counter -%}
               <div class="events__description">
                 <h3 class="events__title">
                   {%- if event.register-link -%}

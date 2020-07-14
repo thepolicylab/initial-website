@@ -43,7 +43,8 @@ exclude: ['.git',
   'CNAME',
   'LICENSE',
   'feed.xml',
-  'team/README.md'
+  'team/README.md',
+  'vendor'
   ]
 
 

@@ -1,9 +1,11 @@
             {%- capture now %}{{'now' | date: '%Y%m%d'}}{% endcapture -%}
             {%- assign now = now | plus: 0 -%}
+            {%- assign any_events = false -%}
             {%- for event in site.events -%}
               {%- capture posttime %}{{ event.date | date: '%Y%m%d'}}{% endcapture -%}
               {%- assign posttime = posttime | plus: 0 -%}
               {%- if posttime > now -%}
+              {%- assign any_events = true -%}
               <div class="events__description">
                 <h3 class="events__title">
                   {%- if event.register-link -%}
@@ -49,10 +51,10 @@
               </div>
               {%- endif -%}
             {%- endfor -%}
-            {%- unless counter > 0 -%}
+            {% comment %} WHEN YOU WANT THIS TO DISAPPEAR ADD *brace*%- unless any_key -%*brace* and similar below; sorry syntax error to leave that as actual code {% endcomment %}
               <div class="events__description">
                 {% comment %}<h3 class="events__title">There are no upcoming events scheduled at this time.</h3>{% endcomment %}
                 <h3>In response to the coronavirus, we have suspended our in-person events</h3>
                 <p>To learn more about the response to Covid-19, check out <a href="http://thirtythousandleagues.com">our episode of 30,000 Leagues featuring Dr. Philip Chan</a>, an infectious disease expert who's part of the coronavirus response team in Rhode Island, and <a href="http://thirtythousandleagues.com">our latest episode with Dr. James McDonald</a> about Rhode Island's framework for re-opening the state.</p>
               </div>
-            {%- endunless -%}
+            {% comment %} WHEN YOU WANT THIS TO DISAPPEAR ADD *brace*%- endunless -%*brace* and similar above; sorry syntax error to leave that as actual code {% endcomment %}

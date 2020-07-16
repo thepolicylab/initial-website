@@ -2,15 +2,15 @@
 layout: team
 title: Chris Calley
 permalink: team/christopher-calley/
-position: Research Associate
+position: Project Manager
 img: chris-calley.jpg
 linkedin: https://www.linkedin.com/in/christopher-calley-768a90bb/
 twitter:
 ---
 
-Chris Calley is a Research Associate at The Policy Lab. Chris represents the Lab in Rhode Island’s Innovation League and supports several ongoing research projects. Chris has policy interests in poverty, transportation, and immigration.
+Chris Calley is a Project Manager at The Policy Lab, where he manages team workflows and guides progress on a range of projects.  Chris has policy interests in poverty, transportation, and immigration.
 {: .lead}
 
-Before coming to Brown University, he most recently worked in the Volpe National Transportation Systems Center, a research arm of the U.S. Department of Transportation. Chris’s policy work experience is with automated vehicles and other intelligent transportation systems. He also helped research and design the Forces to Flyers Initiative, a U.S.DOT training program to assist veterans go from zero flight experience to commercial airline pilots.
+Chris recently graduated with a Master's in Public Affairs from Brown University. Before joining Policy Lab, he most recently worked as an economist focusing on transportation policy, with particular focus on automated vehicles and other intelligent transportation systems.
 
-Chris moved to Boston four years ago with his wife Jordan and is originally from California. Chris actively pursues ways to better apply qualitative data analysis in evidence-based policy. He received his bachelor's degree in Anthropology and Economics from the University of California, Santa Cruz.
+Chris moved to Boston four years ago with his wife Jordan and is originally from California. He received his bachelor's degree in Anthropology and Economics from the University of California, Santa Cruz. Chris actively pursues ways to better apply qualitative data analysis in evidence-based policy. For those looking to schedule an early meeting over a cup of coffee, Chris is your go-to person. 

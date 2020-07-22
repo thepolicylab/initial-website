@@ -1,9 +1,13 @@
-// Mac OSX files
-/.DS_Store
-*/.DS_Store
+# Mac OSX files
+.DS_Store
 
-// SASS Artifacts
+# SASS Artifacts
 .sass-cache
 
-// Jekyll render
+# Jekyll render
 _site
+
+# Editor cruft
+.*.swp
+*~
+.vscode

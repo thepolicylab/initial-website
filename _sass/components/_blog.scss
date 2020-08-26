@@ -1,0 +1,117 @@
+.layout__blog {
+    // account for the positioned navbar
+    padding-top: $nav-height__lg;
+
+    .l-wrapper {
+      padding-top: 0;
+    }
+  }
+
+  .blog {
+
+    &__link {
+      display: block;
+      text-decoration: none;
+    }
+
+    &__link img {
+      transform: scale(1,1);
+      transition: transform 500ms ease;
+    }
+
+    &__link:hover img,
+    &__link:focus img {
+      transform: scale(1.06,1.06);
+    }
+
+    &__date {
+        font-family: $font-stack__custom;
+        padding-right: 5ch;
+        text-decoration: none;
+    }
+
+    &__author {
+        font-family: $font-stack__custom;
+        text-decoration: none;
+        color: gray("600");
+    }
+
+    &__name {
+      font-family: $font-stack__custom;
+      padding-right: 2ch;
+      text-decoration: underline;
+    }
+
+    &__link {
+      color: gray("700");
+      border-bottom: 1px solid rgba($policy-blue, 0);
+      transition: transform 500ms ease;
+    }
+
+    // When team cards are on a dark bg
+    .s__dark &__link &__name,
+    .s__primary &__link &__name {
+      color: $tint__policy-blue__lightest;
+    }
+
+    &__link:hover &__name,
+    &__link:focus &__name {
+      color: $policy-blue;
+      border-bottom-color: rgba($policy-blue, 1);
+      text-decoration: none;
+    }
+
+    // When team cards are on a dark bg
+    .s__dark &__link &__name,
+    .s__primary &__link &__name {
+      color: $tint__policy-blue__lightest;
+      border-bottom-color: rgba($tint__policy-blue__lightest, 0);
+    }
+
+    .s__dark &__link:hover &__name,
+    .s__dark &__link:focus &__name,
+    .s__primary &__link:hover &__name,
+    .s__primary &__link:focus &__name {
+      color: $white;
+      border-bottom-color: rgba($tint__policy-blue__lightest, 1);
+    }
+
+    // Individual profile page
+    &__post {
+
+      &__profile {}
+
+      &__header {}
+
+      &__name {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__title {
+        color: gray('700');
+        text-transform: capitalize;
+      }
+
+      &__position {}
+
+      &__title,
+      &__position {
+        text-align: center;
+
+        @include media-breakpoint-up(sm) {
+          text-align: left;
+        }
+      }
+
+      &__meta {
+        margin-top: auto;
+      }
+
+      &__img {
+        width: 100%;
+      }
+
+      &__content {}
+    }
+  }

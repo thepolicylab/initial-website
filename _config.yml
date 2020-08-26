@@ -53,9 +53,3 @@ relative_permalinks: false
 
 sass:
   sass_dir: _sass
-
-
-# Plugins and extras
-plugins:
-- jekyll-autoprefixer
-- jekyll-github-metadata

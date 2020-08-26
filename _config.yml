@@ -34,6 +34,9 @@ collections:
   events:
     output: false
     permalink: /events/:name
+  blog:
+    output: true
+    permalink: /blog/:name
 
 # Exclude from _site build
 exclude: ['.git',

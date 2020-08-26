@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Blog | The Policy Lab"
+nav-title: Blog
+permalink: blog/
+body-class: blog
+---
+
+<section class="layout__main blog s__light-splatter s__lil-splatter">
+  <div class="nav__spacer"></div>
+
+  <div class="u__container">
+    <div class="u__spacing">
+      <h2 class="h1 text-center">The Policy Lab's Blog</h2>
+    </div>
+    <div class="container u__spacing blog py-0">
+      <div class="row justify-content-center">
+        {% assign sortedBlog = site.blog | sort: 'date' %}
+        {%- for blogpost in sortedBlog -%}
+          {% if page.title != blogpost.title %}
+            {% include blog-teaser.html %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,44 @@
+---
+layout: default
+body-class: blog
+---
+
+<section id="content" class="layout__main blog">
+    <div class="blog__post__profile">
+      <header class="blog__post__header u__spacing s__light-splatter s__lil-splatter">
+        <div class="row u__container">
+          <div class="col-sm-12 blog__post__name">
+            <h1 class="blog__post__title display-5 pt-4 mb-2">{{ page.title }}</h1>
+            <p class="blog__post__position h4"><b>{{ page.author }}</b></p>
+          </div>
+        </div>
+      </header>
+
+      <article class="container u__container u__vspacing blog__post__content">
+        <div class="row">
+          <div class="col-sm-12 col-lg-12">
+
+            {{ content }}
+
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <aside class="u__vspacing s__primary s__primary-clean">
+      <div class="u__container u__spacing connect">
+        <div class="row">
+          <div class="col-md-3 col-lg-4">
+            <h2 class="h1">Get Updates</h2>
+          </div>
+          <div class="col-md-9 col-lg-8">
+            <p class="lead">Sign up to get updates on projects, events, and new episodes of our podcast, <a href="https://thirtythousandleagues.com/">30,000 Leagues</a></p>
+
+            {% include mailchimp.html %}
+
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </section>

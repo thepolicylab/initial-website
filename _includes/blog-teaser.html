@@ -1,0 +1,9 @@
+<div class="blog__post col-12 u__vspacing-b">
+    <a href="{{ '/' | relative_url }}{{ blogpost.permalink }}" class="blog__link">
+      <p>
+        <span class="blog__date">{{ blogpost.date | date: "%B %d, %Y" }}</span>
+        <span class="blog__name h5">{{ blogpost.title }}</span>
+        <span class="blog__author">by {{ blogpost.author }}</span>
+      </p>
+    </a>
+  </div>

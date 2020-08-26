@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - master
-      - d3-pre-deploy
 
 jobs:
   build-and-deploy:

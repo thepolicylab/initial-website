@@ -25,6 +25,10 @@
     background-color: $white;
   }
 
+  .layout__blog & {
+    background-color: $white;
+  }
+
   &__flex {
     @include media-breakpoint-up(lg) {
       display: flex;
@@ -33,7 +37,7 @@
       padding-top: $vertical-rhythm;
     }
   }
-  
+
   // Overrides based on a body class
   .presentation & {
     padding-top: 0;
@@ -42,7 +46,7 @@
 
 // Main page element
 .main {
-  
+
   &__header {
     @include hide;
 
@@ -50,18 +54,18 @@
       @include show();
     }
   }
-  
+
   &__content {
     @include media-breakpoint-up(lg) {
       margin-top: -2rem;
       padding-bottom: 1rem;
     }
-    
+
     @include media-breakpoint-up(xl) {
       margin-top: -4rem;
       padding-bottom: 2rem;
     }
   }
-  
+
   //&__article {}
 }

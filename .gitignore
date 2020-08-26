@@ -5,6 +5,7 @@
 .sass-cache
 
 # Jekyll render
+.jekyll-cache
 _site
 
 # Editor cruft

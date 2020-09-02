@@ -6,6 +6,7 @@ position: Senior Research Associate
 img: drew-engelhardt.jpg
 linkedin:
 twitter:
+published: false
 ---
 
 Drew Engelhardt is a Senior Research Associate at The Policy Lab and a Postdoctoral Research Associate at the Taubman Center for American Politics and Policy, where he studies the dynamic relationship between politics and individuals’ identities and intergroup attitudes.

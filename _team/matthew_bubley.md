@@ -6,7 +6,6 @@ position: Fellow
 img: matthew-bubley.jpg
 linkedin: https://www.linkedin.com/in/mattbubley/
 twitter:
-published: false
 ---
 
 Matthew Bubley is a Fellow of the Policy Lab where he supports the ongoing effort to transform Providence's schools, working closely with officials at the Rhode Island Department of Education and the Providence Public Schools Department.

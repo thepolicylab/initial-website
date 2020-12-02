@@ -6,7 +6,6 @@ position: Associate Service Designer
 img: aidan-hudson-lapore.jpg
 linkedin: https://www.linkedin.com/in/aidan-hudson-lapore/
 twitter:
-published: false
 ---
 
 Aidan Hudson-Lapore is an Associate Service Designer at The Policy Lab. She supports user research and service delivery, and is currently focused on optimizing the customer experience of COVID testing in Rhode Island.  

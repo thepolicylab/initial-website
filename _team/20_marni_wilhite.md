@@ -6,6 +6,7 @@ position: Senior Advisor
 img: marni-wilhite.jpg
 linkedin:
 twitter:
+published: false
 ---
 
 Marni is a Senior Advisor at The Policy Lab, advising on service design, digital infrastructure, and program management for state and local governments. She is Head of Digital Transformation for the City of Austin, and founding director of Austin’s [Office of Design & Delivery](https://odd.austintexas.io/).

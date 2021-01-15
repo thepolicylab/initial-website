@@ -6,6 +6,7 @@ position: Head of Design
 img: ben-guhin-delphine.jpg
 linkedin: https://www.linkedin.com/in/benguhin
 twitter: https://twitter.com/benguhin
+published: false
 ---
 
 Ben Guhin Delphine leads The Policy Lab's practices around human-centered design, user research, systems mapping, and workforce development. He also serves as a Senior Advisor for Design & Technology Policy for the City of Austin, Texas.

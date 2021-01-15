@@ -6,6 +6,7 @@ position: Chief of Staff
 img: matt-santacroce.jpg
 linkedin: https://www.linkedin.com/in/matt-santacroce-2b598962/
 twitter:
+published: false
 ---
 
 Matt Santacroce is Chief of Staff at The Policy Lab. In this role, he is primarily responsible for developing, coordinating, and executing the Policy Lab’s engagement strategy with state government and community-based partners, and managing a suite of project-specific matters primarily pertaining to the Rhode Island executive branch. Matt also supports the Director and the senior team at The Policy Lab in a wide variety of matters relating to grant and financial management, human resources, and public affairs.

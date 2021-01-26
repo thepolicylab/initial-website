@@ -9,7 +9,7 @@ twitter:
 github: https://github.com/paulstey
 ---
 
-Paul is a member of the data science team at The Policy Lab, he also serves as the Director of Scientific Computing and Data Science at Brown University's Center for Computation and Visualization (CCV). He oversees support for high-performance computing, machine learning, research software engineering, and computational biology at CCV. Paul supports a number of projects at The Policy Lab.
+Paul is a member of the data science practice at The Policy Lab. He also serves as the Director of Scientific Computing and Data Science at Brown University's Center for Computation and Visualization (CCV). He oversees support for high-performance computing, machine learning, research software engineering, and computational biology at CCV. Paul supports a number of projects at The Policy Lab.
 {: .lead}
 
 Paul is broadly interested in high-performance computing—particularly GPU programming, code optimization, and algorithm design. He is also interested in using modern tools and techniques of software engineering in the service of reproducible research. Paul enjoys programming in Julia, Python, R, C++, and Rust. He also tolerates JavaScript.

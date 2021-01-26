@@ -8,11 +8,9 @@ linkedin: https://www.linkedin.com/in/aidan-hudson-lapore/
 twitter:
 ---
 
-Aidan Hudson-Lapore is an Associate Service Designer at The Policy Lab. She supports user research and service delivery, and is currently focused on optimizing the customer experience of COVID testing in Rhode Island.  
+Aidan Hudson-Lapore joined The Policy Lab team in 2020 as an Associate Service Designer to support customer experience research to optimize the COVID-19 testing experience in Rhode Island. She is currently detailed to the Office of Evaluation Sciences within the U.S. General Services Administration as a Design Associate Fellow, where she contributes to intervention design and methods support.
 {: .lead}
 
-Along with her work at The Policy Lab, Aidan serves as a Design Strategist at See Change Institute, where she contributes to projects in energy efficiency and sustainability.  Previously, she worked as a Behavior Change Designer at Mad*Pow, where she helped create evidence-based digital interventions to improve health and financial well-being.
+Aidan is an advocate of interdisciplinary approaches, and is focused on how designers can effectively collaborate with researchers, policy-makers, and residents to help implement evidence-based, human-centered services. She has a particular interest in interventions related to climate change and public health.
 
-Aidan believes science and design are a match made in heaven. She received a B.A. in Cognitive Science from Brown University and a B.F.A. in Industrial Design from the Rhode Island School of Design as part of the Brown-RISD Dual-Degree Program.
-
-Outside of the office, you can find Aidan tending to her many philodendrons, practicing Brazilian jiu-jitsu, or listening to just one more podcast episode.
+Prior to The Policy Lab, Aidan has worked as a design strategist at See Change Institute and as a behavior change designer at Mad*Pow. Aidan is an alum of the Brown|RISD dual-degree program, where she earned a B.A. in cognitive science and a B.F.A. in industrial design. Outside of work hours, you can find Aidan tending to her many houseplants, practicing Brazilian jiu-jitsu, or listening to just one more podcast episode.

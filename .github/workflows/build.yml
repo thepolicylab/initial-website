@@ -37,10 +37,7 @@ jobs:
           # So write some custom code here
           #
           # c.f. https://github.com/jekyll/jekyll/issues/5257
-          bundle exec jekyll build | tee /dev/stderr | grep 'Error: YAML Exception'
-          if [ $? == 0 ]; then
-            exit 1
-          fi
+          [ ! $(bundle exec jekyll build | tee /dev/stderr | grep 'Error: YAML Exception') ]
 
       - name: Push to GH Pages
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'

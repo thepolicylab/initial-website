@@ -32,7 +32,12 @@ jobs:
           bundle install --jobs 4
 
       - name: Build the page
-        run: bundle exec jekyll build
+        run: |
+          # Jekyll offers no option for non-zero exit codes on parse errors
+          # So write some custom code here
+          #
+          # c.f. https://github.com/jekyll/jekyll/issues/5257
+          bundle exec jekyll build | tee /dev/stderr | grep 'Error: YAML Exception'
 
       - name: Push to GH Pages
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'

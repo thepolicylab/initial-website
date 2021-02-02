@@ -6,6 +6,7 @@
 
 # Jekyll render
 _site
+.jekyll-cache/
 
 # Editor cruft
 .*.swp

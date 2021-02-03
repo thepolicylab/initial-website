@@ -61,5 +61,27 @@
     &__author__link {
       display: inline-block;
     }
+
+    &__body {
+      h2 {
+        font-family: $font-stack__sans !important;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      figure {
+        border: $border-width solid $border-color;
+        border-radius: $border-radius;
+        padding: spacer(3);
+
+        figcaption {
+          margin-top: spacer(3);
+          padding-top: spacer(3);
+          border-top: $border-width solid $border-color;
+        }
+      }
+    }
   }
 }

@@ -1,5 +1,5 @@
 ---
-layout: reflections
+layout: reflection
 title: "The Making of a Dashboard: Second Line of Title"
 permalink: reflections/making-of-a-dashboard/
 authors:

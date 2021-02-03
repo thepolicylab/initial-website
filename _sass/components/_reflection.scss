@@ -1,10 +1,29 @@
+.layout__reflection {
+  // account for the positioned navbar
+  padding-top: $nav-height__lg;
+
+  .l-wrapper {
+    background-color: $white;
+    padding-top: 0;
+  }
+}
+
 .reflection {
   &__content {
-    &__authors {
-      &__wrapper {
-        margin-top: spacer(6);
-      }
+    &__reflections-link {
+      color: $gray-600;
+      font-weight: $font-weight__bold;
     }
+
+    &__title {
+      color: $gray-700;
+      text-transform: capitalize;
+    }
+
+    &__authors-wrapper {
+      margin-top: spacer(6);
+    }
+
     &__author__link {
       display: inline-block;
     }

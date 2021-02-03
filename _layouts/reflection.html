@@ -1,28 +1,29 @@
 ---
 layout: default
-body-class: reflections
+body-class: reflection
 ---
 {% comment %}
 
-  Relections items in object:
+  Reflection items in object:
   - page.title
   - page.permalink
   - page.authors
+  - page.content
 
 {% endcomment %}
 
 <section id="content" class="layout__main reflection">
-  <div class="reflection__content team__member__profile">
-    <header class="reflection__content__header team__member__header u__spacing s__light-splatter s__lil-splatter">
+  <div class="reflection__content">
+    <header class="reflection__content__header u__spacing s__light-splatter s__lil-splatter">
       <div class="row u__container">
-        <div class="col-sm-7 reflection__content__title__wrapper team__member__name">
-          <a href="/reflections">{{ 'Reflections' }}</a>
+        <div class="col-sm-7 reflection__content__title__wrapper">
+          <a href="/reflections" class="reflection__content__reflections-link">Reflections</a>
           <h1 class="reflection__content__title team__member__title display-5 pt-4 mb-2">{{ page.title }}</h1>
         </div>
       </div>
       <div class="row u__container">
-        <div class="col-sm-8 reflection__content__authors__wrapper team__member__name">
-          <p class="reflection__content__authors team__member__position">
+        <div class="col-sm-8 reflection__content__authors-wrapper">
+          <p class="reflection__content__authors">
             {{ 'By ' }}
             {% for author in page.authors %}
               {% if forloop.length == 1 %}

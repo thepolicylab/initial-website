@@ -31,29 +31,13 @@ body-class: reflection
       <div class="row u__container">
         <div class="col-sm-8 reflection__content__authors-wrapper">
           <p class="reflection__content__authors">
-            {{ 'By ' }}
-            {% for author in page.authors %}
-              {% if forloop.length == 1 %}
-                <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
-              {% elsif forloop.length == 2 %}
-                <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
-                {% if forloop.last %}
-                  and <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
-                {% endif %}
-              {% elsif forloop.length > 2 %}
-                {% if forloop.last %}
-                  and <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
-                {% else %}
-                  <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>, 
-                {% endif %}
-              {% endif %}
-            {% endfor %}
+            {% include byline.html %}
           </p>
         </div>
       </div>
     </header>
 
-    <article class="container u__container u__vspacing team__member__bio">
+    <article class="container u__container u__vspacing reflection__content__body">
       <div class="row">
         <div class="col-sm-9 col-lg-8">
 

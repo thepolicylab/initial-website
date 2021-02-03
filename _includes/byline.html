@@ -1,0 +1,17 @@
+By 
+{% for author in page.authors %}
+  {% if forloop.length == 1 %}
+    <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
+  {% elsif forloop.length == 2 %}
+    <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
+    {% if forloop.last %}
+      and <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
+    {% endif %}
+  {% elsif forloop.length > 2 %}
+    {% if forloop.last %}
+      and <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
+    {% else %}
+      <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>, 
+    {% endif %}
+  {% endif %}
+{% endfor %}

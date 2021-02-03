@@ -38,3 +38,16 @@ For such a project, just-in-time delivery of analytics is key. Therefore, we dec
 - d3.js
 - Vue-Formulate (light-weight form library to create the filter dropdowns on-the-fly)
 - moment.js (to handle datetime operations, which can be a pain in JavaScript)
+
+<div class="float-right">
+  <iframe src="https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&country=~OWID_WRL&region=World&deathsMetric=true&interval=total&hideControls=true&smoothing=0&pickerMetric=location&pickerSort=asc" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+</div>
+
+## iframe embed example
+{: .lead}
+
+For such a project, just-in-time delivery of analytics is key. Therefore, we decided to make this dashboard light-weight and customizable and maximize interactivity. Therefore, we initially decided to forgo a backend and use d3.js only. However, although d3 provides its own way to manipulate the DOM and handing event, it does not provide a good way to manage states given filters that we are applying five filters to the data. That's why we added Vue.js for state management and for reactively updating the visualizations created by d3. In retrospect, Vuex would have been a great addition to provide even better state management, but a simple SPA like this, it's a better idea to focus on the visualizations rather than state management.
+
+For such a project, just-in-time delivery of analytics is key. Therefore, we decided to make this dashboard light-weight and customizable and maximize interactivity. Therefore, we initially decided to forgo a backend and use d3.js only. However, although d3 provides its own way to manipulate the DOM and handing event, it does not provide a good way to manage states given filters that we are applying five filters to the data. That's why we added Vue.js for state management and for reactively updating the visualizations created by d3. In retrospect, Vuex would have been a great addition to provide even better state management, but a simple SPA like this, it's a better idea to focus on the visualizations rather than state management.
+
+For such a project, just-in-time delivery of analytics is key. Therefore, we decided to make this dashboard light-weight and customizable and maximize interactivity. Therefore, we initially decided to forgo a backend and use d3.js only. However, although d3 provides its own way to manipulate the DOM and handing event, it does not provide a good way to manage states given filters that we are applying five filters to the data. That's why we added Vue.js for state management and for reactively updating the visualizations created by d3. In retrospect, Vuex would have been a great addition to provide even better state management, but a simple SPA like this, it's a better idea to focus on the visualizations rather than state management.

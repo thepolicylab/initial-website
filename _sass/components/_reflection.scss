@@ -49,13 +49,33 @@
       font-weight: $font-weight__bold;
     }
 
+    &__title-wrapper,
+    &__authors {
+      text-align: center;
+      
+      @include media-breakpoint-up(sm) {
+        text-align: left;
+      }
+    }
+
     &__title {
       color: $gray-700;
-      text-transform: capitalize;
+      text-transform: none;
     }
 
     &__authors-wrapper {
-      margin-top: spacer(6);
+      @include fluid-units(
+        'padding-top',
+        1,
+        5,
+        strip-unit(rem(bp(small))),
+        strip-unit(rem(bp(large)))
+      );
+      // margin-top: spacer(6);
+    }
+
+    &__authors {
+      margin-bottom: 0;
     }
 
     &__author__link {
@@ -81,6 +101,20 @@
           padding-top: spacer(3);
           border-top: $border-width solid $border-color;
         }
+      }
+
+      .float-right {
+        float: right;
+        width: 50%;
+        margin: rem(32);
+        margin-right: 0;
+      }
+
+      .float-left {
+        float: left;
+        width: 50%;
+        margin: rem(32);
+        margin-left: 0;
       }
     }
   }

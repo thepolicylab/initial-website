@@ -1,0 +1,75 @@
+---
+layout: default
+body-class: reflections
+---
+{% comment %}
+
+  Relections items in object:
+  - page.title
+  - page.permalink
+  - page.authors
+
+{% endcomment %}
+
+<section id="content" class="layout__main reflection">
+  <div class="reflection__content team__member__profile">
+    <header class="reflection__content__header team__member__header u__spacing s__light-splatter s__lil-splatter">
+      <div class="row u__container">
+        <div class="col-sm-7 reflection__content__title__wrapper team__member__name">
+          <a href="/reflections">{{ 'Reflections' }}</a>
+          <h1 class="reflection__content__title team__member__title display-5 pt-4 mb-2">{{ page.title }}</h1>
+        </div>
+      </div>
+      <div class="row u__container">
+        <div class="col-sm-8 reflection__content__authors__wrapper team__member__name">
+          <p class="reflection__content__authors team__member__position">
+            {{ 'By ' }}
+            {% for author in page.authors %}
+              {% if forloop.length == 1 %}
+                <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
+              {% elsif forloop.length == 2 %}
+                <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
+                {% if forloop.last %}
+                  and <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
+                {% endif %}
+              {% elsif forloop.length > 2 %}
+                {% if forloop.last %}
+                  and <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
+                {% else %}
+                  <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>, 
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <article class="container u__container u__vspacing team__member__bio">
+      <div class="row">
+        <div class="col-sm-9 col-lg-8">
+
+          {{ content }}
+
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <aside class="u__vspacing s__primary s__primary-clean">
+    <div class="u__container u__spacing connect">
+      <div class="row">
+        <div class="col-md-3 col-lg-4">
+          <h2 class="h1">Get Updates</h2>
+        </div>
+        <div class="col-md-9 col-lg-8">
+          <p class="lead">Sign up to get updates on projects, events, and new episodes of our podcast, <a href="https://thirtythousandleagues.com/">30,000 Leagues</a></p>
+
+          {% include mailchimp.html %}
+
+        </div>
+      </div>
+    </div>
+  </aside>
+
+</section>

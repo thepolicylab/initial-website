@@ -1,0 +1,12 @@
+.reflection {
+  &__content {
+    &__authors {
+      &__wrapper {
+        margin-top: spacer(6);
+      }
+    }
+    &__author__link {
+      display: inline-block;
+    }
+  }
+}

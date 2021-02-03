@@ -7,6 +7,7 @@ body-class: reflection
   Reflection items in object:
   - page.title
   - page.permalink
+  - page.img (example.jpg)
   - page.authors
   - page.content
 
@@ -14,7 +15,11 @@ body-class: reflection
 
 <section id="content" class="layout__main reflection">
   <div class="reflection__content">
-    <header class="reflection__content__header u__spacing s__light-splatter s__lil-splatter">
+    <div class="reflection__content__img-wrapper">
+      <div style="background-image: url({{ '/' | relative_url }}assets/img/reflections/{{ page.img }})" class="img--rwd reflection__content__img">
+      </div>
+    </div>
+    <header class="reflection__content__header u__spacing">
       <div class="row u__container">
         <div class="col-sm-7 reflection__content__title__wrapper">
           <a href="/reflections" class="reflection__content__reflections-link">Reflections</a>

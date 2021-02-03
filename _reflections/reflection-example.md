@@ -2,7 +2,7 @@
 layout: reflection
 title: "The Making of a Dashboard: Second Line of Title"
 permalink: reflections/making-of-a-dashboard/
-img: reflection_1.jpg
+img: reflection-example-img.jpg
 authors:
   - Paul Xu
   - Kevin Wilson

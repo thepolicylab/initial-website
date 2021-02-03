@@ -15,10 +15,12 @@ body-class: reflection
 
 <section id="content" class="layout__main reflection">
   <div class="reflection__content">
-    <div class="reflection__content__img-wrapper">
-      <div style="background-image: url({{ '/' | relative_url }}assets/img/reflections/{{ page.img }})" class="img--rwd reflection__content__img">
+    {% if page.img %}
+      <div class="reflection__content__img-wrapper">
+        <div style="background-image: url({{ '/' | relative_url }}assets/img/reflections/{{ page.img }})" class="img--rwd reflection__content__img">
+        </div>
       </div>
-    </div>
+    {% endif %}
     <header class="reflection__content__header u__spacing">
       <div class="row u__container">
         <div class="col-sm-7 reflection__content__title__wrapper">

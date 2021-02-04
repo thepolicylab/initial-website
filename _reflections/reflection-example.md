@@ -11,9 +11,9 @@ This is the first in a series of technical blog posts that document how The Poli
 
 This post will cover the background of this project and the decisions The Policy Lab team made on the tech stacks used on this project. Please use the following link to jump to the rest of the story.
 
-- [Part 2. Building the Skeleton of the App with Vue.js](/reflections/building-skeleton-of-app-with-vue)
-- [Part 3. Rendering the Visualizations with d3.js](/reflections/rendering-visualizations-with-d3)
-- [Part 4. UI/UX Refinements from Stakeholder Feedback](/reflections/ui-ux-refinements-from-stakeholder-feedback)
+- [Part 2. Building the Skeleton of the App with Vue.js]({% link _reflections/reflection-example-2.md %})
+- [Part 3. Rendering the Visualizations with d3.js]({% link _reflections/reflection-example-3.md %})
+- [Part 4. UI/UX Refinements from Stakeholder Feedback]({% link _reflections/reflection-example-4.md %})
 
 ## Background of the project
 {: .lead}

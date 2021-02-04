@@ -128,10 +128,14 @@ $nav-height__lg: rem(60);
   }
   
   &__spacer {
-    height: $nav-height__lg;
+    height: $nav-height__sm;
     margin: 0;
     padding: 0;
     line-height: 1;
+
+    @include media-breakpoint-up(lg) {
+      height: $nav-height__lg;
+    }
   }
 }
 

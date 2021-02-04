@@ -1,15 +1,15 @@
 {% if forloop.length == 1 %}
-  <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
+  <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>
 {% elsif forloop.length == 2 %}
   {% if forloop.last %}
-    and <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
+    and <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>
   {% else %}
-    <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
+    <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>
   {% endif %}
 {% elsif forloop.length > 2 %}
   {% if forloop.last %}
-    and <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>
+    and <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>
   {% else %}
-    <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="relfection__content__author__link">{{ author }}</a>, 
+    <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>, 
   {% endif %}
 {% endif %}

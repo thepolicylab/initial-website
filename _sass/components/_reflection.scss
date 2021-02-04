@@ -78,10 +78,6 @@
       margin-bottom: 0;
     }
 
-    &__author__link {
-      display: inline-block;
-    }
-
     &__body {
       h2 {
         font-family: $font-stack__sans !important;
@@ -122,8 +118,36 @@
   &__recirc {
     background-color: $policy-cream;
 
-    &__post + .reflection__recirc__post {
-      margin-top: spacer(3);
+    &__post {
+      &__title {
+        font-family: $font-stack__sans !important;
+        font-weight: $font-weight__bold;
+        margin-bottom: spacer(2);
+      }
+  
+      &__authors {
+        font-weight: $font-weight__bold;
+        margin-bottom: spacer(1);
+      }
+
+      .lead {
+        font-size: inherit;
+        font-weight: $font-weight__normal;
+        margin-bottom: spacer(4);
+
+        @include media-breakpoint-up(sm) {
+          margin-bottom: spacer(5);
+        }
+      }
+    }
+
+    &__landing-link {
+      color: $policy-blue;
+      font-family: $font-stack__custom;
     }
   }
+}
+
+.author__link {
+  display: inline-block;
 }

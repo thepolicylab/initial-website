@@ -25,7 +25,7 @@ body-class: reflection
     <header class="reflection__content__header u__spacing">
       <div class="row u__container">
         <div class="col-sm-7 reflection__content__title-wrapper">
-          <a href="/reflections" class="reflection__content__landing-link">Reflections</a>
+          <a href="{% link reflections.html %}" class="reflection__content__landing-link">Reflections</a>
           <h1 class="reflection__content__title display-5 pt-4 mb-2">{{ page.title }}</h1>
         </div>
       </div>
@@ -61,23 +61,21 @@ body-class: reflection
         {% assign counter = 0 %}
         {% for reflection in site.reflections %}
           {% if reflection.title != page.title and counter <= 4 %}
-            <div class="col-sm-6">
-              <div class="reflection__recirc__post">
-                <a href="{{ reflection.url }}">{{ reflection.title }}</a>
-                <p class="reflection__recirc__authors">
-                  By 
-                  {% for author in reflection.authors %}
-                  {% include byline.html %}
-                  {% endfor %}
-                </p>
-                <div>{{ page.excerpt }}</div>
-              </div>
+            <div class="col-sm-6 reflection__recirc__post">
+              <h3 class="reflection__recirc__post__title h4"><a href="{{ reflection.url }}">{{ reflection.title }}</a></h3>
+              <p class="reflection__recirc__post__authors">
+                By 
+                {% for author in reflection.authors %}
+                {% include byline.html %}
+                {% endfor %}
+              </p>
+              {{ reflection.excerpt }}
             </div>
             {% endif %}
           {% assign counter = counter | plus:1 %}
         {% endfor %}
         <div class="col-12">
-          <a href="/reflections" class="reflection__recirc__landing-link">All Reflections</h2>
+          <a href="{% link reflections.html %}" class="reflection__recirc__landing-link h4">All Reflections</a>
         </div>
       </div>
     </div>

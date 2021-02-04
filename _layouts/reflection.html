@@ -18,7 +18,8 @@ body-class: reflection
   <div class="reflection__content">
     {% if page.img %}
       <div class="reflection__content__img-wrapper">
-        <div style="background-image: url({{ '/' | relative_url }}assets/img/reflections/{{ page.img }})" class="img--rwd reflection__content__img">
+        {% assign bg_image_url = '/assets/img/reflections/' | append: page.img %}
+        <div style="background-image: url('{{ bg_image_url }}')" class="img--rwd reflection__content__img">
         </div>
       </div>
     {% endif %}

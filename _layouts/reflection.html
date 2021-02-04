@@ -9,6 +9,7 @@ body-class: reflection
   - page.permalink
   - page.img (example.jpg)
   - page.authors
+  - page.tease
   - page.content
 
 {% endcomment %}
@@ -24,14 +25,17 @@ body-class: reflection
     <header class="reflection__content__header u__spacing">
       <div class="row u__container">
         <div class="col-sm-7 reflection__content__title-wrapper">
-          <a href="/reflections" class="reflection__content__reflections-link">Reflections</a>
+          <a href="/reflections" class="reflection__content__landing-link">Reflections</a>
           <h1 class="reflection__content__title display-5 pt-4 mb-2">{{ page.title }}</h1>
         </div>
       </div>
       <div class="row u__container">
         <div class="col-sm-8 reflection__content__authors-wrapper">
           <p class="reflection__content__authors">
-            {% include byline.html %}
+            By 
+              {% for author in page.authors %}
+                {% include byline.html %}
+              {% endfor %}
           </p>
         </div>
       </div>
@@ -47,6 +51,37 @@ body-class: reflection
       </div>
     </article>
   </div>
+
+  <aside class="u__vspacing reflection__recirc">
+    <div class="u__container u__spacing">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="h1">More Reflections</h2>
+        </div>
+        {% assign counter = 0 %}
+        {% for reflection in site.reflections %}
+          {% if reflection.title != page.title and counter <= 4 %}
+            <div class="col-sm-6">
+              <div class="reflection__recirc__post">
+                <a href="{{ reflection.url }}">{{ reflection.title }}</a>
+                <p class="reflection__recirc__authors">
+                  By 
+                  {% for author in reflection.authors %}
+                  {% include byline.html %}
+                  {% endfor %}
+                </p>
+                <div>{{ page.excerpt }}</div>
+              </div>
+            </div>
+            {% endif %}
+          {% assign counter = counter | plus:1 %}
+        {% endfor %}
+        <div class="col-12">
+          <a href="/reflections" class="reflection__recirc__landing-link">All Reflections</h2>
+        </div>
+      </div>
+    </div>
+  </aside>
 
   <aside class="u__vspacing s__primary s__primary-clean">
     <div class="u__container u__spacing connect">

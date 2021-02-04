@@ -5,15 +5,12 @@
   @include media-breakpoint-up(lg) {
     padding-top: $nav-height__lg;
   }
-
-  .l-wrapper {
-    background-color: $white;
-    padding-top: 0;
-  }
 }
 
 .reflection {
   &__content {
+    background-color: $white;
+    
     &__img-wrapper,
     &__header {
       background-color: $policy-cream;
@@ -150,4 +147,21 @@
 
 .author__link {
   display: inline-block;
+}
+
+// Landing page
+.page__reflections {
+  .reflections {
+  background: $white;
+
+    &__header {
+      background-color: $policy-blue;
+      color: $white;
+    }
+
+    &__title {
+      color: $white;
+      margin-bottom: spacer(2);
+    }
+  }
 }

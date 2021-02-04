@@ -44,7 +44,7 @@
       }
     }
 
-    &__reflections-link {
+    &__landing-link {
       color: $gray-600;
       font-weight: $font-weight__bold;
     }
@@ -116,6 +116,14 @@
         margin: rem(32);
         margin-left: 0;
       }
+    }
+  }
+
+  &__recirc {
+    background-color: $policy-cream;
+
+    &__post + .reflection__recirc__post {
+      margin-top: spacer(3);
     }
   }
 }

@@ -1,0 +1,98 @@
+---
+layout: default
+body-class: project presentation
+---
+{% comment %}
+
+  Reflection items in object:
+  - page.title
+  - page.permalink
+  - page.content
+
+{% endcomment %}
+
+<section id="content" class="layout__main s__white project">
+  <div class="project__content">
+    <header class="project__content__header u__spacing">
+      <div class="row u__container justify-content-center text-center">
+        <div class="col-12 project__content__landing-link-wrapper">
+          <hr />
+          <a href="{% link reflections.html %}" class="project__content__landing-link">Projects</a>
+        </div>
+        <div class="col-9 project__content__title-wrapper">
+          <h1 class="project__content__title display-5 my-4">{{ page.title }}</h1>
+          {% if page.subtitle %}
+            <p class="project__content__subtitle">{{ page.subtitle }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </header>
+
+    <div class="row u__container">
+      <article class="col-lg-9 project__content__body">
+        <div class="s__blue project__content__body__summary">
+          <h2 class="lead">Project Summary</h2>
+          {{ page.excerpt }}
+        </div>
+        {{ content | remove: page.excerpt }}
+
+      </article>
+
+      <aside class="col-lg-3">
+        {% if page.partners %}
+          <span>Partners</span>
+          {% for partner in page.partners %}
+            <a href="{{ partner.link }}">{{ partner.name }}</a>
+          {% endfor %}
+        {% endif %}
+        {% if page.timeline %}
+          <span>Timeline</span>
+          <span>{{ page.timeline }}</span>
+        {% endif %}
+        {% if page.status %}
+          <span>Timeline</span>
+          <span>{{ page.status }}</span>
+        {% endif %}
+        {% if page.method %}
+          <span>Timeline</span>
+          <span>{{ page.method }}</span>
+        {% endif %}
+        {% if page.links %}
+          <span>For More</span>
+          {% for link in page.links %}
+          <a href="{{ link.link }}">{{ link.name }}</a>
+          {% endfor %}
+        {% endif %}
+      </aside>
+    </div>
+
+  </div>
+
+  <aside class="u__vspacing s__light project__recirc">
+    <div class="u__container u__spacing">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="h1">More Reflections</h2>
+        </div>
+
+      </div>
+    </div>
+  </aside>
+
+  <aside class="u__vspacing s__primary s__primary-clean">
+    <div class="u__container u__spacing connect">
+      <div class="row">
+        <div class="col-md-3 col-lg-4">
+          <h2 class="h1">Get Updates</h2>
+        </div>
+        <div class="col-md-9 col-lg-8">
+          <p class="lead">Sign up to get updates on projects, events, and new episodes of our podcast, <a href="https://thirtythousandleagues.com/">30,000 Leagues</a></p>
+
+          {% include mailchimp.html %}
+
+        </div>
+      </div>
+    </div>
+  </aside>
+
+</section>

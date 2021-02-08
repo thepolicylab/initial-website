@@ -1,0 +1,117 @@
+.layout__project {
+  // account for the positioned navbar
+  padding-top: $nav-height__sm;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: $nav-height__lg;
+  }
+}
+
+.project {
+  &__content {
+    &__landing-link-wrapper {
+      position: relative;
+    }
+
+    &__landing-link {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $gray-600;
+      font-weight: $font-weight__bold;
+      padding: 0 spacer(3);
+    }
+
+    &__title {
+      color: $gray-900;
+      text-transform: none;
+    }
+
+    &__body {
+      &__summary {
+        color: $white;
+        padding: rem(32) rem(32) spacer(2);
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      figure {
+        border: $border-width solid $border-color;
+        border-radius: $border-radius;
+        padding: spacer(3);
+
+        figcaption {
+          margin-top: spacer(3);
+          padding-top: spacer(3);
+          border-top: $border-width solid $border-color;
+        }
+      }
+
+      .float-right {
+        float: right;
+        width: 50%;
+        margin: rem(32);
+        margin-right: 0;
+      }
+
+      .float-left {
+        float: left;
+        width: 50%;
+        margin: rem(32);
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.project__recirc,
+.projects {
+  &__post {
+    &__title {
+      // font-family: $font-stack__sans !important;
+      // font-weight: $font-weight__bold;
+      // margin-bottom: spacer(2);
+
+      // a {
+      //   text-decoration: none;
+
+      //   @include hover-focus() {
+      //     text-decoration: $link-decoration;
+      //   }
+      // }
+    }
+
+    .lead {
+      // font-size: inherit;
+      // font-weight: $font-weight__normal;
+      // margin-bottom: spacer(4);
+
+      // @include media-breakpoint-up(sm) {
+      //   margin-bottom: spacer(5);
+      // }
+    }
+  }
+
+  &__landing-link {
+    // color: $policy-blue;
+    // font-family: $font-stack__custom;
+  }
+}
+
+// Landing page
+.page__projects {
+  .projects {
+    &__header {
+      // background-color: $policy-blue;
+      // color: $white;
+    }
+
+    &__title {
+      // color: $white;
+      // margin-bottom: spacer(2);
+    }
+  }
+}

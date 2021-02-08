@@ -19,6 +19,10 @@
                   <li class="nav-item nav__item">
                     <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#top" class="nav-link nav__link js-smoothscroll">{{ site.title }}</a>
                   </li>
+
+                  <li class="nav-item nav__item">
+                    <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#projects" class="nav-link nav__link js-smoothscroll">Projects</a>
+                  </li>
                   
                   <li class="nav-item nav__item">
                     <a href="{% if page.permalink != '/' %}{{ '/index.html' | relative_url }}{% endif %}#events" class="nav-link nav__link js-smoothscroll">Events</a>

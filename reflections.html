@@ -28,7 +28,7 @@ body-class: reflections presentation
             <p class="reflection__recirc__post__authors">
               By 
               {% for author in reflection.authors %}
-              {% include byline.html %}
+                {% include byline.html %}
               {% endfor %}
             </p>
             {{ reflection.excerpt }}

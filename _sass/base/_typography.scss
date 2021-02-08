@@ -68,6 +68,10 @@ h6, .h6 {
   @include one-element-size(h6);
 }
 
+.lead {
+  font-family: $font-stack__sans !important;
+}
+
 // Reused in other places as well for specific elements
 %placeholder__font-size {
   @include one-element-size();

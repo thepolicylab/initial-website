@@ -8,9 +8,7 @@
 }
 
 .reflection {
-  &__content {
-    background-color: $white;
-    
+  &__content {    
     &__img-wrapper,
     &__header {
       background-color: $policy-cream;
@@ -68,7 +66,6 @@
         strip-unit(rem(bp(small))),
         strip-unit(rem(bp(large)))
       );
-      // margin-top: spacer(6);
     }
 
     &__authors {
@@ -105,14 +102,6 @@
         margin: rem(32);
         margin-left: 0;
       }
-    }
-  }
-
-  &__recirc {
-    background-color: $policy-cream;
-
-    .page__home & {
-      background-color: $white;
     }
   }
 }
@@ -163,8 +152,6 @@
 // Landing page
 .page__reflections {
   .reflections {
-    background: $white;
-
     &__header {
       background-color: $policy-blue;
       color: $white;

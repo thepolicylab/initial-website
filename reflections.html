@@ -22,7 +22,8 @@ body-class: reflections presentation
   <div class="u__container u__vspacing">
     <div class="row u__spacing team py-0">
       <div class="col-sm-9 col-lg-8">
-        {% for reflection in site.reflections %}
+        {% assign reflections_most_recent = site.reflections | reverse %}
+        {% for reflection in reflections_most_recent %}
           <div class="reflections__post">
             <h3 class="reflections__post__title h4"><a href="{{ reflection.url }}">{{ reflection.title }}</a></h3>
             <p class="reflections__post__authors">

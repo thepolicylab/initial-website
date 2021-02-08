@@ -60,7 +60,8 @@ body-class: reflection presentation
           <h2 class="h1">More Reflections</h2>
         </div>
         {% assign counter = 0 %}
-        {% for reflection in site.reflections %}
+        {% assign reflections_most_recent = site.reflections | reverse %}
+        {% for reflection in reflections_most_recent %}
           {% if reflection.title != page.title and counter <= 4 %}
             <div class="col-sm-6 reflection__recirc__post">
               <h3 class="reflection__recirc__post__title h4"><a href="{{ reflection.url }}">{{ reflection.title }}</a></h3>

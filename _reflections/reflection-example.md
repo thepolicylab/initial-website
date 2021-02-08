@@ -4,6 +4,7 @@ title: "The Making of a Dashboard: Second Line of Title"
 permalink: reflections/making-of-a-dashboard/
 img: reflection-example-img.jpg
 authors: ['Paul Xu', 'Kevin Wilson', 'Claire Hug']
+date: 2021-02-03
 ---
 
 This is the first in a series of technical blog posts that document how The Policy Lab at Brown University built an interactive data dashboard for United Way of Rhode Island to support analytics and decision-making with 211 calls data.

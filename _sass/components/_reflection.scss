@@ -110,6 +110,10 @@
 
   &__recirc {
     background-color: $policy-cream;
+
+    .page__home & {
+      background-color: $white;
+    }
   }
 }
 

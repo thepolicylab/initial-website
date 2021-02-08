@@ -1,15 +1,7 @@
-{% if forloop.length == 1 %}
-  <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>
-{% elsif forloop.length == 2 %}
-  {% if forloop.last %}
-    and <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>
-  {% else %}
-    <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>
-  {% endif %}
-{% elsif forloop.length > 2 %}
-  {% if forloop.last %}
-    and <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>
-  {% else %}
-    <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>, 
-  {% endif %}
-{% endif %}
+{%- assign length = forloop.length -%}
+{%- assign secondtolast = length | minus: 1 -%}
+<a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>
+{%- unless forloop.last -%}
+  {% if length > 2 %}{{ ', ' }}{% endif %}
+{%- endunless -%}
+{% if forloop.index == secondtolast %}{{ ' and ' }}{% endif %}

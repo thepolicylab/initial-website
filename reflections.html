@@ -23,9 +23,9 @@ body-class: reflections presentation
     <div class="row u__spacing team py-0">
       <div class="col-sm-9 col-lg-8">
         {% for reflection in site.reflections %}
-          <div class="reflection__recirc__post">
-            <h3 class="reflection__recirc__post__title h4"><a href="{{ reflection.url }}">{{ reflection.title }}</a></h3>
-            <p class="reflection__recirc__post__authors">
+          <div class="reflections__post">
+            <h3 class="reflections__post__title h4"><a href="{{ reflection.url }}">{{ reflection.title }}</a></h3>
+            <p class="reflections__post__authors">
               By 
               {% for author in reflection.authors %}
                 {% include byline.html %}

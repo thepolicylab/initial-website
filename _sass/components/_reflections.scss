@@ -71,38 +71,6 @@
     &__authors {
       margin-bottom: 0;
     }
-
-    &__body {
-      img {
-        max-width: 100%;
-      }
-
-      figure {
-        border: $border-width solid $border-color;
-        border-radius: $border-radius;
-        padding: spacer(3);
-
-        figcaption {
-          margin-top: spacer(3);
-          padding-top: spacer(3);
-          border-top: $border-width solid $border-color;
-        }
-      }
-
-      .float-right {
-        float: right;
-        width: 50%;
-        margin: rem(32);
-        margin-right: 0;
-      }
-
-      .float-left {
-        float: left;
-        width: 50%;
-        margin: rem(32);
-        margin-left: 0;
-      }
-    }
   }
 }
 

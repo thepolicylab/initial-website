@@ -28,7 +28,7 @@ This project is a first step in the collaboration between The Policy Lab and Uni
 After communicating with the team at United Way of Rhode Island, Ben Guhin Delphine, Head of Design at The Policy Lab, created the first sketch of the design (see below). This first draft includes a stacked area chart, a choropleth map, and a few dropdowns that allow the users to filter the data. The stacked area chart, compared with line charts, helps user to see trends in call volumes not only across categories and areas.
 
 <figure>
-  <img src="/assets/img/reflections/reflection-example-img.jpg" alt="The first draft of the United Way 211 dashboard">
+  <img class="img--rwd" src="/assets/img/reflections/reflection-example-img.jpg" alt="The first draft of the United Way 211 dashboard">
   <figcaption>An early visual design mockup of what the dashboard might look like</figcaption>
 </figure>
 

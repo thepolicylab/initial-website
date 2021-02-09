@@ -34,42 +34,6 @@
         color: $white;
         padding: rem(32) rem(32) spacer(2);
       }
-
-      img {
-        max-width: 100%;
-      }
-
-      figure {
-        border: $border-width solid $border-color;
-        border-radius: $border-radius;
-        padding: spacer(3);
-
-        figcaption {
-          margin-top: spacer(3);
-          padding-top: spacer(3);
-          border-top: $border-width solid $border-color;
-        }
-      }
-
-      .float-right {
-        margin-bottom: rem(32);
-
-        @include media-breakpoint-up(sm) {
-          float: right;
-          width: 50%;
-          margin-left: rem(32);
-        }
-      }
-
-      .float-left {
-        margin-bottom: rem(32);
-
-        @include media-breakpoint-up(sm) {
-          float: left;
-          width: 50%;
-          margin-right: rem(32);
-        }
-      }
     }
 
     &__aside {

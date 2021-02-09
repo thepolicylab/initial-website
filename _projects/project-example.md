@@ -41,7 +41,7 @@ The cost of transportation presents a number of challenges for low-income Washin
 <!-- add 'class="float-left"' or 'class="float-right"' to the <figure> tag -->
 <!-- <figure class="float-left"> or <figure class="float-right"> -->
 <figure class="float-right">
-  <img src="/assets/img/reflections/reflection-example-img.jpg" alt="The first draft of the United Way 211 dashboard">
+  <img class="img--rwd" src="/assets/img/reflections/reflection-example-img.jpg" alt="The first draft of the United Way 211 dashboard">
   <figcaption>An early visual design mockup of what the dashboard might look like</figcaption>
 </figure>
 

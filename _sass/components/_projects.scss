@@ -85,34 +85,9 @@
         }
       }
     }
-
-    .lead {
-      // font-size: inherit;
-      // font-weight: $font-weight__normal;
-      // margin-bottom: spacer(4);
-
-      // @include media-breakpoint-up(sm) {
-      //   margin-bottom: spacer(5);
-      // }
-    }
   }
 
   &__landing-link {
     font-family: $font-stack__custom;
-  }
-}
-
-// Landing page
-.page__projects {
-  .projects {
-    &__header {
-      // background-color: $policy-blue;
-      // color: $white;
-    }
-
-    &__title {
-      // color: $white;
-      // margin-bottom: spacer(2);
-    }
   }
 }

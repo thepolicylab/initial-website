@@ -71,6 +71,7 @@
     }
     
     &__title {
+      flex-grow: 1;
       border-bottom: 10px solid $policy-cream;
       font-family: $font-stack__sans !important;
       font-weight: $font-weight__bold;

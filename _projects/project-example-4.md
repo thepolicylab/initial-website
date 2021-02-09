@@ -1,10 +1,10 @@
 ---
 layout: project
-permalink: projects/can-discounted-transit-improve-mobility-well-being-for-low-income-residents/
-title: "Can discounted transit improve mobility and well-being for low-income residents"
+permalink: projects/project-example-4/
+title: "And this is the last example before I give up and switch to using Lorem Ipsum"
 subtitle: As Lab staff have been detailed to support Mayor Muriel Bowser's comprehensive response to the District of Columbia's coronavirus (COVID-19) public health emergency, several Lab projects have been delayed. When the District resumes regular operations, project timelines will be updated accordingly. For more information on the public health emergency, please visit coronavirus.dc.gov.
 abstract: A long description of the project to be described in a pull quote.
-date: 2021-02-08
+date: 2021-02-09
 aside:
   partners:
     - name: District Department of Transportation
@@ -13,7 +13,7 @@ aside:
       link: https://jpal.org
   timeline: 2019 - 2023
   status: Design
-  method: Randomized Evaluation
+  method: Totally Made Up
   links:
     - name: Open Science Framework
       link: https://osf.io/wherever

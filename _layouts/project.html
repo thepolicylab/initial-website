@@ -66,26 +66,17 @@ body-class: project presentation
         <div class="col-12 text-center">
           <h2 class="h1">More Projects</h2>
         </div>
-        <div class="col-sm-4 project__recirc__post text-center">
-          <span class="project__recirc__post__meta">Name of Method</span>
-          <h3 class="project__recirc__post__title h4"><a href="">Can discounted transit improve mobility and well-being for low-income residents</a></h3>
-        </div>
-        <div class="col-sm-4 project__recirc__post text-center">
-          <span class="project__recirc__post__meta">Name of Method</span>
-          <h3 class="project__recirc__post__title h4"><a href="">Can discounted transit improve mobility and well-being for low-income residents</a></h3>
-        </div>
-        <div class="col-sm-4 project__recirc__post text-center">
-          <span class="project__recirc__post__meta">Name of Method</span>
-          <h3 class="project__recirc__post__title h4"><a href="">Can discounted transit improve mobility and well-being for low-income residents</a></h3>
-        </div>
-        <div class="col-sm-4 project__recirc__post text-center">
-          <span class="project__recirc__post__meta">Name of Method</span>
-          <h3 class="project__recirc__post__title h4"><a href="">Can discounted transit improve mobility and well-being for low-income residents</a></h3>
-        </div>
-        <div class="col-sm-4 project__recirc__post text-center">
-          <span class="project__recirc__post__meta">Name of Method</span>
-          <h3 class="project__recirc__post__title h4"><a href="">Can discounted transit improve mobility and well-being for low-income residents</a></h3>
-        </div>
+        {% assign counter = 0 %}
+        {% assign projects_most_recent = site.projects | reverse %}
+        {% for project in projects_most_recent %}
+          {% if project.title != page.title and counter <= 5 %}
+            <div class="col-sm-4 project__recirc__post d-flex flex-column text-center">
+              <span class="project__recirc__post__meta">{{ project.aside.method }}</span>
+              <h3 class="project__recirc__post__title h4"><a href="{{ project.url }}">{{ project.title }}</a></h3>
+            </div>
+          {% endif %}
+          {% assign counter = counter | plus:1 %}
+        {% endfor %}
       </div>
     </div>
   </aside>

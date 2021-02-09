@@ -1,10 +1,9 @@
 ---
 layout: project
-permalink: projects/project-example-5/
-title: "Ut enim ad minim veniam, quis nostrud exercitation"
-subtitle: As Lab staff have been detailed to support Mayor Muriel Bowser's comprehensive response to the District of Columbia's coronavirus (COVID-19) public health emergency, several Lab projects have been delayed. When the District resumes regular operations, project timelines will be updated accordingly. For more information on the public health emergency, please visit coronavirus.dc.gov.
+title: "Other title of case study goes here and spans perhaps three to five lines in sentence case"
+subtitle: 
 abstract: A long description of the project to be described in a pull quote.
-date: 2021-02-09
+date: 2021-02-02
 aside:
   partners:
     - name: District Department of Transportation
@@ -13,7 +12,7 @@ aside:
       link: https://jpal.org
   timeline: 2019 - 2023
   status: Design
-  method: Method Example
+  method: Some Other Method
   links:
     - name: Open Science Framework
       link: https://osf.io/wherever

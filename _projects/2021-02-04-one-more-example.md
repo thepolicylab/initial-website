@@ -1,10 +1,9 @@
 ---
 layout: project
-permalink: projects/project-example-7/
 title: "One more example to show that the landing page shows all of them"
 subtitle: As Lab staff have been detailed to support Mayor Muriel Bowser's comprehensive response to the District of Columbia's coronavirus (COVID-19) public health emergency, several Lab projects have been delayed. When the District resumes regular operations, project timelines will be updated accordingly. For more information on the public health emergency, please visit coronavirus.dc.gov.
 abstract: A long description of the project to be described in a pull quote.
-date: 2021-02-09
+date: 2021-02-04
 aside:
   partners:
     - name: District Department of Transportation

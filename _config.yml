@@ -39,7 +39,7 @@ collections:
     permalink: /reflections/:name
   projects:
     output: true
-    permalink: /projects/:name
+    permalink: /:collection/:name
 
 # Exclude from _site build
 exclude: ['.git',

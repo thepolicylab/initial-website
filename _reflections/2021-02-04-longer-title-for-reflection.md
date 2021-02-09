@@ -1,21 +1,20 @@
 ---
 layout: reflection
-title: "Event Recap: How do we optimize COVID-19 testing across our communities?"
-permalink: reflections/optimize-covid-testing-across-communities/
+title: "Other longer title for a reflection can go here and span two lines"
 img: reflection-example-img.jpg
-authors: ['Kelly Crawley']
+authors: ['Jake Bowers', 'Edward Huh']
 date: 2021-02-04
 published: false
 ---
 
-Learn how researchers at The Policy Lab and Brown University quickly partnered with policymakers at the State of Rhode Island and supported the design and analytics of Rhode Island's statewide COVID-19 testing program. These efforts improved the quality and speed of information generated to inform decisions about how to safely reopen our communities and the economy.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 {: .lead}
 
 This post will cover the background of this project and the decisions The Policy Lab team made on the tech stacks used on this project. Please use the following link to jump to the rest of the story.
 
-- [Part 2. Building the Skeleton of the App with Vue.js](/reflections/building-skeleton-of-app-with-vue)
-- [Part 3. Rendering the Visualizations with d3.js](/reflections/rendering-visualizations-with-d3)
-- [Part 4. UI/UX Refinements from Stakeholder Feedback](/reflections/ui-ux-refinements-from-stakeholder-feedback)
+- [Part 2. Building the Skeleton of the App with Vue.js]({% link _reflections/2021-02-03-optimize-covid-testing.md %})
+- [Part 3. Rendering the Visualizations with d3.js]({% link _reflections/2021-02-04-longer-title-for-reflection.md %})
+- [Part 4. UI/UX Refinements from Stakeholder Feedback]({% link _reflections/2021-02-06-additional-article.md %})
 
 ## Background of the project
 {: .lead}

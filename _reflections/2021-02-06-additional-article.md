@@ -1,7 +1,6 @@
 ---
 layout: reflection
 title: "Title here for additional article"
-permalink: reflections/title-here-for-additional-article/
 img: reflection-example-img.jpg
 authors: ['Sam Smith', 'Aidan Hudson-Lapore']
 date: 2021-02-06
@@ -13,9 +12,9 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 This post will cover the background of this project and the decisions The Policy Lab team made on the tech stacks used on this project. Please use the following link to jump to the rest of the story.
 
-- [Part 2. Building the Skeleton of the App with Vue.js](/reflections/building-skeleton-of-app-with-vue)
-- [Part 3. Rendering the Visualizations with d3.js](/reflections/rendering-visualizations-with-d3)
-- [Part 4. UI/UX Refinements from Stakeholder Feedback](/reflections/ui-ux-refinements-from-stakeholder-feedback)
+- [Part 2. Building the Skeleton of the App with Vue.js]({% link _reflections/2021-02-03-optimize-covid-testing.md %})
+- [Part 3. Rendering the Visualizations with d3.js]({% link _reflections/2021-02-04-longer-title-for-reflection.md %})
+- [Part 4. UI/UX Refinements from Stakeholder Feedback]({% link _reflections/2021-02-06-additional-article.md %})
 
 ## Background of the project
 {: .lead}

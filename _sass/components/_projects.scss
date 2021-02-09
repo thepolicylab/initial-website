@@ -61,18 +61,29 @@
 .project__recirc,
 .projects {
   &__post {
+    padding-top: spacer(5);
+
+    &__meta {
+      color: $gray-300;
+      display: block;
+      font-weight: $font-weight__bold;
+      margin-bottom: spacer(3);
+    }
+    
     &__title {
-      // font-family: $font-stack__sans !important;
-      // font-weight: $font-weight__bold;
-      // margin-bottom: spacer(2);
+      border-bottom: 10px solid $policy-cream;
+      font-family: $font-stack__sans !important;
+      font-weight: $font-weight__bold;
+      margin-bottom: 0;
+      padding-bottom: rem(32);
 
-      // a {
-      //   text-decoration: none;
+      a {
+        text-decoration: none;
 
-      //   @include hover-focus() {
-      //     text-decoration: $link-decoration;
-      //   }
-      // }
+        @include hover-focus() {
+          text-decoration: $link-decoration;
+        }
+      }
     }
 
     .lead {

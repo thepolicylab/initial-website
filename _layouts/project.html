@@ -28,9 +28,9 @@ body-class: project presentation
       </div>
     </header>
 
-    <div class="row u__container">
+    <div class="row flex-row-reverse u__container">
       <article class="col-lg-9 project__content__body">
-        <div class="s__blue project__content__body__summary">
+        <div class="s__blue project__content__body__summary mb-4 mb-lg-5">
           <h2 class="lead">Project Summary</h2>
           {{ page.excerpt }}
         </div>
@@ -38,32 +38,24 @@ body-class: project presentation
 
       </article>
 
-      <aside class="col-lg-3">
-        {% if page.partners %}
-          <span>Partners</span>
-          {% for partner in page.partners %}
-            <a href="{{ partner.link }}">{{ partner.name }}</a>
-          {% endfor %}
-        {% endif %}
-        {% if page.timeline %}
-          <span>Timeline</span>
-          <span>{{ page.timeline }}</span>
-        {% endif %}
-        {% if page.status %}
-          <span>Timeline</span>
-          <span>{{ page.status }}</span>
-        {% endif %}
-        {% if page.method %}
-          <span>Timeline</span>
-          <span>{{ page.method }}</span>
-        {% endif %}
-        {% if page.links %}
-          <span>For More</span>
-          {% for link in page.links %}
-          <a href="{{ link.link }}">{{ link.name }}</a>
-          {% endfor %}
-        {% endif %}
-      </aside>
+      <div class="col-lg-3">
+        <aside class=" s__light project__content__aside">
+          <ul class="project__content__aside__list">
+            {% for meta in page.aside %}
+              <li>
+                <p class="lead">{{ meta[0] | capitalize }}</p>
+                {% for inner_meta in meta[1] %}
+                  {% if inner_meta.link %}
+                    <p><a href="{{ inner_meta.link }}">{{ inner_meta.name }}</a></p>
+                  {% else %}
+                    <p>{{ inner_meta }}</p>
+                  {% endif %}
+                {% endfor %}
+              </li>
+            {% endfor %}
+          </ul>
+        </aside>
+      </div>
     </div>
 
   </div>

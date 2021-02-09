@@ -14,6 +14,7 @@
     }
 
     &__landing-link {
+      background-color: $white;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -53,15 +54,42 @@
       .float-right {
         float: right;
         width: 50%;
-        margin: rem(32);
-        margin-right: 0;
+        margin-bottom: rem(32);
+        margin-left: rem(32);
       }
 
       .float-left {
         float: left;
         width: 50%;
-        margin: rem(32);
-        margin-left: 0;
+        margin-right: rem(32);
+        margin-bottom: rem(32);
+      }
+    }
+
+    &__aside {
+      padding: rem(32);
+
+      &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li + li {
+          margin-top: rem(32);
+        }
+
+        p {
+          margin-bottom: spacer(2);
+        }
+
+        a {
+          color: inherit;
+          text-decoration: none;
+
+          @include hover-focus() {
+            text-decoration: $link-decoration;
+          }
+        }
       }
     }
   }

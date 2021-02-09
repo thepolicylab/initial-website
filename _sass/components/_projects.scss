@@ -9,6 +9,8 @@
 
 .project {
   &__content {
+    padding-top: 0;
+
     &__landing-link-wrapper {
       position: relative;
     }
@@ -50,15 +52,6 @@
 
         p {
           margin-bottom: spacer(2);
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-
-          @include hover-focus() {
-            text-decoration: $link-decoration;
-          }
         }
       }
     }

@@ -58,10 +58,9 @@
   }
 }
 
-.project__recirc,
-.projects {
+.project__recirc {
   &__post {
-    padding-top: spacer(5);
+    padding-top: spacer(6);
 
     &__meta {
       color: $gray-300;
@@ -99,8 +98,7 @@
   }
 
   &__landing-link {
-    // color: $policy-blue;
-    // font-family: $font-stack__custom;
+    font-family: $font-stack__custom;
   }
 }
 

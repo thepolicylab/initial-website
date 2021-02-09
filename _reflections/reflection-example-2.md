@@ -5,6 +5,7 @@ permalink: reflections/optimize-covid-testing-across-communities/
 img: reflection-example-img.jpg
 authors: ['Kelly Crawley']
 date: 2021-02-04
+published: false
 ---
 
 Learn how researchers at The Policy Lab and Brown University quickly partnered with policymakers at the State of Rhode Island and supported the design and analytics of Rhode Island's statewide COVID-19 testing program. These efforts improved the quality and speed of information generated to inform decisions about how to safely reopen our communities and the economy.

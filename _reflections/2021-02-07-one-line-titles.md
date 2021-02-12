@@ -2,7 +2,7 @@
 layout: reflection
 title: "Titles might only span one line though"
 img: reflection-example-img.jpg
-authors: ['Jake Bowers', 'Edward Huh']
+authors: ['Jake Bowers','Edward Huh','Brian Hogue']
 date: 2021-02-07
 published: false
 ---

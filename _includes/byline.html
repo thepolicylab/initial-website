@@ -1,6 +1,11 @@
 {%- assign length = forloop.length -%}
 {%- assign secondtolast = length | minus: 1 -%}
-<a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>
+{%- assign team_member = site.team | where:"title", author | first -%}
+{%- if team_member.title == author -%}
+  <a href="{{ '/team/' | relative_url }}{{ author | slugify }}" class="author__link">{{ author }}</a>
+{%- else -%}
+  <span class="author__no-link">{{ author }}</span>
+{%- endif -%}
 {%- unless forloop.last -%}
   {% if length > 2 %}{{ ', ' }}{% endif %}
 {%- endunless -%}

@@ -2,7 +2,7 @@
 layout: reflection
 title: "Event Recap: How do we optimize COVID-19 testing across our communities?"
 img: reflection-example-img.jpg
-authors: ['Kelly Crawley']
+authors: ['Kelly Harris Crawley']
 date: 2021-02-03
 published: false
 ---

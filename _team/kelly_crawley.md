@@ -1,7 +1,7 @@
 ---
 layout: team
 title: Kelly Harris Crawley
-permalink: team/kelly-crawley/
+permalink: team/kelly-harris-crawley/
 position: Senior Associate for Community Engagement
 img: kelly-crawley.jpg
 linkedin: https://www.linkedin.com/in/kelly-crawley-22250447/

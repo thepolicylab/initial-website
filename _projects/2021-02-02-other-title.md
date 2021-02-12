@@ -2,7 +2,6 @@
 layout: project
 title: "Other title of case study goes here and spans perhaps three to five lines in sentence case"
 subtitle: 
-abstract: A long description of the project to be described in a pull quote.
 date: 2021-02-02
 aside:
   partners:

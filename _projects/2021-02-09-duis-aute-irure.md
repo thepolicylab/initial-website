@@ -10,7 +10,7 @@ aside:
       link: https://ddot.dc.gov/
     - name: The Abdul Lafif Jameel Poverty Action Lab (J-PAL)
       link: https://jpal.org
-  timeline: 2019 - 2023
+  timeline: "2019 - 2023"
   status: Design
   method: Randomized Evaluation
   links:

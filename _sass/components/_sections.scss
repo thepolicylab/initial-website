@@ -74,4 +74,8 @@
   &__gray {
     background-color: gray("200");
   }
+
+  &__blue {
+    background-color: $policy-blue;
+  }
 }

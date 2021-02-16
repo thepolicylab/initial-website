@@ -1,9 +1,9 @@
 .layout__team {
   // account for the positioned navbar
-  padding-top: $nav-height__lg;
-  
-  .l-wrapper {
-    padding-top: 0;
+  padding-top: $nav-height__sm;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: $nav-height__lg;
   }
 }
 

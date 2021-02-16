@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="layout__{{ page.layout }} page__{{ page.body-class }}" data-spy="scroll" data-target="#main-nav">
+  <body class="layout__{{ page.layout }} page__{{ page.body-class }} page__{{ layout.body-class }}" data-spy="scroll" data-target="#main-nav">
     <div id="top" class="l-wrapper">
 
       {% unless page.show-nav == false  %}

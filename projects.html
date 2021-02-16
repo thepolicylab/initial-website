@@ -1,0 +1,46 @@
+---
+layout: default
+title: "Reflections | The Policy Lab"
+subtitle: "Learn more about our work across state, local, and national partners"
+nav-title: Projects
+permalink: projects/
+body-class: projects presentation
+---
+
+<section class="layout__main s__white projects">
+  <div class="nav__spacer"></div>
+
+  <div class="u__vspacing s__primary project__recirc">
+    <div class="u__container u__spacing">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="h1 mb-2">Projects</h2>
+          <span class="lead">{{ page.subtitle }}</span>
+        </div>
+        {% assign projects_most_recent = site.projects | reverse %}
+        {% for project in projects_most_recent %}
+          <div class="col-sm-4 project__recirc__post d-flex flex-column text-center">
+            <span class="project__recirc__post__meta">{{ project.aside.method }}</span>
+            <h3 class="project__recirc__post__title h4"><a href="{{ project.url }}">{{ project.title }}</a></h3>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <aside class="u__vspacing s__light">
+    <div class="u__container u__spacing connect">
+      <div class="row">
+        <div class="col-md-3 col-lg-4">
+          <h2 class="h1">Get Updates</h2>
+        </div>
+        <div class="col-md-9 col-lg-8">
+          <p class="lead">Sign up to get updates on projects, events, and new episodes of our podcast, <a href="https://thirtythousandleagues.com/">30,000 Leagues</a></p>
+
+          {% include mailchimp.html %}
+
+        </div>
+      </div>
+    </div>
+  </aside>
+</section>

@@ -1,0 +1,133 @@
+.layout__reflection {
+  // account for the positioned navbar
+  padding-top: $nav-height__sm;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: $nav-height__lg;
+  }
+}
+
+.reflection {
+  &__content {    
+    &__img-wrapper,
+    &__header {
+      background-color: $policy-cream;
+    }
+
+    &__img {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 50vw;
+      max-height: 50vw;
+      max-width: $max-width;
+      margin: 0 auto;
+
+      @include media-breakpoint-up(md) {
+        min-height: 40vw;
+        max-height: 40vw;
+      }
+
+      @include media-breakpoint-up(xl) {
+        min-height: 30vw;
+        max-height: 30vw;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        min-height: 456px;
+        max-height: 456px;
+      }
+    }
+
+    &__landing-link {
+      color: $gray-600;
+      font-weight: $font-weight__bold;
+    }
+
+    &__title-wrapper,
+    &__authors {
+      text-align: center;
+      
+      @include media-breakpoint-up(sm) {
+        text-align: left;
+      }
+    }
+
+    &__title {
+      color: $gray-700;
+      text-transform: none;
+    }
+
+    &__authors-wrapper {
+      @include fluid-units(
+        'padding-top',
+        1,
+        5,
+        strip-unit(rem(bp(small))),
+        strip-unit(rem(bp(large)))
+      );
+    }
+
+    &__authors {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.reflection__recirc,
+.reflections {
+  &__post {
+    &__title {
+      font-family: $font-stack__sans !important;
+      font-weight: $font-weight__bold;
+      margin-bottom: spacer(2);
+
+      a {
+        text-decoration: none;
+
+        @include hover-focus() {
+          text-decoration: $link-decoration;
+        }
+      }
+    }
+
+    &__authors {
+      font-weight: $font-weight__bold;
+      margin-bottom: spacer(1);
+    }
+
+    .lead {
+      font-size: inherit;
+      font-weight: $font-weight__normal;
+      margin-bottom: spacer(4);
+
+      @include media-breakpoint-up(sm) {
+        margin-bottom: spacer(5);
+      }
+    }
+  }
+
+  &__landing-link {
+    color: $policy-blue;
+    font-family: $font-stack__custom;
+  }
+}
+
+.author__link {
+  display: inline-block;
+}
+
+// Landing page
+.page__reflections {
+  .reflections {
+    &__header {
+      background-color: $policy-blue;
+      color: $white;
+    }
+
+    &__title {
+      color: $white;
+      margin-bottom: spacer(2);
+    }
+  }
+}

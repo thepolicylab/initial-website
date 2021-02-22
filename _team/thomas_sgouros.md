@@ -1,7 +1,7 @@
 ---
 layout: team
-title: Thomas Sgouros
-permalink: team/thomas-sgouros/
+title: Tom Sgouros
+permalink: team/tom-sgouros/
 position: Fellow
 img: thomas-sgouros.jpg
 linkedin:

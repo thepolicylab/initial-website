@@ -68,6 +68,10 @@ h6, .h6 {
   @include one-element-size(h6);
 }
 
+.lead {
+  font-family: $font-stack__sans !important;
+}
+
 // Reused in other places as well for specific elements
 %placeholder__font-size {
   @include one-element-size();
@@ -203,7 +207,17 @@ form {
 //  border-bottom: 2px solid $color__borders;
 //}
 
-//figure {}
+figure {
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+  padding: spacer(3);
+
+  figcaption {
+    margin-top: spacer(3);
+    padding-top: spacer(3);
+    border-top: $border-width solid $border-color;
+  }
+}
 
 //table {
 //  width: 100%;

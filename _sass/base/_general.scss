@@ -101,3 +101,23 @@ hr.squiggle {
   margin: $spacer auto;
   max-width: em(212);
 }
+
+.float-right {
+  margin-bottom: rem(32);
+
+  @include media-breakpoint-up(sm) {
+    float: right;
+    width: 50%;
+    margin-left: rem(32);
+  }
+}
+
+.float-left {
+  margin-bottom: rem(32);
+
+  @include media-breakpoint-up(sm) {
+    float: left;
+    width: 50%;
+    margin-right: rem(32);
+  }
+}

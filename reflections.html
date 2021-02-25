@@ -1,0 +1,57 @@
+---
+layout: default
+title: "Reflections | The Policy Lab"
+subtitle: "Thoughts from our staff, partners, and fellows"
+nav-title: Reflections
+permalink: reflections/
+body-class: reflections presentation
+---
+
+<section class="layout__main s__white reflections">
+  <div class="nav__spacer"></div>
+
+  <header class="reflections__header">
+    <div class="row u__container u__spacing u__vspacing">
+      <div class="reflections__title-wrapper">
+        <h1 class="reflections__title">Reflections</h1>
+        <span class="reflections__subtitle h5">{{ page.subtitle }}</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="u__container u__vspacing">
+    <div class="row u__spacing team py-0">
+      <div class="col-sm-9 col-lg-8">
+        {% assign reflections_most_recent = site.reflections | reverse %}
+        {% for reflection in reflections_most_recent %}
+          <div class="reflections__post">
+            <h3 class="reflections__post__title h4"><a href="{{ reflection.url }}">{{ reflection.title }}</a></h3>
+            <p class="reflections__post__authors">
+              By 
+              {% for author in reflection.authors %}
+                {% include byline.html %}
+              {% endfor %}
+            </p>
+            {{ reflection.excerpt }}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <aside class="u__vspacing s__light">
+    <div class="u__container u__spacing connect">
+      <div class="row">
+        <div class="col-md-3 col-lg-4">
+          <h2 class="h1">Get Updates</h2>
+        </div>
+        <div class="col-md-9 col-lg-8">
+          <p class="lead">Sign up to get updates on projects, events, and new episodes of our podcast, <a href="https://thirtythousandleagues.com/">30,000 Leagues</a></p>
+
+          {% include mailchimp.html %}
+
+        </div>
+      </div>
+    </div>
+  </aside>
+</section>

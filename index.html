@@ -40,7 +40,6 @@ body-class: home
         </div>
       </div>
 
-
       <section id="anchor-about" class="u__vspacing s__white">
         <article class="u__container">
 
@@ -58,6 +57,67 @@ body-class: home
         </article>
       </section>
 
+      <section id="projects" class="u__vspacing s__primary project__recirc">
+        <div class="u__container u__spacing">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <h2 class="h1 mb-2">Projects</h2>
+              <span class="lead">Learn more about our work across state, local, and national partners</span>
+            </div>
+            {% assign projects_most_recent = site.projects | reverse %}
+            {% for project in projects_most_recent limit:6 %}
+              <div class="col-sm-4 project__recirc__post d-flex flex-column text-center">
+                <span class="project__recirc__post__meta">{{ project.aside.method }}</span>
+                <h3 class="project__recirc__post__title h4"><a href="{{ project.url }}">{{ project.title }}</a></h3>
+              </div>
+            {% endfor %}
+            <div class="col-12 pt-5 text-center">
+              <a href="{% link projects.html %}" class="project__recirc__landing-link h4">All Projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="u__vspacing s__light">
+        <article class="u__container u__spacing events">
+          <div class="row">
+            <div class="col-md-3 col-lg-4">
+              <h2 class="h1">Events</h2>
+            </div>
+            <div class="col-md-9 col-lg-8">
+
+              {% include events.html %}
+
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="reflections" class="u__vspacing s__white reflection__recirc">
+        <div class="u__container u__spacing">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="h1">Reflections</h2>
+            </div>
+            {% assign reflections_most_recent = site.reflections | reverse %}
+            {% for reflection in reflections_most_recent limit:4 %}
+              <div class="col-sm-6 reflection__recirc__post">
+                <h3 class="reflection__recirc__post__title h4"><a href="{{ reflection.url }}">{{ reflection.title }}</a></h3>
+                <p class="reflection__recirc__post__authors">
+                  By 
+                  {% for author in reflection.authors %}
+                  {% include byline.html %}
+                  {% endfor %}
+                </p>
+                {{ reflection.excerpt }}
+              </div>
+            {% endfor %}
+            <div class="col-12">
+              <a href="{% link reflections.html %}" class="reflection__recirc__landing-link h4">All Reflections</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="connect" class="u__vspacing s__primary target-cynosure">
         <article class="u__container u__spacing connect">
@@ -75,23 +135,6 @@ body-class: home
         </article>
       </section>
 
-
-      <section id="events" class="u__vspacing s__light">
-        <article class="u__container u__spacing events">
-          <div class="row">
-            <div class="col-md-3 col-lg-4">
-              <h2 class="h1">Events</h2>
-            </div>
-            <div class="col-md-9 col-lg-8">
-
-              {% include events.html %}
-
-            </div>
-          </div>
-        </article>
-      </section>
-
-
       <section id="quote" class="u__vspacing s__green">
         <article class="u__container">
 
@@ -104,7 +147,6 @@ body-class: home
 
         </article>
       </section>
-
 
       <section id="theory" class="u__vspacing s__white">
         <article class="u__container">
@@ -146,8 +188,6 @@ body-class: home
         </article>
       </section>
 
-
-
       <section id="team" class="u__vspacing s__light">
         <article class="u__container">
           <div class="u__spacing">
@@ -169,9 +209,6 @@ body-class: home
         </article>
       </section>
 
-
-
-
       <section id="jobs" class="u__vspacing s__light-splatter pb-0 target-cynosure">
         <article class="u__container u__spacing jobs">
           <div class="row">
@@ -189,5 +226,4 @@ body-class: home
             </div>
           </div>
         </article>
-
       </section>

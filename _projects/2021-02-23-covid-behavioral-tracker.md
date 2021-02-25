@@ -14,6 +14,9 @@ aside:
       link: https://tpl.fyi/covid-research-tracker
 ---
 
+The COVID-19 pandemic unleashed a flood of scientific research. Behavioral scientists quickly realized they had a role in the effort, since the fight against COVID-19 depends on individuals electively engaging in costly behaviors like self isolation, mask-wearing, and vaccination. The Policy Lab has been aggregating and summarizing this work in a [COVID-19 Behavioral Research Tracker](https://tpl.fyi/covid-research-tracker) to put make it much easier for policymakers to access.
+{: .summary}
+
 ## Why is this issue important?
 {: .lead}
 

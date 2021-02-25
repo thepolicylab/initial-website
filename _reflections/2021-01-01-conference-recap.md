@@ -2,7 +2,7 @@
 layout: reflection
 title: "Conference-palooza!"
 authors: ['Kelly Harris Crawley']
-date: 2020-12-19
+date: 2021-01-01
 ---
 
 The last quarter of 2020 brought a schedule full of presentations! We were grateful to share what we’ve been learning with national audiences. Here’s a sample of what we’ve been Zooming-in on.

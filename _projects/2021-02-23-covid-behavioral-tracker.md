@@ -39,7 +39,7 @@ The Covid Research Tracker is a living, public document. As of February 2021 the
 
 <figure>
   <img class="img--rwd" src="/assets/img/projects/2021-02-23-covid-heavioral-tracker.png" alt="Screenshot of the COVID-19 Behavioral Science Research Tracker">
-  <figcaption>A screenshot of The Policy Lab's [COVID-19 Behavioral Science Research Tracker](https://docs.google.com/spreadsheets/d/1Byeq4H2e2bEnYrFjRAYZKT3ml8wGO3jXu2zoOTYezUc/edit?pli=1#gid=0).</figcaption>
+  <figcaption>A screenshot of The Policy Lab's <a href="https://docs.google.com/spreadsheets/d/1Byeq4H2e2bEnYrFjRAYZKT3ml8wGO3jXu2zoOTYezUc/edit?pli=1#gid=0">COVID-19 Behavioral Science Research Tracker</a>.</figcaption>
 </figure>
 
 Our hope is that the Tracker will be an asset for researchers involved in the COVID-19 response as well as anyone interested in the behavioral science at play within the pandemic. We could imagine many uses of the database—and users will surely have many more ideas. For example, if you look at all papers testing different communication appeals for why a person might engage in a health-related behavior (e.g. practice social distancing), you’ll notice that messages appealing to the wellbeing of the community fare no better than, and in some cases worse than, similar messages appealing to the wellbeing of the individual or family. (We replicated this in a survey experiment on COVID-19 vaccine information seeking, by the way - details [here](https://osf.io/ydpnu/).) Or for those interested in the politics of COVID-19, you can use the tracker to parse through the many studies examining the relationship between political party and preventive behaviors or COVID-related beliefs and attitudes.[^2]
@@ -49,6 +49,6 @@ Our hope is that the Tracker will be an asset for researchers involved in the CO
 
 The Policy Lab continues to update the tracker. If you see gaps or have additions or improvements to suggest, please email us at [thepolicylab@brown.edu](mailto:thepolicylab@brown.edu).
 
-[^1] Lunn et al. (2020). [Using Behavioral Science to help fight the Coronavirus](http://www.journal-bpa.org/index.php/jbpa/article/view/147). _Journal of Behavioral Public Administration_. Van Bavel et al. (2020). [Using social and behavioural science to support COVID-19 pandemic response](https://www.nature.com/articles/s41562-020-0884-z.). _Nature Human Behavior_.
+[^1]: Lunn et al. (2020). [Using Behavioral Science to help fight the Coronavirus](http://www.journal-bpa.org/index.php/jbpa/article/view/147). _Journal of Behavioral Public Administration_. Van Bavel et al. (2020). [Using social and behavioural science to support COVID-19 pandemic response](https://www.nature.com/articles/s41562-020-0884-z.). _Nature Human Behavior_.
 
 [^2]: See for instance Geana et al. (submitted). [Ideology as a determinant of health behavior](https://osf.io/87qcn).

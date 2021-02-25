@@ -6634,6 +6634,8 @@ figure {
   .project__content__body__summary {
     color: #fff;
     padding: 2rem 2rem 0.5rem; }
+    .project__content__body__summary a {
+      color: #bcbbc4; }
   .project__content__aside {
     padding: 2rem; }
     .project__content__aside__list {

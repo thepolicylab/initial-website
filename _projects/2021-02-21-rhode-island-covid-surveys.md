@@ -13,6 +13,8 @@ aside:
   links:
     - name: Open Science Framework
       link: http://osf.io/w2nhg
+    - name: Paper detailing results
+      link: https://osf.io/ydpnu
 ---
 
 In collaboaration with Rhode Island's Department of Health and Governor's Office, we conducted a series of surveys to understand the beliefs and attitudes governing individual behaviors during the COVID-19 pandemic to help policymakers respond effectively in these unprecedented times.
@@ -60,7 +62,7 @@ If you’re interested in replicating this survey in your state, please contact 
 ## What happened behind the scenes?
 {: .lead}
 
-A full examination of vaccine intentions and beliefs by demographics and other individual characteristics is forthcoming; preliminary results indicate that intentions to vaccinate are lower in Rhode Island’s major cities, among Republicans, and at lower ranges of family income or educational attainment. Results from a survey experiment[^5] and our ongoing COVID-19 behavioral research tracking[^6] suggest that public health messages appealing to the good of the community are less effective than identical messages that appeal to the good of one’s family. This result informed the state’s COVID-19 messaging strategy, which Governor Raimondo summarized during a subsequent weekly press briefing: “I have been up here offering a message of ‘protect your household’, I’m gonna continue to hammer home that message.”[^7]
+A full examination of vaccine intentions and beliefs by demographics and other individual characteristics is forthcoming; preliminary results indicate that intentions to vaccinate are lower in Rhode Island’s major cities, among Republicans, and at lower ranges of family income or educational attainment. Results from a [survey experiment](https://osf.io/ydpnu) and our ongoing COVID-19 behavioral research tracking[^6] suggest that public health messages appealing to the good of the community are less effective than identical messages that appeal to the good of one’s family. This result informed the state’s COVID-19 messaging strategy, which Governor Raimondo summarized during a subsequent weekly press briefing: “I have been up here offering a message of ‘protect your household’, I’m gonna continue to hammer home that message.”[^7]
 
 The Policy Lab continues to work with RIDOH on surveying COVID-19-related beliefs and behaviors in order to inform the state’s ongoing mitigation efforts and vaccine rollout.
 
@@ -72,8 +74,6 @@ The Policy Lab continues to work with RIDOH on surveying COVID-19-related belief
 [^3]: [Anderson et al., 2020](https://www.thelancet.com/article/S0140-6736(20)32318-7/fulltext); [McNeil, 2020](https://www.nytimes.com/2020/12/24/health/herd-immunity-covid-coronavirus.html); [Royal Society/British Academy, 2020](https://royalsociety.org/-/media/policy/projects/set-c/set-c-vaccine-deployment.pdf)
 
 [^4]: [Hamel et al., 2020](https://www.kff.org/coronavirus-covid-19/report/kff-covid-19-vaccine-monitor-december-2020/); [Kreps et al., 2020](https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2771872); [Tyson et al., 2020](https://www.pewresearch.org/science/2020/09/17/u-s-public-now-divided-over-whether-to-get-covid-19-vaccine/)
-
-[^5]: Rabb, Glick, Houston, Bowers, & Yokum (forthcoming). No evidence that collective-good appeals best promote Covid-related health behaviors.
 
 [^6]: [https://tpl.fyi/covid-research-tracker](https://tpl.fyi/covid-research-tracker)
 

@@ -36,7 +36,7 @@ Notably, and as you can see in the [annotated budget template](http://www.omb.ri
 
 <figure>
   <img class="img--rwd" src="/assets/img/projects/2021-02-25-rhodeisland-evidence-scale.png" alt="Rhode Island's 6-point Evidence Scale">
-  <figcaption>The Rhode Island Evidence Scale. The re-designed budget template also introduced, for the first time, a 6-point Evidence Scale. The instructions asked users to “rank the proposed initiative’s current level of evidentiary support,” with links to resources such as [Pew’s Results First Clearinghouse](https://www.pewtrusts.org/en/research-and-analysis/data-visualizations/2015/results-first-clearinghouse-database) and the [Social Programs That Work](https://evidencebasedprograms.org/) database as references. We also provided training on how to conduct desk research and how to use the scale.</figcaption>
+  <figcaption>Figure 1. The Rhode Island Evidence Scale. The re-designed budget template also introduced, for the first time, a 6-point Evidence Scale. The instructions asked users to “rank the proposed initiative’s current level of evidentiary support,” with links to resources such as <a href="https://www.pewtrusts.org/en/research-and-analysis/data-visualizations/2015/results-first-clearinghouse-database">Pew’s Results First Clearinghouse</a> and the <a href="https://evidencebasedprograms.org/)">Social Programs That Work</a> database as references. We also provided training on how to conduct desk research and how to use the scale.</figcaption>
 </figure>
 
 ## What have we learned (so far)?

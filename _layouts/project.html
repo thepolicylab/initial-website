@@ -48,7 +48,11 @@ body-class: project presentation
                   {% if inner_meta.link %}
                     <p><a href="{{ inner_meta.link }}">{{ inner_meta.name }}</a></p>
                   {% else %}
-                    <p>{{ inner_meta }}</p>
+                    {% if inner_meta.name %}
+                      <p>{{ inner_meta.name }}</p>
+                    {% else %}
+                      <p>{{ inner_meta }}</p>
+                    {% endif %}
                   {% endif %}
                 {% endfor %}
               </li>

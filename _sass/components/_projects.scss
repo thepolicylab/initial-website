@@ -68,7 +68,7 @@
       font-weight: $font-weight__bold;
       margin-bottom: spacer(3);
     }
-    
+
     &__title {
       flex-grow: 1;
       border-bottom: 10px solid $policy-cream;
@@ -90,4 +90,19 @@
   &__landing-link {
     font-family: $font-stack__custom;
   }
+}
+
+.footnotes {
+  li {
+    font-size: small;
+  }
+
+  p {
+    font-size: small;
+  }
+
+  border-top: gray;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding-top: 1rem;
 }

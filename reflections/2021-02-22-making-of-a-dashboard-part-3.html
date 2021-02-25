@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+
+  <head>
+	<meta charset="utf-8">
+	<link rel="dns-prefetch" href="//use.typekit.net">
+	<link rel="dns-prefetch" href="//cloud.typography.com">
+	<link rel="dns-prefetch" href="//www.googletagmanager.com">
+	<link rel="dns-prefetch" href="//code.jquery.com">
+	<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+	<link rel="preconnect" href="//brown.us20.list-manage.com">
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="google-site-verification" content="wkcAVWy8ClxzqSm5y4O1zgeSVSi3QBaFD69VQP5YNvQ">
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="The Policy Lab">
+	<meta property="og:url" content="//thepolicylab.brown.edu/reflections/2021-02-22-making-of-a-dashboard-part-3">
+	<meta property="og:image" content="/assets/img/share-image.jpg">
+	<meta property="og:site_name" content="The Policy Lab">
+	<meta property="og:description" content="We're a new lab at the center of Rhode Island’s infrastructure for evidence-based policymaking. Let's learn together.">
+
+  <title>The Making of Dashboard - Part 3 | The Policy Lab</title>
+  <meta name="description" content="We're a new lab at the center of Rhode Island’s infrastructure for evidence-based policymaking. Let's learn together.">
+
+  <link rel="stylesheet" type="text/css" href="https://use.typekit.net/wag1nll.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7022116/7515612/css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#007ea8">
+  <meta name="msapplication-TileColor" content="#007ea8">
+  <meta name="theme-color" content="#007ea8">
+
+  <!--Global site tag (gtag.js) - Google Analytics-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134641342-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134641342-1');
+  </script>
+
+</head>
+
+
+  <body class="layout__reflection page__ page__reflection presentation" data-spy="scroll" data-target="#main-nav">
+    <div id="top" class="l-wrapper">
+
+      
+                  
+          <div class="nav__container fixed-top">
+            <nav id="main-nav" class="main__nav navbar navbar-expand-lg u__container nav">
+
+              <a href="#content" class="nav-link nav__link nav__skip sr-only sr-only-focusable js-smoothscroll">Skip to main content</a>
+
+              <button class="navbar-toggler nav__button" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="nav__button__icon">&equiv;</span>
+                <span class="nav__button__text" style="font-weight: 600; padding-top: 0.2em;"><span class="sr-only">Open the </span>Menu</span>
+              </button>
+              <div class="collapse navbar-collapse nav__pane" id="navbarContent">
+                <ul class="navbar-nav nav__list" role="navigation">
+
+                  <li class="nav-item nav__item">
+                    <a href="/index.html#top" class="nav-link nav__link js-smoothscroll">The Policy Lab</a>
+                  </li>
+
+                  <li class="nav-item nav__item">
+                    <a href="/index.html#projects" class="nav-link nav__link js-smoothscroll">Projects</a>
+                  </li>
+                  
+                  <li class="nav-item nav__item">
+                    <a href="/index.html#events" class="nav-link nav__link js-smoothscroll">Events</a>
+                  </li>
+
+                  <li class="nav-item nav__item">
+                    <a href="/index.html#reflections" class="nav-link nav__link js-smoothscroll">Reflections</a>
+                  </li>
+
+                  <li class="nav-item nav__item">
+                    <a href="/index.html#connect" class="nav-link nav__link js-smoothscroll">Get Updates</a>
+                  </li>
+                  
+                  <li class="nav-item nav__item">
+                    <a href="/index.html#podcast" class="nav-link nav__link js-smoothscroll">Podcast</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+      
+      
+      
+
+<section id="content" class="layout__main s__white reflection">
+  <div class="reflection__content">
+    
+    <header class="reflection__content__header u__spacing">
+      <div class="row u__container">
+        <div class="col-sm-7 reflection__content__title-wrapper">
+          <a href="/reflections/" class="reflection__content__landing-link">Reflections</a>
+          <h1 class="reflection__content__title display-5 pt-4 mb-2">The Making of Dashboard - Part 3</h1>
+        </div>
+      </div>
+      <div class="row u__container">
+        <div class="col-sm-8 reflection__content__authors-wrapper">
+          <p class="reflection__content__authors">
+            By 
+              
+                <a href="/team/paul-xu" class="author__link">Paul Xu</a>
+
+              
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <article class="container u__container u__vspacing reflection__content__body">
+      <div class="row">
+        <div class="col-sm-9 col-lg-8">
+
+          <p>In this post, we will cover the details in creating the data visualizations used in <a href="https://tpl.fyi/211-dashboard">the United Way Rhode Island 211 Dashboard</a> to reveal patterns in 211 calls. <a href="/reflections/2021-02-21-making-of-a-dashboard-part-2">The previous post</a> described in detail the overall architecture of the app and how data is persisted as state in the Vue app. This post focuses more on the gotchas using d3.js to create interactive data visualizations.</p>
+
+<ul>
+  <li>Part 1. <a href="/reflections/2021-02-20-making-of-a-dashboard-part-1">Decisions on the Tech Stack</a></li>
+  <li>Part 2. <a href="/reflections/2021-02-21-making-of-a-dashboard-part-2">Building the Skeleton of the App with Vue.js</a></li>
+  <li>Part 4. <a href="/reflections/2021-02-23-making-of-a-dashboard-part-4">UI/UX Refinements from Stakeholder Feedback</a></li>
+</ul>
+
+<h2 id="general-design-patterns">General Design Patterns</h2>
+
+<figure>
+    <img class="img--rwd" src="/assets/img/reflections/2021-02-22-static-stacked-bar-chart.png" alt="A stacked area chart" />
+  <figcaption>One of the charts we'll be building in this post.</figcaption>
+</figure>
+
+<p>Each of the visualizations lives within a Vue component. The overall structure of the component looks like this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="p">{</span>
+  <span class="nx">data</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span>
+      <span class="na">filteredData</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> <span class="c1">// stores the result of the filterData method</span>
+
+      <span class="c1">// persist a chart object with an updateChart method that can be called</span>
+      <span class="c1">// when the filter is updated.</span>
+      <span class="na">chart</span><span class="p">:</span> <span class="kc">null</span>
+    <span class="p">};</span>
+  <span class="p">},</span>
+  <span class="na">props</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">rawData</span><span class="p">:</span> <span class="nb">Object</span><span class="p">,</span>
+    <span class="na">filter</span><span class="p">:</span> <span class="nb">Object</span>
+  <span class="p">},</span>
+  <span class="na">methods</span><span class="p">:</span> <span class="p">{</span>
+    <span class="c1">// inititalizes the chart and returns a chart object with an updateChart method</span>
+    <span class="nx">initChart</span><span class="p">(</span><span class="nx">filter</span><span class="p">)</span> <span class="p">{},</span>
+    <span class="c1">// filters rawData and returns filteredData in the components state</span>
+    <span class="nx">filterData</span><span class="p">(</span><span class="nx">filteredData</span><span class="p">,</span> <span class="nx">filter</span><span class="p">)</span> <span class="p">{},</span>
+  <span class="p">},</span>
+  <span class="nx">created</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// filters the data and creates the chart when the component is being created</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">filteredData</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">filterData</span><span class="p">(</span><span class="nx">filter</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">chart</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">initChart</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">filteredData</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">filter</span><span class="p">);</span>
+  <span class="p">},</span>
+  <span class="na">watch</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">filter</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">deep</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// create a "deep watcher" that monitors each element of the object</span>
+      <span class="nx">handler</span><span class="p">(</span><span class="nx">newFilter</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">filteredData</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">filterData</span><span class="p">(</span><span class="nx">newFilter</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">chart</span><span class="p">.</span><span class="nx">updateChart</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">filteredData</span><span class="p">,</span> <span class="nx">newFilter</span><span class="p">);</span>
+      <span class="p">},</span>
+    <span class="p">},</span>
+  <span class="p">},</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>The above code snippet shows that the component receives as props the 211 data loaded from a <code class="highlighter-rouge">.csv</code> file and a filter objects that contains all of the parameters of the filter. Whenever the component is created (i.e. when the <code class="highlighter-rouge">created()</code> lifecycle method is called), the <code class="highlighter-rouge">filterData</code> method is called and the result is stored in the component’s state. Then the <code class="highlighter-rouge">initChart()</code> method is called, returning in a chart object, which is also saved to the component’s state. This chart objects itself has an <code class="highlighter-rouge">updateChart</code> method, which can be used to update the chart. This follows the d3.js design pattern described <a href="https://medium.com/d3js-tutorials/a-d3-js-design-pattern-16a6503dc86f">in this article</a> to keep d3 code centralized in the Vue component.</p>
+
+<p>Each component also has a deep <code class="highlighter-rouge">watcher</code> that watches the filter props. Whenever the filter changes, its handler will call the <code class="highlighter-rouge">filterData</code> method again, and then call the <code class="highlighter-rouge">updateChart</code> method of the <code class="highlighter-rouge">chart</code> object persisted in the state to update the chart.</p>
+
+<h2 id="lets-make-the-map">Let’s Make the Map!</h2>
+
+<p>Making a map (choropleth) with d3.js is a widely covered subject. There are many tutorials avaiable that walks you through how to create a map using <code class="highlighter-rouge">geojson</code>/<code class="highlighter-rouge">topojson</code> in d3. For example, this <a href="https://observablehq.com/@d3/choropleth">Observable notebook</a> by d3’s creator Mike Bostock contains code for creating choropleths in d3 v5. <a href="https://datawanderings.com/2018/10/28/making-a-map-in-d3-js-v-5/">This article</a> is also a great tutorial for creating such maps. What I want to cover in this section is a few things that got me stuck for hours.</p>
+
+<h3 id="1-finding-the-correct-geojsontopojson-for-the-base-map">1. Finding the correct <code class="highlighter-rouge">geojson/topojson</code> for the base map</h3>
+
+<p>Typically you should have no difficulties finding a <code class="highlighter-rouge">geojson</code>/<code class="highlighter-rouge">topojson</code> file that contains the correct border outlines for the geographical information that you want to plot. However, these files are made to be very precise and tend to be too big for a project like this. The <code class="highlighter-rouge">geojson</code> file that I got at first from the <a href="http://www.rigis.org/datasets/municipalities-1997">RI GIS website</a> was over 6MB. I tried to use <a href="https://mapshaper.org/">MapShaper</a> to reduce the file size but d3 had problems reading the files it produced. I eventually found a <code class="highlighter-rouge">topojson</code> file that was small enough. So, you might need to spend some time finding the right files for the base map, especailly if you are focusing on a state or a smaller region.</p>
+
+<h3 id="2-using-the-correct-projection">2. Using the correct projection</h3>
+
+<p>We will need a projection function that projects geographic coordinates to planar coordinates that can be used to draw SVG paths with d3.js. If we were creating a map of the United States, then the <code class="highlighter-rouge">AlbersUSA</code> projection comes in quite handy. In this project, I used the <code class="highlighter-rouge">mercator</code> projection, which had to be scaled over 30,000 times with numerous trials and errors to make the map look the way it is.</p>
+
+<p>After the dashboard was created, I discovered <a href="https://source.opennews.org/articles/choosing-right-map-projection/#:~:text=For%20a%20regional%20map%E2%80%94a,two%20points%20is%20a%20snap.">this post</a> that talks about using UTM (Universal Transverse Mercator) projection for mapping small areas, which we may migrate to in the future. I welcome any comment/feedback on other ways to project the map of states that does not require as much correction.</p>
+
+<h3 id="3-the-infamous-maup-problem">3. The infamous MAUP problem</h3>
+
+<p>Another problem that I encontered when mapping the 211 call data is this so-called <a href="https://en.wikipedia.org/wiki/Modifiable_areal_unit_problem">Modifiable areal unit problem (MAUP)</a>, which, in this context, means that the number of calls plotted on a map is a reflection of that area’s population density. In this case, since Providence is Rhode Islands’s densest population center, naturally many more 211 calls originate from Providence, which results in a map with only Providence highlighted. I modified the color scale to reflect the number of calls per 1000 capita to preserve some interpretability. I also welcome any suggestions/comments on other ways to produce maps that are less biased by population density.</p>
+
+<h2 id="stacked-area-chart-with-smooth-transitions">Stacked Area Chart with Smooth Transitions</h2>
+
+<p>As with the Map, we are not going to be concerned with how to create a stacked area chart in d3.js. <a href="https://www.d3-graph-gallery.com/graph/stackedarea_template.html">This great tutorial</a> covers this topic thoroughly and nicely. Also, I would recommend that you use a library such as <code class="highlighter-rouge">vega</code>, <code class="highlighter-rouge">vega-lite</code>, <code class="highlighter-rouge">chart.js</code>, <code class="highlighter-rouge">c3.js</code>, <code class="highlighter-rouge">apex charts</code> and any other JavaScript charting library to create it, because while creating the area chart itself is not difficult, creating informative tooltips can be quite involved. Here, we are using plain d3 for two reasons. First, there are too many categories in the data and we would like to only display major categories when all categories are shown. That means we will need to customize the legend a little bit. Second, we also want to create smooth transition animations when the data changes. We cannot achieve such deep customization with a library.  The rest of this section will focus on how we created the smooth transition animations for the stacked area chart shown below. We will also touch upon some gotchas in data wrangling in the browser with d3, and how to display time series data properly with time scales.</p>
+
+<div>
+  <img class="img--rwd" src="/assets/img/reflections/2021-02-22-stacked-bar-chart.gif" alt="An example of smooth transitions in a stacked area chart" />
+</div>
+
+<h3 id="creating-smooth-transitions">Creating smooth transitions</h3>
+
+<p>d3 provides a <code class="highlighter-rouge">transition</code> function that allows smooth transition animations when the underlying data of the visualizations changes. <a href="https://observablehq.com/@d3/streamgraph-transitions">This article</a> shows a really cool transition with a streamgraph. With the <code class="highlighter-rouge">transition()</code> and <code class="highlighter-rouge">delay()</code> functions, it is very easy to create such animations. However, the transition breaks down when the number of data points on the x-axis changes, such as when a user wants to see the data from last month instead of last week. The reason is that when there is no changes in the number of data points on the x-axis, d3 can figure out that each data point is only going up and down and interpolate the intermediate points between the start and end positions for each data point. However, when this prerequisite no longer holds, d3 will have trouble interpolating the intermediate position for the shapes to change, resulting in unwieldy transition animations that look weird.</p>
+
+<p>The solution to this is to tell d3 to hold the points on both ends of the area charts, these points can only go up and down. Then the rest of the algorithm will figure out how to interpolate the positions of other points, so that the transition looks better. We used the <code class="highlighter-rouge">d3-interpolate-path</code> library for this task. To use this library, first install it with npm.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-s</span> d3-interpolate-path
+</code></pre></div></div>
+
+<p>Then, import the library to the code for stacked area chart with:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">interpolatePath</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">d3-interpolate-path</span><span class="dl">"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Next, when the data changes, pass the interpolation function to</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">stacks</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span>
+  <span class="p">(</span><span class="nx">enter</span><span class="p">)</span> <span class="o">=&gt;</span>
+    <span class="nx">enter</span>
+      <span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="dl">"</span><span class="s2">path</span><span class="dl">"</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">class</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">area</span><span class="dl">"</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">fill</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">color</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">key</span><span class="p">))</span>
+      <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">d</span><span class="dl">"</span><span class="p">,</span> <span class="nx">area</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">opacity</span><span class="dl">"</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">"</span><span class="s2">mousemove</span><span class="dl">"</span><span class="p">,</span> <span class="nx">handleMouseOver</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">"</span><span class="s2">mouseout</span><span class="dl">"</span><span class="p">,</span> <span class="nx">handleMouseOut</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">call</span><span class="p">((</span><span class="nx">enter</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">enter</span><span class="p">.</span><span class="nx">transition</span><span class="p">(</span><span class="nx">t</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">opacity</span><span class="dl">"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)),</span>
+  <span class="p">(</span><span class="nx">update</span><span class="p">)</span> <span class="o">=&gt;</span>
+    <span class="nx">update</span>
+      <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">fill</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">color</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">key</span><span class="p">))</span>
+      <span class="p">.</span><span class="nx">call</span><span class="p">((</span><span class="nx">update</span><span class="p">)</span> <span class="o">=&gt;</span>
+        <span class="nx">update</span>
+          <span class="p">.</span><span class="nx">transition</span><span class="p">()</span>
+          <span class="p">.</span><span class="nx">duration</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+          <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">opactiy</span><span class="dl">"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+          <span class="p">.</span><span class="nx">attrTween</span><span class="p">(</span><span class="dl">"</span><span class="s2">d</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">let</span> <span class="nx">previous</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">d</span><span class="dl">"</span><span class="p">);</span>
+            <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="nx">area</span><span class="p">(</span><span class="nx">d</span><span class="p">);</span>
+            <span class="k">return</span> <span class="nx">interpolatePath</span><span class="p">(</span><span class="nx">previous</span><span class="p">,</span> <span class="nx">current</span><span class="p">,</span> <span class="nx">excludeSegment</span><span class="p">);</span>
+          <span class="p">})</span>
+      <span class="p">),</span>
+  <span class="p">(</span><span class="nx">exit</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">exit</span><span class="p">.</span><span class="nx">transition</span><span class="p">().</span><span class="nx">duration</span><span class="p">(</span><span class="mi">500</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="dl">"</span><span class="s2">opacity</span><span class="dl">"</span><span class="p">,</span> <span class="mi">0</span><span class="p">).</span><span class="nx">remove</span><span class="p">()</span>
+<span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">excludeSegment</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">a</span><span class="p">.</span><span class="nx">x</span> <span class="o">===</span> <span class="nx">b</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The above code uses d3 v5’s <code class="highlighter-rouge">selection.join()</code> function to update the rendered chart using d3’s enter, update, and exit pattern. <a href="https://observablehq.com/@d3/selection-join">This Observable notebook</a> explains in detail how it works, but the TL;DR version is that it accepts 3 functions that describe what to do with new data points (enter), what to do with data points that have changed (update), and what to do with data points that no longer exists (exit). <code class="highlighter-rouge">interpolatePath</code> was used in the callback that handles updates. We first use <code class="highlighter-rouge">selection.attrTween()</code> that accepts a function that describes how the tweening between the changes in an specific attribute of a selection should happen. The <code class="highlighter-rouge">excludeSegment</code> function defines that as long as the line segment lies on both ends of the area (any two points <code class="highlighter-rouge">a</code>, <code class="highlighter-rouge">b</code> whose coordinates satisfy <code class="highlighter-rouge">a.x === b.x</code>), then these points should be excluded in the interpolation of the transition, resulting in smooth transitions even when the numbers of data points change.</p>
+
+<h3 id="wrangling-data-in-d3">Wrangling data in d3</h3>
+
+<p>Since we are not using any backend, any data wrangling such as group aggregations are done with d3. Although d3 provides lots of functions for performing such operations, there is not a data structure such as <code class="highlighter-rouge">pandas.DataFrame</code> in Python or <code class="highlighter-rouge">data.frame</code> in R that easily and efficiently does group aggregations. In this context, we want to aggregate for each day, in each category, how many calls were received. This would have been a simple call to <code class="highlighter-rouge">df.groupby().sum()</code> in Python or similar functions in <code class="highlighter-rouge">dplyr</code> in R. d3 provides a <code class="highlighter-rouge">d3.nest()</code> function for us to do the same thing, but it’s not very straightforward:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">nestedData</span> <span class="o">=</span> <span class="nx">d3</span>
+  <span class="p">.</span><span class="nx">nest</span><span class="p">()</span>
+  <span class="p">.</span><span class="nx">key</span><span class="p">(</span><span class="nx">d</span> <span class="o">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">date</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">sortKeys</span><span class="p">(</span><span class="nx">d3</span><span class="p">.</span><span class="nx">ascending</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">key</span><span class="p">(</span><span class="nx">d</span> <span class="o">=&gt;</span> <span class="nx">d</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">sortKeys</span><span class="p">(</span><span class="nx">d3</span><span class="p">.</span><span class="nx">ascending</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">rollup</span><span class="p">(</span><span class="nx">leaf</span> <span class="o">=&gt;</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">sum</span><span class="p">(</span><span class="nx">leaf</span><span class="p">,</span> <span class="nx">d</span> <span class="o">=&gt;</span> <span class="o">+</span><span class="nx">d</span><span class="p">.</span><span class="nx">count</span><span class="p">))</span>
+  <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">rawData</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">entries</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p><a href="http://bl.ocks.org/phoebebright/raw/3176159/">This article</a> provides a few good examples on how nesting works in d3.js.  to build the stacked area chart, we created a two-layer nest, with <code class="highlighter-rouge">date</code> and <code class="highlighter-rouge">type</code> as keys. This step is similar to <code class="highlighter-rouge">df.groupby(['date', 'type'])</code> in pandas in Python. Then, <code class="highlighter-rouge">nest()</code> provides a <code class="highlighter-rouge">rollup</code> function to collect results on leaves in this data structure, which are arrays of objects that have the same <code class="highlighter-rouge">date</code>s and <code class="highlighter-rouge">type</code>s . Here, we use <code class="highlighter-rouge">d3.sum()</code> to sum up the number of calls (stored in <code class="highlighter-rouge">count</code>). Then we use <code class="highlighter-rouge">d3.nest().map()</code> on the raw data to return a <code class="highlighter-rouge">map</code> data structure. Lastly, we use the <code class="highlighter-rouge">entries()</code> function of the JavaScript <code class="highlighter-rouge">map</code> data structure to obtain an array of counts for each type of calls on each day. This array can then be passed to d3’s <code class="highlighter-rouge">d3.stack()</code> function to create a stacked data structure that can be used to create the stacked area chart.</p>
+
+<h3 id="to-display-dates-correctly">To display dates correctly</h3>
+
+<p>Unlike Python, JavaScript does not have a dedicated type for dates. The <code class="highlighter-rouge">Date()</code> object actually stores both date and time as an integer, and it can behave slightly unexpectedly:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; new Date("2020-06-01")
+2020-06-01T00:00:00.000Z
+&gt; new Date("2020/06/01")
+2020-06-01T04:00:00.000Z
+</code></pre></div></div>
+
+<p>The above code was run in node.js. However, in Chrome, what we got was:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>new Date("2020-06-01")
+Sun May 31 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
+new Date("2020/06/01")
+Mon Jun 01 2020 00:00:00 GMT-0400 (Eastern Daylight Time)
+</code></pre></div></div>
+
+<p>This might cause some unexpected bugs. My recommendation is to use <code class="highlighter-rouge">moment.js</code> for date operations whenever possible, and use UTC time for dates. This means using <code class="highlighter-rouge">d3.scaleUtc()</code> for the x-axis for the stacked bar chart. Otherwise, each data points will be rendered slightly before the ticks for each date, since a string like <code class="highlighter-rouge">2020-06-01</code> is seen as 8pm of the previous day locally (Eastern Daylight Time).</p>
+
+<h2 id="the-finished-prototype">The finished prototype</h2>
+
+<p>After all that coding, we arrived at a finished prototype!</p>
+
+<div>
+    <img class="img--rwd" src="/assets/img/reflections/2021-02-22-initial-dashboard.png" alt="The initial dashboard prototype" />
+</div>
+
+<p>In the next post I will discuss the UI/UX improvement we made to the dashboard based on the feedback that we received.</p>
+
+<p><a href="/reflections/2021-02-23-making-of-a-dashboard-part-4">Part 4. UI/UX Refinements from Stakeholder Feedback</a></p>
+
+
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <aside class="u__vspacing s__light reflection__recirc">
+    <div class="u__container u__spacing">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="h1">More Reflections</h2>
+        </div>
+        
+        
+        
+          
+            <div class="col-sm-6 reflection__recirc__post">
+              <h3 class="reflection__recirc__post__title h4"><a href="/reflections/2021-02-25-welcome-to-reflections">Welcome to <i>Reflections</i></a></h3>
+              <p class="reflection__recirc__post__authors">
+                By 
+                
+                <a href="/team/david-yokum" class="author__link">David Yokum</a>
+
+                
+              </p>
+              <p class="lead">I’m excited to welcome y’all to Reflections!</p>
+
+
+            </div>
+            
+          
+        
+          
+            <div class="col-sm-6 reflection__recirc__post">
+              <h3 class="reflection__recirc__post__title h4"><a href="/reflections/2021-02-23-making-of-a-dashboard-part-4">The Making of Dashboard - Part 4: Refinements and Stakeholder Feedback</a></h3>
+              <p class="reflection__recirc__post__authors">
+                By 
+                
+                <a href="/team/paul-xu" class="author__link">Paul Xu</a>
+
+                
+              </p>
+              <p>In <a href="/reflections/2021-02-22-making-of-a-dashboard-part-3">the previous post</a> we discussed general design patterns that put Vue and d3 together. This post will focus on how we improved the UI/UX design of the first prototype (shown above) according to the feedback from the UWRI team and the rest of The Policy Lab team.  We will also discuss the improvements that made the site faster and more responsive.</p>
+
+
+            </div>
+            
+          
+        
+          
+          
+        
+          
+            <div class="col-sm-6 reflection__recirc__post">
+              <h3 class="reflection__recirc__post__title h4"><a href="/reflections/2021-02-21-making-of-a-dashboard-part-2">The Making of Dashboard - Part 2</a></h3>
+              <p class="reflection__recirc__post__authors">
+                By 
+                
+                <a href="/team/paul-xu" class="author__link">Paul Xu</a>
+
+                
+              </p>
+              <p>In the <a href="% link _reflections/2021-02-20-making-of-a-dashboard-part-1.md %}">previous post</a>, we covered the background and the decisions on the tech stack used for the <a href="https://uwri.org">United Way Rhode Island</a> 211 dashboard. This post will describe how we used <code class="highlighter-rouge">Vue.js</code> to build the architecture of the dashboard based on the design of Ben Guhin Delphine in the featured image above.</p>
+
+
+            </div>
+            
+          
+        
+          
+            <div class="col-sm-6 reflection__recirc__post">
+              <h3 class="reflection__recirc__post__title h4"><a href="/reflections/2021-02-20-making-of-a-dashboard-part-1">The Making of Dashboard - Part 1</a></h3>
+              <p class="reflection__recirc__post__authors">
+                By 
+                
+                <a href="/team/paul-xu" class="author__link">Paul Xu</a>
+
+                
+              </p>
+              <p>This is the first of a series of technical blog posts that document how The Policy Lab at Brown University built <a href="https://tpl.fyi/211-dashboard">an interactive data dashboard</a> with United Way of Rhode Island to support analytics and decision-making with COVID-related 211 call data. This post will cover the background of this project and the decisions The Policy Lab team made on the tech stack. Please use the following link to jump to the rest of the story.</p>
+
+
+            </div>
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+        <div class="col-12">
+          <a href="/reflections/" class="reflection__recirc__landing-link h4">All Reflections</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <aside class="u__vspacing s__primary s__primary-clean">
+    <div class="u__container u__spacing connect">
+      <div class="row">
+        <div class="col-md-3 col-lg-4">
+          <h2 class="h1">Get Updates</h2>
+        </div>
+        <div class="col-md-9 col-lg-8">
+          <p class="lead">Sign up to get updates on projects, events, and new episodes of our podcast, <a href="https://thirtythousandleagues.com/">30,000 Leagues</a></p>
+
+                <div id="anchor-signup" class="mc">
+        <div id="mc_embed_signup">
+          <h2 class="h6 text-center text-md-left">Subscribe</h2>
+          <form action="https://brown.us20.list-manage.com/subscribe/post?u=5050b7f10df36f1c41b3743cf&amp;id=cf85e54967" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline mc__form justify-content-center justify-content-md-start" target="_blank">
+            <div id="mc_embed_signup_scroll" class="form-group mc__wrapper">
+              <label for="mce-EMAIL" class="mc__label sr-only">Please provide your email address:</label>
+              <input type="email" name="EMAIL" class="form-control mc__input" id="mce-EMAIL" placeholder="name@email.com" required="" value="">
+              <div class="mc__nectar" aria-hidden="true"><input type="text" name="b_5050b7f10df36f1c41b3743cf_cf85e54967" tabindex="-1" value=""></div>
+              <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info mc__button" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+
+</section>
+
+      
+      
+              <section class="s__sky s__lil-splatter" aria-hidden="true">
+        <div class="city--header">
+          <div class="cloud cloud--1"></div>
+          <div class="cloud cloud--2"></div>
+          <div class="cloud cloud--3"></div>
+          <div class="cloud cloud--4"></div>
+          <div class="cloud cloud--5"></div>
+          <img srcset="/assets/illus/cityscape-1200.png 1200w,
+                       /assets/illus/cityscape-2400.png 2400w,
+                       /assets/illus/cityscape-2400.png 2x 1200w,
+                       /assets/illus/cityscape-3200.png 3200w,
+                       /assets/illus/cityscape-3200.png 2x 1600w"
+            sizes="(min-width: 2400px) 3200px, (min-width: 1200px) 2400px, 1200px"
+            src="/assets/illus/cityscape-1200.png" alt="" class="img--rwd">
+        </div>
+      </section>
+      <section id="podcast" class="podcast s__primary">
+        <div class="podcast__blurb u__container u__vspacing u__spacing">
+          <p class="h4 mb-0">Check out our podcast</p>
+          <h2 class="display-4">30,000 Leagues</h2>
+          <p class="podcast__badges">
+            <a href="//podcasts.apple.com/us/podcast/30-000-leagues/id1476890683" target="_blank" title="Open Apple Podcasts in a new window"><img src="/assets/img/Apple_Podcasts_listen_WHITEtrans.svg" alt="Listen with Apple Podcasts" width="165"></a>
+            <a href="//podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkLnBpcHBhLmlvL3B1YmxpYy9zaG93cy90aGlydHktdGhvdXNhbmQtbGVhZ3Vlcw&ved=0CAAQ4aUDahcKEwjwjNKlzKHoAhUAAAAAHQAAAAAQAQ&hl=en" target="_blank" title="Open Google Podcasts in a new window"><img src="/assets/img/Google_Podcasts_listen_WHITEtrans.svg" alt="Listen with Google Podcasts" width="165"></a>
+            <a href="//open.spotify.com/show/0pItMizm0y0ndIkiV2kkgu" target="_blank" title="Open Spotify in a new window"><img src="/assets/img/Spotify_Podcasts_listen_WHITEtrans.svg" alt="Listen with Spotify" width="165"></a>
+          </p>
+          <p class="podcast__url h4"><a href="//thirtythousandleagues.com"><strong>thirtythousandleagues.com</strong></a></p>
+        </div>
+        <div class="podcast__img">
+          <img srcset="/assets/illus/30kleagues-640.jpg 640w,
+                       /assets/illus/30kleagues-1200.jpg 1200w,
+                       /assets/illus/30kleagues-2400.jpg 2400w,
+                       /assets/illus/30kleagues-2400.jpg 2x 1200w,
+                       /assets/illus/30kleagues-3200.jpg 3200w,
+                       /assets/illus/30kleagues-3200.jpg 2x 1600w"
+            sizes="(min-width: 2400px) 3200px, (min-width: 1200px) 2400px, (max-width: 640px) 640px, 1200px"
+            src="/assets/illus/30kleagues-640.jpg" alt="">
+        </div>
+      </section>
+      <footer id="anchor-contact" class="main__footer footer s__dark u__vspacing target-cynosure">
+        <div class="u__container u__spacing">
+          <div class="row align-items-start">
+            <div class="col-md-6 col-lg-7 col-xl-8">
+              <p class="footer__logo text-center text-md-left">
+                <img class="brand__img img--rwd" alt="Brown University" src="/assets/img/brown-policy-lab-white.svg">
+              </p>
+              <address class="text-center text-md-left">
+                <a href="https://www.google.com/maps/place/225+Dyer+St,+Providence,+RI+02903/data=!4m2!3m1!1s0x89e44515bb1f3ad9:0x32a107a554a713c0?sa=X&ved=2ahUKEwi3iqjcgevnAhVpUN8KHf9yCcYQ8gEwAHoECAsQAQ">
+                  <span>225 Dyer Street, 5th floor </span>
+                  <span>Providence RI 02903</span>
+                </a>
+              </address>
+              <p class="text-center text-md-left">
+                <a href="mailto:thepolicylab@brown.edu">thepolicylab@brown.edu</a>
+                <a class="breaker" href="tel:401-863-3392">(401) 863-3392</a>
+              </p>
+              <p class="text-center text-md-left m-0">
+                <small>An official website of Brown University</small>
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4 pt-5 pt-md-0">
+                    <div id="anchor-signup" class="mc">
+        <div id="mc_embed_signup">
+          <h2 class="h6 text-center text-md-left">Subscribe</h2>
+          <form action="https://brown.us20.list-manage.com/subscribe/post?u=5050b7f10df36f1c41b3743cf&amp;id=cf85e54967" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline mc__form justify-content-center justify-content-md-start" target="_blank">
+            <div id="mc_embed_signup_scroll" class="form-group mc__wrapper">
+              <label for="mce-EMAIL" class="mc__label sr-only">Please provide your email address:</label>
+              <input type="email" name="EMAIL" class="form-control mc__input" id="mce-EMAIL" placeholder="name@email.com" required="" value="">
+              <div class="mc__nectar" aria-hidden="true"><input type="text" name="b_5050b7f10df36f1c41b3743cf_cf85e54967" tabindex="-1" value=""></div>
+              <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info mc__button" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      
+    </div>
+    
+        
+    <script
+      src="//code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/assets/js/project.js"></script>
+    
+  </body>
+</html>

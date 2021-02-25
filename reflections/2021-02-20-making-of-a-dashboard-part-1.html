@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+
+  <head>
+	<meta charset="utf-8">
+	<link rel="dns-prefetch" href="//use.typekit.net">
+	<link rel="dns-prefetch" href="//cloud.typography.com">
+	<link rel="dns-prefetch" href="//www.googletagmanager.com">
+	<link rel="dns-prefetch" href="//code.jquery.com">
+	<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+	<link rel="preconnect" href="//brown.us20.list-manage.com">
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="google-site-verification" content="wkcAVWy8ClxzqSm5y4O1zgeSVSi3QBaFD69VQP5YNvQ">
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="The Policy Lab">
+	<meta property="og:url" content="//thepolicylab.brown.edu/reflections/2021-02-20-making-of-a-dashboard-part-1">
+	<meta property="og:image" content="/assets/img/share-image.jpg">
+	<meta property="og:site_name" content="The Policy Lab">
+	<meta property="og:description" content="We're a new lab at the center of Rhode Island’s infrastructure for evidence-based policymaking. Let's learn together.">
+
+  <title>The Making of Dashboard - Part 1 | The Policy Lab</title>
+  <meta name="description" content="We're a new lab at the center of Rhode Island’s infrastructure for evidence-based policymaking. Let's learn together.">
+
+  <link rel="stylesheet" type="text/css" href="https://use.typekit.net/wag1nll.css">
+  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7022116/7515612/css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#007ea8">
+  <meta name="msapplication-TileColor" content="#007ea8">
+  <meta name="theme-color" content="#007ea8">
+
+  <!--Global site tag (gtag.js) - Google Analytics-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134641342-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134641342-1');
+  </script>
+
+</head>
+
+
+  <body class="layout__reflection page__ page__reflection presentation" data-spy="scroll" data-target="#main-nav">
+    <div id="top" class="l-wrapper">
+
+      
+                  
+          <div class="nav__container fixed-top">
+            <nav id="main-nav" class="main__nav navbar navbar-expand-lg u__container nav">
+
+              <a href="#content" class="nav-link nav__link nav__skip sr-only sr-only-focusable js-smoothscroll">Skip to main content</a>
+
+              <button class="navbar-toggler nav__button" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="nav__button__icon">&equiv;</span>
+                <span class="nav__button__text" style="font-weight: 600; padding-top: 0.2em;"><span class="sr-only">Open the </span>Menu</span>
+              </button>
+              <div class="collapse navbar-collapse nav__pane" id="navbarContent">
+                <ul class="navbar-nav nav__list" role="navigation">
+
+                  <li class="nav-item nav__item">
+                    <a href="/index.html#top" class="nav-link nav__link js-smoothscroll">The Policy Lab</a>
+                  </li>
+
+                  <li class="nav-item nav__item">
+                    <a href="/index.html#projects" class="nav-link nav__link js-smoothscroll">Projects</a>
+                  </li>
+                  
+                  <li class="nav-item nav__item">
+                    <a href="/index.html#events" class="nav-link nav__link js-smoothscroll">Events</a>
+                  </li>
+
+                  <li class="nav-item nav__item">
+                    <a href="/index.html#reflections" class="nav-link nav__link js-smoothscroll">Reflections</a>
+                  </li>
+
+                  <li class="nav-item nav__item">
+                    <a href="/index.html#connect" class="nav-link nav__link js-smoothscroll">Get Updates</a>
+                  </li>
+                  
+                  <li class="nav-item nav__item">
+                    <a href="/index.html#podcast" class="nav-link nav__link js-smoothscroll">Podcast</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+      
+      
+      
+
+<section id="content" class="layout__main s__white reflection">
+  <div class="reflection__content">
+    
+    <header class="reflection__content__header u__spacing">
+      <div class="row u__container">
+        <div class="col-sm-7 reflection__content__title-wrapper">
+          <a href="/reflections/" class="reflection__content__landing-link">Reflections</a>
+          <h1 class="reflection__content__title display-5 pt-4 mb-2">The Making of Dashboard - Part 1</h1>
+        </div>
+      </div>
+      <div class="row u__container">
+        <div class="col-sm-8 reflection__content__authors-wrapper">
+          <p class="reflection__content__authors">
+            By 
+              
+                <a href="/team/paul-xu" class="author__link">Paul Xu</a>
+
+              
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <article class="container u__container u__vspacing reflection__content__body">
+      <div class="row">
+        <div class="col-sm-9 col-lg-8">
+
+          <p>This is the first of a series of technical blog posts that document how The Policy Lab at Brown University built <a href="https://tpl.fyi/211-dashboard">an interactive data dashboard</a> with United Way of Rhode Island to support analytics and decision-making with COVID-related 211 call data. This post will cover the background of this project and the decisions The Policy Lab team made on the tech stack. Please use the following link to jump to the rest of the story.</p>
+
+<ul>
+  <li>Part 2. <a href="/reflections/2021-02-21-making-of-a-dashboard-part-2">Building the Skeleton of the App with Vue.js</a></li>
+  <li>Part 3. <a href="/reflections/2021-02-22-making-of-a-dashboard-part-3">Rendering the Visualizations with d3.js</a></li>
+  <li>Part 4. <a href="/reflections/2021-02-23-making-of-a-dashboard-part-4">UI/UX Refinements from Stakeholder Feedback</a></li>
+</ul>
+
+<h2 id="background-of-the-project">Background of the project</h2>
+
+<p>Operated by United Way, 211 is a free and confidential service that helps people across North America find the local resources they need 24 hours a day, 7 days a week. Since the beginning of the COVID-19 pandemic, the United Way of Rhode Island has played a vital role in handling a range of support calls to the COVID-19 hotline at the request of the Governor’s Office, including <a href="https://covid.ri.gov">after hours information</a> and <a href="https://www.providencejournal.com/story/news/coronavirus/2020/07/10/raimondo-launches-7-million-rental-assistance-program-with-united-way/113959940/">managing a rental assistance program</a>.</p>
+
+<p>In order to track trends in these calls geographically,over time, and by assistance category, the 211 team asked The Policy Lab to help them build an interactive dashboard that caters to the most pressing needs in analytics and provides the easiest and quickest way to reveal trends and patterns in the 211 data.</p>
+
+<h2 id="first-draft-of-the-design">First draft of the design</h2>
+
+<p>After communicating with the team at United Way of Rhode Island, Ben Guhin Delphine, then Head of Design at The Policy Lab, created the first sketch of the design (see below). This first draft includes a stacked area chart, a choropleth map, and a few dropdowns that allow the users to filter the data. The stacked area chart, compared with line charts, helps users to see trends in call volumes not only across categories but also in total. Mapping calls to the geographical regions where they originate also reveals needs for resources across RI cities and towns.</p>
+
+<figure>
+  <img class="img--rwd" src="/assets/img/reflections/2021-02-20-dashboard-design.jpg" alt="The initial design of the dashboard" />
+  <figcaption>The initial design of the dashboard.</figcaption>
+</figure>
+
+<h2 id="decisions-on-tech-stack">Decisions on tech stack</h2>
+
+<p>For such a project, fast delivery of analytical insights is key. Therefore, we decided to make a custom-made dashboard for United Way of Rhode Island that maximizes interactivity. We initially decided to forgo a backend and use d3.js only. However, while d3 provides its own way to manipulate the DOM and process event triggers, it does not provide a good way to manage the state of user-applied filters. So we added Vue.js for state management and the reactivity required to update the visualizations created by d3. Below is all of the libraries we used to create this dashboard:</p>
+<ul>
+  <li><a href="https://vuejs.org/">Vue.js</a></li>
+  <li><a href="https://d3js.org/">d3.js</a></li>
+  <li><a href="https://vuex.vuejs.org/">Vuex</a> (for advanced state management)</li>
+  <li><a href="https://vueformulate.com/">Vue-Formulate</a> (a lightweight form library to create the filter dropdowns on-the-fly)</li>
+  <li><a href="https://momentjs.com/">moment.js</a> (to handle datetime operations, which can be a pain in JavaScript)</li>
+</ul>
+
+<p>In addition, we used Python for data cleaning and producing a CSV loaded by d3 to produce the visualizations.</p>
+
+<h2 id="next-up">Next Up</h2>
+
+<p>In the <a href="/reflections/2021-02-21-making-of-a-dashboard-part-2">next post</a>, we’ll cover some of the technical parts of creating such a tool, building out a skeleton which we’ll work on through the following three posts.</p>
+
+
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <aside class="u__vspacing s__light reflection__recirc">
+    <div class="u__container u__spacing">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="h1">More Reflections</h2>
+        </div>
+        
+        
+        
+          
+            <div class="col-sm-6 reflection__recirc__post">
+              <h3 class="reflection__recirc__post__title h4"><a href="/reflections/2021-02-25-welcome-to-reflections">Welcome to <i>Reflections</i></a></h3>
+              <p class="reflection__recirc__post__authors">
+                By 
+                
+                <a href="/team/david-yokum" class="author__link">David Yokum</a>
+
+                
+              </p>
+              <p class="lead">I’m excited to welcome y’all to Reflections!</p>
+
+
+            </div>
+            
+          
+        
+          
+            <div class="col-sm-6 reflection__recirc__post">
+              <h3 class="reflection__recirc__post__title h4"><a href="/reflections/2021-02-23-making-of-a-dashboard-part-4">The Making of Dashboard - Part 4: Refinements and Stakeholder Feedback</a></h3>
+              <p class="reflection__recirc__post__authors">
+                By 
+                
+                <a href="/team/paul-xu" class="author__link">Paul Xu</a>
+
+                
+              </p>
+              <p>In <a href="/reflections/2021-02-22-making-of-a-dashboard-part-3">the previous post</a> we discussed general design patterns that put Vue and d3 together. This post will focus on how we improved the UI/UX design of the first prototype (shown above) according to the feedback from the UWRI team and the rest of The Policy Lab team.  We will also discuss the improvements that made the site faster and more responsive.</p>
+
+
+            </div>
+            
+          
+        
+          
+            <div class="col-sm-6 reflection__recirc__post">
+              <h3 class="reflection__recirc__post__title h4"><a href="/reflections/2021-02-22-making-of-a-dashboard-part-3">The Making of Dashboard - Part 3</a></h3>
+              <p class="reflection__recirc__post__authors">
+                By 
+                
+                <a href="/team/paul-xu" class="author__link">Paul Xu</a>
+
+                
+              </p>
+              <p>In this post, we will cover the details in creating the data visualizations used in <a href="https://tpl.fyi/211-dashboard">the United Way Rhode Island 211 Dashboard</a> to reveal patterns in 211 calls. <a href="/reflections/2021-02-21-making-of-a-dashboard-part-2">The previous post</a> described in detail the overall architecture of the app and how data is persisted as state in the Vue app. This post focuses more on the gotchas using d3.js to create interactive data visualizations.</p>
+
+
+            </div>
+            
+          
+        
+          
+            <div class="col-sm-6 reflection__recirc__post">
+              <h3 class="reflection__recirc__post__title h4"><a href="/reflections/2021-02-21-making-of-a-dashboard-part-2">The Making of Dashboard - Part 2</a></h3>
+              <p class="reflection__recirc__post__authors">
+                By 
+                
+                <a href="/team/paul-xu" class="author__link">Paul Xu</a>
+
+                
+              </p>
+              <p>In the <a href="% link _reflections/2021-02-20-making-of-a-dashboard-part-1.md %}">previous post</a>, we covered the background and the decisions on the tech stack used for the <a href="https://uwri.org">United Way Rhode Island</a> 211 dashboard. This post will describe how we used <code class="highlighter-rouge">Vue.js</code> to build the architecture of the dashboard based on the design of Ben Guhin Delphine in the featured image above.</p>
+
+
+            </div>
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+        <div class="col-12">
+          <a href="/reflections/" class="reflection__recirc__landing-link h4">All Reflections</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <aside class="u__vspacing s__primary s__primary-clean">
+    <div class="u__container u__spacing connect">
+      <div class="row">
+        <div class="col-md-3 col-lg-4">
+          <h2 class="h1">Get Updates</h2>
+        </div>
+        <div class="col-md-9 col-lg-8">
+          <p class="lead">Sign up to get updates on projects, events, and new episodes of our podcast, <a href="https://thirtythousandleagues.com/">30,000 Leagues</a></p>
+
+                <div id="anchor-signup" class="mc">
+        <div id="mc_embed_signup">
+          <h2 class="h6 text-center text-md-left">Subscribe</h2>
+          <form action="https://brown.us20.list-manage.com/subscribe/post?u=5050b7f10df36f1c41b3743cf&amp;id=cf85e54967" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline mc__form justify-content-center justify-content-md-start" target="_blank">
+            <div id="mc_embed_signup_scroll" class="form-group mc__wrapper">
+              <label for="mce-EMAIL" class="mc__label sr-only">Please provide your email address:</label>
+              <input type="email" name="EMAIL" class="form-control mc__input" id="mce-EMAIL" placeholder="name@email.com" required="" value="">
+              <div class="mc__nectar" aria-hidden="true"><input type="text" name="b_5050b7f10df36f1c41b3743cf_cf85e54967" tabindex="-1" value=""></div>
+              <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info mc__button" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+
+</section>
+
+      
+      
+              <section class="s__sky s__lil-splatter" aria-hidden="true">
+        <div class="city--header">
+          <div class="cloud cloud--1"></div>
+          <div class="cloud cloud--2"></div>
+          <div class="cloud cloud--3"></div>
+          <div class="cloud cloud--4"></div>
+          <div class="cloud cloud--5"></div>
+          <img srcset="/assets/illus/cityscape-1200.png 1200w,
+                       /assets/illus/cityscape-2400.png 2400w,
+                       /assets/illus/cityscape-2400.png 2x 1200w,
+                       /assets/illus/cityscape-3200.png 3200w,
+                       /assets/illus/cityscape-3200.png 2x 1600w"
+            sizes="(min-width: 2400px) 3200px, (min-width: 1200px) 2400px, 1200px"
+            src="/assets/illus/cityscape-1200.png" alt="" class="img--rwd">
+        </div>
+      </section>
+      <section id="podcast" class="podcast s__primary">
+        <div class="podcast__blurb u__container u__vspacing u__spacing">
+          <p class="h4 mb-0">Check out our podcast</p>
+          <h2 class="display-4">30,000 Leagues</h2>
+          <p class="podcast__badges">
+            <a href="//podcasts.apple.com/us/podcast/30-000-leagues/id1476890683" target="_blank" title="Open Apple Podcasts in a new window"><img src="/assets/img/Apple_Podcasts_listen_WHITEtrans.svg" alt="Listen with Apple Podcasts" width="165"></a>
+            <a href="//podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkLnBpcHBhLmlvL3B1YmxpYy9zaG93cy90aGlydHktdGhvdXNhbmQtbGVhZ3Vlcw&ved=0CAAQ4aUDahcKEwjwjNKlzKHoAhUAAAAAHQAAAAAQAQ&hl=en" target="_blank" title="Open Google Podcasts in a new window"><img src="/assets/img/Google_Podcasts_listen_WHITEtrans.svg" alt="Listen with Google Podcasts" width="165"></a>
+            <a href="//open.spotify.com/show/0pItMizm0y0ndIkiV2kkgu" target="_blank" title="Open Spotify in a new window"><img src="/assets/img/Spotify_Podcasts_listen_WHITEtrans.svg" alt="Listen with Spotify" width="165"></a>
+          </p>
+          <p class="podcast__url h4"><a href="//thirtythousandleagues.com"><strong>thirtythousandleagues.com</strong></a></p>
+        </div>
+        <div class="podcast__img">
+          <img srcset="/assets/illus/30kleagues-640.jpg 640w,
+                       /assets/illus/30kleagues-1200.jpg 1200w,
+                       /assets/illus/30kleagues-2400.jpg 2400w,
+                       /assets/illus/30kleagues-2400.jpg 2x 1200w,
+                       /assets/illus/30kleagues-3200.jpg 3200w,
+                       /assets/illus/30kleagues-3200.jpg 2x 1600w"
+            sizes="(min-width: 2400px) 3200px, (min-width: 1200px) 2400px, (max-width: 640px) 640px, 1200px"
+            src="/assets/illus/30kleagues-640.jpg" alt="">
+        </div>
+      </section>
+      <footer id="anchor-contact" class="main__footer footer s__dark u__vspacing target-cynosure">
+        <div class="u__container u__spacing">
+          <div class="row align-items-start">
+            <div class="col-md-6 col-lg-7 col-xl-8">
+              <p class="footer__logo text-center text-md-left">
+                <img class="brand__img img--rwd" alt="Brown University" src="/assets/img/brown-policy-lab-white.svg">
+              </p>
+              <address class="text-center text-md-left">
+                <a href="https://www.google.com/maps/place/225+Dyer+St,+Providence,+RI+02903/data=!4m2!3m1!1s0x89e44515bb1f3ad9:0x32a107a554a713c0?sa=X&ved=2ahUKEwi3iqjcgevnAhVpUN8KHf9yCcYQ8gEwAHoECAsQAQ">
+                  <span>225 Dyer Street, 5th floor </span>
+                  <span>Providence RI 02903</span>
+                </a>
+              </address>
+              <p class="text-center text-md-left">
+                <a href="mailto:thepolicylab@brown.edu">thepolicylab@brown.edu</a>
+                <a class="breaker" href="tel:401-863-3392">(401) 863-3392</a>
+              </p>
+              <p class="text-center text-md-left m-0">
+                <small>An official website of Brown University</small>
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4 pt-5 pt-md-0">
+                    <div id="anchor-signup" class="mc">
+        <div id="mc_embed_signup">
+          <h2 class="h6 text-center text-md-left">Subscribe</h2>
+          <form action="https://brown.us20.list-manage.com/subscribe/post?u=5050b7f10df36f1c41b3743cf&amp;id=cf85e54967" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline mc__form justify-content-center justify-content-md-start" target="_blank">
+            <div id="mc_embed_signup_scroll" class="form-group mc__wrapper">
+              <label for="mce-EMAIL" class="mc__label sr-only">Please provide your email address:</label>
+              <input type="email" name="EMAIL" class="form-control mc__input" id="mce-EMAIL" placeholder="name@email.com" required="" value="">
+              <div class="mc__nectar" aria-hidden="true"><input type="text" name="b_5050b7f10df36f1c41b3743cf_cf85e54967" tabindex="-1" value=""></div>
+              <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info mc__button" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      
+    </div>
+    
+        
+    <script
+      src="//code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/assets/js/project.js"></script>
+    
+  </body>
+</html>

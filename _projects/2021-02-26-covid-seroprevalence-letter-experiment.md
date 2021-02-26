@@ -54,7 +54,7 @@ Since the two letters were randomly assigned to households, they allowed us to e
 
 <figure class="float-right">
   <img class="img--rwd" src="/assets/img/projects/2021-02-26-covid-seroprevalence-letter-experiment.png" alt="Bar chart with error bars showing a 3.3 percentage point improvement from Letter B">
-  <figcaption><b>Figure 2.</b> Letter B, redesigned based on behavioral science principles, increased show-ups for COVID-19 testing from 7.5% to 10.7% percent. (N = 5,000).
+  <figcaption><b>Figure 2.</b> Letter B, redesigned based on behavioral science principles, increased show-ups for COVID-19 testing from 7.5% to 10.7% percent. (N = 5,000).</figcaption>
 </figure>
 
 The letter redesigned based on behavioral science principles (Letter B) meaningfully increased show-ups for COVID-19 testing: 10.7% of Letter B recipients showed for testing, compared to only 7.5% of those receiving Letter A.

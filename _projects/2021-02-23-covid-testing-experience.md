@@ -10,7 +10,7 @@ aside:
       link: http://www.eohhs.ri.gov/
     - name: Rhode Island Department of Children, Youth, and Families
       link: http://www.dcyf.ri.gov/     
-  timeline: "April 2020 - December 2020"
+  timeline: "May 2020 - December 2020"
   status: Completed
   method: Interviews, UX Design, Toolkit Design
   links:

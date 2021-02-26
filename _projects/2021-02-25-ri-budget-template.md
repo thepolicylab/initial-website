@@ -13,7 +13,7 @@ aside:
   method: Toolkit Design, Training, Qualitative Research
 ---
 
-The design of everyday paperwork matters. To ensure we can use evidence in the budget process, we need to distill that evidence quickly and efficiently. The Policy Lab worked with Rhode Island's Office of Management and Budget to redesign the form (called a "Decision Package") that Rhode Island Agency Staff use to submit their budget proposals. The new design helps users think and communicate clearly about the evidence behind their proposal. We provided training and support to staff to help them fill out the new form, and worked with OMB to update its Budget Guidance.
+The design of everyday paperwork matters. To ensure we can use evidence in the budget process, we need to distill that evidence quickly and efficiently. The Policy Lab worked with Rhode Island's Office of Management and Budget to redesign the forms that agencies use to submit their budget proposals. The new design helps users think and communicate clearly about the evidence behind their proposal. We provided training and support and worked with OMB to update its Budget Guidance and create an Evidence Scale.
 {: .summary}
 
 ## Why is this issue important?

@@ -110,3 +110,11 @@
   border-top-width: 1px;
   padding-top: 1rem;
 }
+
+blockquote {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-style: italic;
+  font-weight: 700;
+  color: $tint__policy-blue__rich;
+}

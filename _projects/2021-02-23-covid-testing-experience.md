@@ -9,7 +9,7 @@ aside:
     - name: Rhode Island Executive Office of Health and Human Services
       link: http://www.eohhs.ri.gov/
     - name: Rhode Island Department of Children, Youth, and Families
-      link: http://www.dcyf.ri.gov/     
+      link: http://www.dcyf.ri.gov/
   timeline: "May 2020 - December 2020"
   status: Completed
   method: Interviews, UX Design, Toolkit Design
@@ -24,7 +24,7 @@ Ensuring that Rhode Island receives the data necessary to inform its COVID-19 re
 ## Why is this issue important?
 {: .lead}
 
-Rhode Island’s response to COVID-19 is driven by data. Understanding in real time how the pandemic is unfolding—how many people are infected, and where—is critical for decision-making about if and when to enforce or lift restrictions (such as opening restaurants or schools), and for efforts to isolate and quarantine potentially infected residents. To keep that data flowing, people must be willing and able to get tested.  
+Rhode Island’s response to COVID-19 is driven by data. Understanding in real time how the pandemic is unfolding—how many people are infected, and where—is critical for decision-making about if and when to enforce or lift restrictions (such as opening restaurants or schools), and for efforts to isolate and quarantine potentially infected residents. To keep that data flowing, people must be willing and able to get tested.
 
 But someone may be reluctant to get a COVID-19 test. They may have difficulty getting a test. To troubleshoot against barriers to getting tested, and reassure residents that the experience will be seamless, we set out to optimize the COVID-19 testing experience in Rhode Island. A particular focus was the K-12 testing experience, which is integral to reopening our schools.
 
@@ -66,6 +66,6 @@ In January 2021, we also released a series of [user research toolkits](https://o
 
 Throughout our interviews, a common refrain was that people were grateful to the staff delivering tests, and they were also appreciative of the chance to provide feedback and be a part of making the process work better. An illustrative comment:
 
->> *“I’m so impressed that Rhode Island got their act together to do this. It’s key to making school work at all. I want it to work and it's SO close to working.”*
+> “I’m so impressed that Rhode Island got their act together to do this. It’s key to making school work at all. I want it to work and it's SO close to working.”
 
-Occasionally, these conversations could become quite personal. People would share how they’re faring, not just on that testing day, but more generally during the pandemic and all its associated hardships. It’s a privilege of UX research to hear such stories.  
+Occasionally, these conversations could become quite personal. People would share how they’re faring, not just on that testing day, but more generally during the pandemic and all its associated hardships. It’s a privilege of UX research to hear such stories.

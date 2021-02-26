@@ -62,6 +62,7 @@ We show responses over time tied to clarity of information at COVID-19 testing l
 In January 2021, we also released a series of [user research toolkits](https://osf.io/6d7e5/). These can help other states replicate our learnings and also conduct their own UX research in the COVID-19 testing space. If you see gaps or have additions or improvements to suggest, please email us at [thepolicylab@brown.edu](mailto:thepolicylab@brown.edu).
 
 ## Behind the scenes
+{: .lead}
 
 Throughout our interviews, a common refrain was that people were grateful to the staff delivering tests, and they were also appreciative of the chance to provide feedback and be a part of making the process work better. An illustrative comment:
 

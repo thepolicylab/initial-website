@@ -47,12 +47,12 @@ The large majority (over 90%) of people who interacted with the state’s COVID-
   4. Pressure test new processes and systems for preventable issues by introducing a diverse set of users into simulated scenarios.
   5. Assign a team member to collect user feedback and provide individualized support.
 
-For example, Figure 1 plots over time how many people agreed it was clear where to go and what to do at a testing location. By September the overall rating was high (about 90% saying “yes” or “definitely yes”), but further reforms based on the recommendations increased those saying “definitely yes” by about 20 percentage points.
+  <figure class="float-right">
+    <img class="img--rwd" src="/assets/img/projects/2021-02-26-covid-ux-case-study-fig1.JPG" alt="Figure 1: weekly trends in user experience on process clarity at COVID-19 testing sites">
+    <figcaption>Figure 1. Weekly trends in user experience about the clarity of the process once arriving at a COVID-19 test site (N=1,150).</figcaption>
+  </figure>
 
-<figure class="float-right">
-  <img class="img--rwd" src="/assets/img/projects/2021-02-26-covid-ux-case-study-fig1.JPG" alt="Figure 1: weekly trends in user experience on process clarity at COVID-19 testing sites">
-  <figcaption>Figure 1. Weekly trends in user experience about the clarity of the process once arriving at a COVID-19 test site (N=1,150).</figcaption>
-</figure>
+For example, Figure 1 plots over time how many people agreed it was clear where to go and what to do at a testing location. By September the overall rating was high (about 90% saying “yes” or “definitely yes”), but further reforms based on the recommendations increased those saying “definitely yes” by about 20 percentage points.
 
 We show responses over time tied to clarity of information at COVID-19 testing locations. While overall public opinion was always high, new users' opinion of the process increased over time as the team actively adapted and implemented recommendations
 
@@ -65,6 +65,6 @@ In January 2021, we also released a series of [user research toolkits](https://o
 
 Throughout our interviews, a common refrain was that people were grateful to the staff delivering tests, and they were also appreciative of the chance to provide feedback and be a part of making the process work better. An illustrative comment:
 
-> *“I’m so impressed that Rhode Island got their act together to do this. It’s key to making school work at all. I want it to work and it's SO close to working.”*
+>> *“I’m so impressed that Rhode Island got their act together to do this. It’s key to making school work at all. I want it to work and it's SO close to working.”*
 
 Occasionally, these conversations could become quite personal. People would share how they’re faring, not just on that testing day, but more generally during the pandemic and all its associated hardships. It’s a privilege of UX research to hear such stories.  

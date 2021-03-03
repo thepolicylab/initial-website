@@ -16,6 +16,8 @@ aside:
   links:
     - name: User research toolkits
       link: https://osf.io/6d7e5/
+    - name: K-12 COVID-19 Testing Experience Report
+      link: https://osf.io/jxgrz/
 ---
 
 Ensuring that Rhode Island receives the data necessary to inform its COVID-19 response means ensuring people remain willing and able to get tested. To understand barriers to getting tested and to ensure a positive testing experience for Rhode Islanders, The Policy Lab conducted user experience (UX) research, talking to people who have been tested, and people who have failed to get tested. We used their responses to create process and user journey maps. Our research told us that the larger majority of people who interacted with the state's COVID-19 testing program had a positive experience. It also helped us identify insights to help the state further improve the process.
@@ -39,7 +41,7 @@ Between May and December 2020, we conducted field observations of testing sites,
 ## What did we learn?
 {: .lead}
 
-The large majority (over 90%) of people who interacted with the state’s COVID-19 testing program had a positive experience. But there was (as always) room to improve. In the K-12 testing space, for example, we uncovered 13 key insights, leading to 5 core recommendations that are now being pursued:
+The large majority (over 90%) of people who interacted with the state’s COVID-19 testing program had a positive experience. But there was (as always) room to improve. In the K-12 testing space, for example, we uncovered 13 key insights, leading to 5 core recommendations that are now being pursued (see the full [K-12 report](https://osf.io/jxgrz/) for details):
 
   1. Offer a broad variety of options for where and when users can get an appointment—as well as who can qualify for one.
   2. Send users more information leading up to their appointment, focusing on what to expect at their appointment and specific instructions on what to do when they arrive.

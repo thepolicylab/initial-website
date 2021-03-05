@@ -18,6 +18,8 @@ aside:
       link: https://osf.io/gjke9
     - name: Pre-analysis Plan
       link: https://osf.io/759j2/
+    - name: Project Brief
+      link: https://osf.io/pvs4h/
 ---
 
 Autonomous vehicles were piloted in Providence, Rhode Island in 2019-2020. Dubbed the “Little Roady” project, the pilot offered free rides on an autonomous shuttle along a 12-stop, 5.3 mile fixed route between Olneyville Square and the Providence Train Station. The Policy Lab helped policymakers understand why some individuals are more open to autonomous vehicles than others.
@@ -47,7 +49,7 @@ Throughout the pilot, the research team surveyed people as they were riding the 
 
 About 4 in 5 people familiar with Little Roady expressed interest in riding the autonomous shuttle. Those who took a ride reported mostly positive experiences. Anecdotally we encountered confusion about how the technology worked; for example, it was not always clear to the riders how often the human attendant had to take over control of the vehicle and drive it manually. Nonetheless most people (77%) predicted that riding in an AV would ultimately be as or more safe than driving themselves, an assessment that is slightly higher than the 71% who say riding a public bus is as or more safe than driving themselves.
 
-The statewide and national surveys, in contrast, found that only 28% of people had any interest in riding an AV. Concerns about safety, not only for riders but also cyclists and pedestrians, were expressed more frequently. There was skepticism that AVs would reduce traffic or lower transportation costs. People familiar with AV technology were more likely to be optimistic. An experiment embedded in the surveys (see Working Paper for details) found that sharing positive press about AVs did not affect opinions, while press on downsides of the technology further lowered interest in taking a ride.
+The statewide and national surveys, in contrast, found that only 28% of people had any interest in riding an AV. Concerns about safety, not only for riders but also cyclists and pedestrians, were expressed more frequently. There was skepticism that AVs would reduce traffic or lower transportation costs. People familiar with AV technology were more likely to be optimistic. An experiment embedded in the surveys (see the [project brief](https://osf.io/pvs4h/) for details) found that sharing positive press about AVs did not affect opinions, while press on downsides of the technology further lowered interest in taking a ride.
 
 ## What happens next?
 {: .lead}

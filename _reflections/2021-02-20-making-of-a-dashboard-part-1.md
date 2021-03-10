@@ -1,6 +1,6 @@
 ---
 layout: reflection
-title: "The Making of Dashboard - Part 1"
+title: "The Making of Dashboard - Part 1: Decisions on the Tech Stack"
 authors: ['Paul Xu']
 date: 2021-02-20
 ---

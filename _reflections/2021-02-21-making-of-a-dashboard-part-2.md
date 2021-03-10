@@ -1,6 +1,6 @@
 ---
 layout: reflection
-title: "The Making of Dashboard - Part 2"
+title: "The Making of Dashboard - Part 2: Building the Skeleton of the App"
 authors: ['Paul Xu']
 date: 2021-02-21
 ---

@@ -1,6 +1,6 @@
 ---
 layout: reflection
-title: "The Making of Dashboard - Part 3"
+title: "The Making of Dashboard - Part 3: Rendering the Visualizations"
 authors: ['Paul Xu']
 date: 2021-02-22
 ---

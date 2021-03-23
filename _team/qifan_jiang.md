@@ -6,6 +6,7 @@ position: Research Associate
 img: qifan-jiang.jpg
 linkedin:
 twitter:
+published: false
 ---
 
 Qifan Jiang is a Research Associate at The Policy Lab and a Master of Public Affairs candidate at Brown University.

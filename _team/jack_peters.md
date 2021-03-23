@@ -6,6 +6,7 @@ position: Research Associate
 img: jack-peters.jpg
 linkedin:
 twitter:
+published: false
 ---
 
 Jack Peters is a Research Associate at The Policy Lab and a Master of Public Affairs candidate at Brown University. Jack is working on a Project with the United way of Rhode Island to evaluate available data on Out of School Learning Time programs in the State and to explore potential strategic indicators to monitor progress in this programming area.

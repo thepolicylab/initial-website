@@ -5,6 +5,7 @@ permalink: team/luana-dumitrache/
 position: Research Associate
 img: luana-dumitrache.jpg
 linkedin:
+published: false
 ---
 
 Luana Dumitrache is a Research Associate at The Policy Lab and a Master of Public Affairs candidate at Brown University.

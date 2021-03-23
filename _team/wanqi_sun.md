@@ -6,6 +6,7 @@ position: Research Associate
 img: wanqi-sun.jpg
 linkedin:
 twitter:
+published: false
 ---
 
 Wanqi Sun is a Research Associate at The Policy Lab and a Master of Public Affairs candidate at Brown University.

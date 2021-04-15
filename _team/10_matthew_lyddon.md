@@ -2,14 +2,16 @@
 layout: team
 title: Matthew J. Lyddon
 permalink: team/matt-lyddon/
-position: Project Manager
+position: Associate Director
 img: matt-lyddon.jpg
 linkedin: https://www.linkedin.com/in/matthewjlyddon/
 twitter:
 ---
 
-Matthew J. Lyddon is The Policy Lab's senior Project Manager. In this role, Matt leads scoping, planning, and implementation across an array of Lab projects, coordinates the work of the project management group, and oversees workflow planning for the Lab’s Data Science practice. He manages several of the Lab's core capacity-building functions, including grant and fundraising infrastructure, research integrity, and collaboration with departments and offices across Brown University. Matt also provides strategic leadership and guidance to the Lab’s communications and public engagement activity.
+Matthew J. Lyddon is The Policy Lab's Associate Director. In this role, Matt works closely with the Director to develop and implement the Lab’s strategic goals across research, engagement, and sustainability. He oversees the operational, administrative, and financial management of the Lab, and provides leadership to the project managers group. Matt also works to develop and support the Lab’s community of practice, guides the commissioning of new projects, and develops new collaborative initiatives.
 {: .lead}
+
+Prior to his appointment as Associate Director, Matt served as a Project Manager for The Policy Lab, leading scoping, planning, and implementation across several projects. He also helped develop the Lab’s internal capacity across grant and financial infrastructure, project and workflow management, public engagement, recruitment, and onboarding.  
 
 Matt was formerly a Postdoctoral Research Associate and Research Manager for the Brown Education Standards Research Team led by Susan Moffitt, and co-authored two technical reports with the team on public education in California for the [Getting Down to Facts II](https://www.gettingdowntofacts.com/) project at Stanford University. Matt also recently served as an Academic Program Fellow at the Taubman Center for American Politics and Policy at Brown, where he developed several new programs for intellectual and public engagement.
 

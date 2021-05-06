@@ -8,7 +8,7 @@ linkedin: https://www.linkedin.com/in/davidyokum
 twitter: https://twitter.com/david_yokum
 ---
 
-David Yokum, JD, PhD is Director of The Policy Lab at Brown University, where he leads a wide portfolio of work leveraging scientific methods to improve public policy and operations. David is also an Adjunct Associate Professor at the Watson Institute and Senior Advisor to The Lab @ DC.
+David Yokum, JD, PhD is Director of The Policy Lab at Brown University, where he leads a wide portfolio of work leveraging scientific methods to improve public policy and operations. David is also Senior Advisor to North Carolina's [Office of Strategic Partnerships](https://www.osbm.nc.gov/operational-excellence/strategic-partnerships).
 {: .lead}
 
 David was previously the founding director of [The Lab @ DC](https://thelab.dc.gov/) in the D.C. Mayor’s Office and, before that, a founding member of the White House’s [Social & Behavioral Sciences Team](https://oes.gsa.gov/) and director of its scientific delivery unit housed at the U.S. General Services Administration. President Obama institutionalized the latter work in Executive Order 13707, “Using Behavioral Science Insights to Better Serve the American People.” All three ventures were exemplars of building internal-to-government scientific capacity and partnerships with universities, which have since inspired replications across the world.

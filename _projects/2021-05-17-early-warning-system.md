@@ -8,7 +8,7 @@ aside:
       link: https://www.ride.ri.gov/
     - name: DataSpark
       link: https://datasparkri.org/
-  timeline: "September 2019 - November 2019"
+  timeline: "September 2019 -  ongoing"
   status: Re-evaluation and re-implementation due to COVID-19
   method: Predictive Modeling based on Machine Learning, simulation, imputation
   links:

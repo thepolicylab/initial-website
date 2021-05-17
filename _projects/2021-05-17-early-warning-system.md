@@ -16,8 +16,6 @@ aside:
       link: "https://www.ride.ri.gov/StudentsFamilies/EducationPrograms/EarlyWarningSystem.aspx"
     - name: Press Release about EWS
       link: "https://www.ride.ri.gov/InsideRIDE/AdditionalInformation/News/ViewArticle/tabid/408/ArticleId/662/RIDE-Develops-Early-Warning-System-That-Allows-for-Early-Intervention.aspx"
-    - name: Press Release about EWS
-      link: "https://www.ride.ri.gov/InsideRIDE/AdditionalInformation/News/ViewArticle/tabid/408/ArticleId/662/RIDE-Develops-Early-Warning-System-That-Allows-for-Early-Intervention.aspx" 
     - name: "Early Alert Systems During a Pandemic: A Simulation Study on the Impact of Concept Drift"
       link: "https://thepolicylab.brown.edu/assets/lak21-51.pdf"
 ---

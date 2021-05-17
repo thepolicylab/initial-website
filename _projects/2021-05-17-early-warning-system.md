@@ -13,13 +13,13 @@ aside:
   method: Predictive Modeling based on Machine Learning, simulation, imputation
   links:
     - name: RIDE information on EWS
-      link: https://www.ride.ri.gov/StudentsFamilies/EducationPrograms/EarlyWarningSystem.aspx
+      link: "https://www.ride.ri.gov/StudentsFamilies/EducationPrograms/EarlyWarningSystem.aspx"
     - name: Press Release about EWS
-      link: https://www.ride.ri.gov/InsideRIDE/AdditionalInformation/News/ViewArticle/tabid/408/ArticleId/662/RIDE-Develops-Early-Warning-System-That-Allows-for-Early-Intervention.aspx
+      link: "https://www.ride.ri.gov/InsideRIDE/AdditionalInformation/News/ViewArticle/tabid/408/ArticleId/662/RIDE-Develops-Early-Warning-System-That-Allows-for-Early-Intervention.aspx"
     - name: Press Release about EWS
-      link: https://www.ride.ri.gov/InsideRIDE/AdditionalInformation/News/ViewArticle/tabid/408/ArticleId/662/RIDE-Develops-Early-Warning-System-That-Allows-for-Early-Intervention.aspx    
+      link: "https://www.ride.ri.gov/InsideRIDE/AdditionalInformation/News/ViewArticle/tabid/408/ArticleId/662/RIDE-Develops-Early-Warning-System-That-Allows-for-Early-Intervention.aspx" 
     - name: Early Alert Systems During a Pandemic: A Simulation Study on the Impact of Concept Drift
-      link: https://thepolicylab.brown.edu/assets/lak21-51.pdf
+      link: "https://thepolicylab.brown.edu/assets/lak21-51.pdf"
 ---
 
  The Policy Lab partnered with the RI Department of Education (RIDE) and DataSpark on developing an early warning system (EWS) that can predict which students are most prone to dropping out, allowing educators the time to act upon this information. Using six indicators, the dashboard generates color-coded risk bands to inform a multi-tiered system of support and keep students in school and on track to graduate. We are currently exploring how the changes and challenges of the COVID-19 pandemic is impacting the underlying data and how they might impact model performance.

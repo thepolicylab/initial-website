@@ -17,7 +17,7 @@ aside:
       link: https://osf.io/ydpnu
 ---
 
-In collaboaration with Rhode Island's Department of Health and Governor's Office, we conducted a series of surveys to understand the beliefs and attitudes governing individual behaviors during the COVID-19 pandemic to help policymakers respond effectively in these unprecedented times.
+In collaboration with Rhode Island's Department of Health and Governor's Office, we conducted a series of surveys to understand the beliefs and attitudes governing individual behaviors during the COVID-19 pandemic to help policymakers respond effectively in these unprecedented times.
 {: .summary}
 
 ## Why is this issue important?
@@ -53,13 +53,6 @@ Rhode Islanders were more concerned with side effects than any other downside to
 The October survey focused on young adults (18-29), who continually showed higher infection rates than other age groups, found that just 17% of this group self-reported wearing masks “every time” they visited friends and family—at least 13 percentage points lower than all other groups except 30-39-year-olds (20%)—even though they reported wearing masks when entering businesses or leaving the home at higher rates than all other groups. Although self-reports are notoriously biased, presumably young adults felt little pressure to under-report compliance with public health guidelines, so inconsistent mask-wearing while socializing is likely widespread. (Notably, mask-wearing when visiting friends and family was lower than when entering businesses or leaving the house for all age groups, but the pattern was most pronounced for 18-29-year-olds.) Young adults also socialized with more people and practiced social distancing less than all other age groups. Just half correctly identified their own age group as the most likely to be infected, suggesting many underestimate risk.
 
 ## What happens next?
-{: .lead}
-
-The database of results is publicly available to help empower decision-making by government, philanthropy, and nonprofit organizations about how best to respond to the pandemic. Already, a variety of resources and training have been (and continue to be) created to meet the needs raised by the responding nonprofits (see, for example, [curated list of resources](https://www.ncnonprofits.org/sites/default/files/COVIDResources210201_NCCN_OSBM.pdf)).
-
-If you’re interested in replicating this survey in your state, please contact us at [thepolicylab@brown.edu](mailto:thepolicylab@brown.edu).
-
-## What happened behind the scenes?
 {: .lead}
 
 A full examination of vaccine intentions and beliefs by demographics and other individual characteristics is forthcoming; preliminary results indicate that intentions to vaccinate are lower in Rhode Island’s major cities, among Republicans, and at lower ranges of family income or educational attainment. Results from a [survey experiment](https://osf.io/ydpnu) and our ongoing COVID-19 behavioral research tracking[^6] suggest that public health messages appealing to the good of the community are less effective than identical messages that appeal to the good of one’s family. This result informed the state’s COVID-19 messaging strategy, which Governor Raimondo summarized during a subsequent weekly press briefing: “I have been up here offering a message of ‘protect your household’, I’m gonna continue to hammer home that message.”[^7]
